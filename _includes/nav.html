@@ -19,7 +19,16 @@
     <form action="" id="search-form">
       <a href="/index.html" id="mobile-avatar" style="background-image:url({{ site.avatar }})"></a>
       <!-- NOTE: input field is disabled by default -->
-      <input id="search-input" type="text" placeholder="Search..." disabled >
+      <input id="search-input" type="text" placeholder="Search..." (function() {
+    var cx = '011396242115913189926:7a1cte8z8t8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })(); >
     </form>
 
     <nav id="pl__container">
