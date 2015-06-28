@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1.1em;
   font-size: 2em; 
   font-weight: bold;
-  float: center;}
+  text-align: center;}
 
 #post__content > p, #post__content > ul, #post__content > ol {
   margin-top: 1.5em;
