@@ -32,7 +32,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0 40px 0 0;
+  margin: 0 100px 0 0;
   font: 100 16px/1.5 Avenir, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
