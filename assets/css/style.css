@@ -371,8 +371,8 @@ a {
 
 #pjax {
   padding: 0 5% 30px; 
-  margin-left: 50px;
-  margin-right: 250px;}
+  margin-left: 60px;
+  margin-right: 260px;}
   #pjax.fadeIn {
     -webkit-animation: fadeIn .3s;
     -moz-animation: fadeIn .3s;
