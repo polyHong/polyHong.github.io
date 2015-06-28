@@ -370,8 +370,7 @@ a {
       font-size: 14px; } }
 
 #pjax {
-  padding: 0 5% 30px; 
-  margin-right: 268px;}
+  padding: 0 5% 30px; }
   #pjax.fadeIn {
     -webkit-animation: fadeIn .3s;
     -moz-animation: fadeIn .3s;
@@ -398,9 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 #post__title {
   margin: 0;
   padding-top: 1.1em;
-  font-size: 2em; 
-  font-weight: bold;
-  text-align: center;}
+  font-size: 2em; }
 
 #post__content > p, #post__content > ul, #post__content > ol {
   margin-top: 1.5em;
