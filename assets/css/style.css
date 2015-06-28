@@ -370,8 +370,8 @@ a {
       font-size: 14px; } }
 
 #pjax {
-  padding: 0 5% 30px;
-  padding-right:240px;  }
+  padding: 0 8% 30px;
+  padding-right:248px;  }
   #pjax.fadeIn {
     -webkit-animation: fadeIn .3s;
     -moz-animation: fadeIn .3s;
