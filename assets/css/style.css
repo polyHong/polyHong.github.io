@@ -85,7 +85,7 @@ a {
    Tags
 \*---------------------------------*/
 #tags {
-  width: 120px;
+  width: 165px;
   height: 100%;
   background: #474d57;
   border-right: 1px solid #3c4149;
@@ -102,8 +102,8 @@ a {
       display: none; } }
 
 #avatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin: 55px auto 35px;
   border-radius: 50%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
@@ -210,7 +210,7 @@ a {
    Posts List
 \*---------------------------------*/
 #posts-list {
-  width: 400px;
+  width: 420px;
   height: 100%;
   background: rgba(250, 250, 250, 0.95);
   border-right: 1px solid #e5e8ec;
@@ -370,8 +370,8 @@ a {
       font-size: 14px; } }
 
 #pjax {
-  padding: 0 6.5% 30px;
-  padding-right:230px;  }
+  padding: 0 5% 30px;
+  padding-right:240px;  }
   #pjax.fadeIn {
     -webkit-animation: fadeIn .3s;
     -moz-animation: fadeIn .3s;
