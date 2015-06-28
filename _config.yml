@@ -1,0 +1,41 @@
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: redcarpet
+
+# 作者信息
+author: 
+  name: 王洪
+  email: ama.hong.wang@gmail.com
+  link: http://polyhong.github.io
+  github: http://github.com/polyHong
+
+# 站点信息
+title: Hammer|王洪的博客 
+description: my personal blog
+url: http://polyhong.github.io
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: /assets/img/boy.jpg
+favicon: /assets/img/foot.jpg
+
+# google analytics 设置
+#ga:
+#  id: UA-54767140-1
+#  url: yansu.org
+
+# disqus 设置
+#disqus:
+#  shortname: suyan-zh
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
