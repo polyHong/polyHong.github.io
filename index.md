@@ -3,8 +3,9 @@ layout: post
 title: Welcome to Hong(Hammer) Wang's Blog
 ---
 
->##面朝大海，春暖花开  
->*--海子*  
+----------
+<center>
+>##**面朝大海，春暖花开**   
 >从明天起，做一个幸福的人  
 >喂马、劈柴，周游世界  
 >从明天起，关心粮食和蔬菜  
@@ -19,6 +20,8 @@ title: Welcome to Hong(Hammer) Wang's Blog
 >愿你有情人终成眷属  
 >愿你在尘世获得幸福  
 >我只愿面朝大海，春暖花开
+</center>
+----------
 
 
 ## 关于博客
