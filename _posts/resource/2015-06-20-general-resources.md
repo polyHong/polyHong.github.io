@@ -1,11 +1,17 @@
 ---
 layout: post
-title: 常用资源
+title: 常用资源列表
 category: 资源
-tags: SEO
-keywords: SEO
+tags: resource
+keywords: Latex, Matrix Optimization
 ---
 
-## Latex小技巧
-
 ## 矩阵优化相关资源
+> - [The Advanced Matrix Factorization Jungle](https://sites.google.com/site/igorcarron2/matrixfactorizations): a living document on the state of the art matrix factorization algorithms and their numerous implementations
+> - [Convex optimization research](http://cvxr.com/): software for Disciplined Convex Programming
+
+## Latex相关资源
+> - [Chinese Tex: HomePage](http://www.ctex.org/HomePage)
+> - [Ctan: Comprehensive TEX Archive Network](http://ctan.org/)
+> - [Online Latex Equation Editor](http://www.codecogs.com/latex/eqneditor.php)
+
