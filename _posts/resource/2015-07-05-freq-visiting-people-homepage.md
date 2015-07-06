@@ -18,7 +18,7 @@ keywords: Mathematics, Optimization, People
 > 10. [Defeng Sun](http://www.math.nus.edu.sg/~matsundf/)
 > 11. [Paul Tseng](http://www.mit.edu/~dimitrib/PTseng/personal.html)
 > 12. [Zaiwen Wen](http://bicmr.pku.edu.cn/~wenzw)
-> 13. [Hou-Duo](http://www.personal.soton.ac.uk/hdqi/)
+> 13. [Hou-Duo Qi](http://www.personal.soton.ac.uk/hdqi/)
 > 14. [Tony Cai](http://www-stat.wharton.upenn.edu/~tcai/)
 > 15. [Shiqian Ma](http://www1.se.cuhk.edu.hk/~sqma/)
 > 16. [Maryam Fazel](http://faculty.washington.edu/mfazel/)
