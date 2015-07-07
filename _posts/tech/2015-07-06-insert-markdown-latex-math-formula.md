@@ -53,18 +53,29 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 因为网页插入公式的原理是调用"某某网站的服务器"动态生成的, 所以保证公式正常显示的前提是该网站公式生成服务一直有效. forkosh在这方面据说表现不错.  
 
 
-## 方法三: 使用MathJax引擎  
+## 方法三: 使用MathJax引擎 
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> 
 
 [Stakeoverflow](http://stackoverflow.com/)上漂亮的公式是用MathJax引擎生成. 值得一提的是, MathJax引擎生成的公式不是图片. 在Markdown中添加MathJax引擎也很方便:  
 
 ```
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ```  
+然后, 直接使用Tex编辑公式即可. `$$公式$$`表示行间公式, 本来Tex中使用`\(公式\)`表示行内公式, 但因为`\`是Markdown的转移字符, 所以在Markdown中输入行内公式应使用`\\(公式\\)`, 下面行间公式代码,
 
+```tex
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
+```  
+显示的行间公式结果如下,
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \eqno{(1)$$.  
 
+而行内公式代码,
 
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-
+```tex
 \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+```  
+给出的则是下面的结果,
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\).  
+
+MathJax引擎生成的公式, 你还可以使用鼠标右键进行操作. 
