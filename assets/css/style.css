@@ -433,7 +433,7 @@ kbd {
   padding: .2em .3em .1em;
   font-size: .75em;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  background: white;
+  background: black;
   background: -webkit-linear-gradient(left, #f6f4f4, white, #f6f4f4);
   background: -moz-linear-gradient(left, #f6f4f4, white, #f6f4f4);
   background: -ms-linear-gradient(left, #f6f4f4, white, #f6f4f4);
