@@ -51,7 +51,7 @@ a {
    Sidebar => Tags & Posts List
 \*---------------------------------*/
 #sidebar {
-  width: 515px;
+  width: 535px;
   height: 100%;
   float: left; }
   @media screen and (min-device-width: 1281px) {
@@ -85,7 +85,7 @@ a {
    Tags
 \*---------------------------------*/
 #tags {
-  width: 135px;
+  width: 145px;
   height: 100%;
   background: #474d57;
   border-right: 1px solid #3c4149;
@@ -102,9 +102,9 @@ a {
       display: none; } }
 
 #avatar {
-  width: 85px;
-  height: 85px;
-  margin: 55px auto 25px;
+  width: 90px;
+  height: 90px;
+  margin: 55px auto 35px;
   border-radius: 50%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
   background-repeat: no-repeat;
