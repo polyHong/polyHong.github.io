@@ -8,4 +8,4 @@ keywords: Newton
 
 > 文章引自网络. ---- Hammer Wang
 
-![newton-liefetime](/assets/img/life/newton-life.jpg)
+![newton-liefetime](/assets/img/life/newton-lifetime.jpg)
