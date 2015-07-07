@@ -7,7 +7,7 @@ keywords: Latex, Markdown, Mathematics formula
 description: 
 ---
 
-在Markdown中插入数学公式, 一种方法是把公式保存为图片, 然后在正文使用img标签进行引用, 然而当你有很多公式需要编辑的时候, 这种办法就有点然人头疼. 因为你需要在编辑公式, 保存图片, img标签引用之间来回切换.  
+在Markdown中插入数学公式, 一种方法是把公式保存为图片, 然后在正文使用img标签进行引用, 然而当你有很多公式需要编辑的时候, 这种办法就让人很头疼. 因为你需要在编辑公式, 保存图片, img标签引用之间来回切换.  
 
 一种更为简单方便的方法是, 使用html语法, 调用在线LaTex公式编辑器的公式生成API, 在线生成LaTex数学公式, 这样可以避免将公式保存为图片. 弊端是公式很多的时候, 网页刷新可能会比一般的网页慢一些.  
 
@@ -67,4 +67,4 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 
-$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
