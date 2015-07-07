@@ -11,7 +11,7 @@ description:
 
 
 <center>  
-![unix-network-term](/assets/img/tech/UNIX/unix-network-terminology)
+![unix-network-term](/assets/img/tech/UNIX/unix-network-terminology.jpg)
 </center>  
 
 ## Portmap(端口映射)  
