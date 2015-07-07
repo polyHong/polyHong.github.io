@@ -433,7 +433,7 @@ kbd {
   padding: .2em .3em .1em;
   font-size: .75em;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  background: black;
+  background: white;
   background: -webkit-linear-gradient(left, #f6f4f4, white, #f6f4f4);
   background: -moz-linear-gradient(left, #f6f4f4, white, #f6f4f4);
   background: -ms-linear-gradient(left, #f6f4f4, white, #f6f4f4);
@@ -609,14 +609,14 @@ iframe {
 \*---------------------------------*/
 @media screen and (min-device-width: 1281px) {
   #sidebar.fullscreen {
-    margin-left: -585px; } }
+    margin-left: -535px; } }
 @media screen and (max-device-width: 1280px) {
   #sidebar.fullscreen {
-    -webkit-transform: translateX(-585px);
-    -moz-transform: translateX(-585px);
-    -ms-transform: translateX(-585px);
-    -o-transform: translateX(-585px);
-    transform: translateX(-585px); } }
+    -webkit-transform: translateX(-535px);
+    -moz-transform: translateX(-535px);
+    -ms-transform: translateX(-535px);
+    -o-transform: translateX(-535px);
+    transform: translateX(-535px); } }
 
 #pjax.fullscreen {
   max-width: 800px;
