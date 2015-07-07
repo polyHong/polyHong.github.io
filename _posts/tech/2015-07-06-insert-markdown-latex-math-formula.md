@@ -67,15 +67,15 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 ```tex
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
 ```  
-显示的行间公式结果如下,
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \eqno{(1)$$.  
+显示的行间公式结果如下,  
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$.  
 
 而行内公式代码,
 
 ```tex
 \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 ```  
-给出的则是下面的结果,
+给出的则是下面的结果,  
 \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\).  
 
 MathJax引擎生成的公式, 你还可以使用鼠标右键进行操作. 
