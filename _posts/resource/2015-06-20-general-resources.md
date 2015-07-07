@@ -17,6 +17,7 @@ keywords: Latex, Matrix Optimization
 > - [Chinese Tex: HomePage](http://www.ctex.org/HomePage)
 > - [Ctan: Comprehensive TEX Archive Network](http://ctan.org/)
 > - [Online Latex Equation Editor](http://www.codecogs.com/latex/eqneditor.php)
+> - [Wikibooks: Latex](https://en.wikibooks.org/wiki/LaTeX)
 
 
 
