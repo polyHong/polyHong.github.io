@@ -359,11 +359,11 @@ a {
   -webkit-overflow-scrolling: touch; }
   #post ::selection {
     color: white;
-    background: #33caa6;
+    background: #1E90FF;   /*#33caa6*/
     text-shadow: none; }
   #post ::-moz-selection {
     color: white;
-    background: #33caa6;
+    background: #1E90FF;   /*#33caa6*/
     text-shadow: none; }
   @media screen and (max-width: 585px) {
     #post {
