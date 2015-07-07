@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #e5e8ec;
   border-radius: 5px; 
   /*设置图片垂直居中*/
-  vertical-align:middle;}
+  vertical-align: middle; }
 
 strong {
   font-weight: 600; }
