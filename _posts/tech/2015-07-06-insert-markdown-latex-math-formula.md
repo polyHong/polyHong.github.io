@@ -68,7 +68,7 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
 ```  
 显示的行间公式结果如下,  
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$.  
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
 
 而行内公式代码,
 
