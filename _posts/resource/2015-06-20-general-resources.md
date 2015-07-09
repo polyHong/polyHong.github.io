@@ -16,8 +16,10 @@ keywords: Latex, Matrix Optimization
 ## Latex相关资源
 > - [Chinese Tex: HomePage](http://www.ctex.org/HomePage)
 > - [Ctan: Comprehensive TEX Archive Network](http://ctan.org/)
-> - [Online Latex Equation Editor](http://www.codecogs.com/latex/eqneditor.php)
+> - [Online Latex Equation Editor](http://www.codecogs.com/latex/eqneditor.php?lang=en-us)
 > - [Wikibooks: Latex](https://en.wikibooks.org/wiki/LaTeX)
+> - [LaTex Templates](http://www.LaTeXTemplates.com)
+> - [TeX Users Group](www.tug.org)
 
 
 
