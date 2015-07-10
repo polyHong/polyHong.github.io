@@ -159,12 +159,12 @@ a {
       position: absolute;
       right: -3px; }
     .tags__li.active:before {
-      top: -6px;
+      top: 0px;
       border-right: 2px solid #fafafa;
       border-bottom: 2px solid #fafafa;
       border-radius: 0 0 6px 0; }
     .tags__li.active:after {
-      bottom: -6px;
+      bottom: 0px;
       border-right: 2px solid #fafafa;
       border-top: 2px solid #fafafa;
       border-radius: 0 6px 0 0; }
