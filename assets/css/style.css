@@ -135,7 +135,8 @@ a {
   padding: 12px 35px 9px;
   border-top: 1px solid #525965;
   border-bottom: 1px solid #3c4149;
-  cursor: pointer; }
+  cursor: pointer; 
+  display: inline-block;}
   .tags__li.active {
     margin-right: -1px;
     color: #020202;
@@ -159,12 +160,12 @@ a {
       position: absolute;
       right: -3px; }
     .tags__li.active:before {
-      top: 0px;
+      top: -6px;
       border-right: 2px solid #fafafa;
       border-bottom: 2px solid #fafafa;
       border-radius: 0 0 6px 0; }
     .tags__li.active:after {
-      bottom: 0px;
+      bottom: -6px;
       border-right: 2px solid #fafafa;
       border-top: 2px solid #fafafa;
       border-radius: 0 6px 0 0; }
