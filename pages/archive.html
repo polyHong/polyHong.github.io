@@ -16,7 +16,7 @@ comments: false
       <ul id="tags__ul">
     {% endif %}
     <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; 
-      <a class="pjax" href="{{ post.url }}">{{ post.title }}</a>
+      <a class="pjax" href="{{ post.url }}"><span class="pl__title">{{ post.title }}</span></a>
     </li>
   
     {% if forloop.last %}
@@ -30,7 +30,7 @@ comments: false
         {% if this_month != next_month %}
         </ul>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}年{{next_month}}月</legend>
-        <ul>
+        <ul id="tags__ul">
         {% endif %}
       {% endif %}
     {% endif %}
