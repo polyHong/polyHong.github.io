@@ -13,7 +13,7 @@ comments: false
   
     {% if forloop.first %}
       <legend id="{{this_year}}-{{this_month}}">{{this_year}}年{{this_month}}月</legend>
-      <ul id="tags__ul">
+      <ul>
     {% endif %}
     <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; 
       <a class="pjax" href="{{ post.url }}"><span class="pl__title">{{ post.title }}</span></a>
@@ -25,12 +25,12 @@ comments: false
       {% if this_year != next_year %}
         </ul>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}年{{next_month}}月</legend>
-        <ul id="tags__ul">
+        <ul>
       {% else %}    
         {% if this_month != next_month %}
         </ul>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}年{{next_month}}月</legend>
-        <ul id="tags__ul">
+        <ul>
         {% endif %}
       {% endif %}
     {% endif %}
