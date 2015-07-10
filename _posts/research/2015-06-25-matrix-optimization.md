@@ -2,7 +2,7 @@
 layout: post
 title: 矩阵优化
 category: 科研
-tags: [Optimization, Matrix Optimization]
+tags: Optimization, Matrix Optimization
 keywords: Low rank, sparse optimization
 description: 
 ---
