@@ -28,4 +28,5 @@ keywords: Latex, Matrix Optimization
 > - [Mathematics Stack Exchange](http://math.stackexchange.com/)
 > - [Project Euler](http://projecteuler.net/about)
 > - [Wolfram MathWorld](http://mathworld.wolfram.com/)
+> - [Mytest iPython link](http://nbviewer.jupyter.org/github/polyHong/iPythonstudy/blob/master/python_learning.ipynb)
 
