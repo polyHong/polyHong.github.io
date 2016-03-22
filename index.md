@@ -5,22 +5,22 @@ title: Welcome to Hong(Hammer) Wang's Blog
 
 ----------
 
->##**面朝大海，春暖花开**
->从明天起，做一个幸福的人  
->喂马、劈柴，周游世界  
->从明天起，关心粮食和蔬菜  
->我有一所房子，面朝大海，春暖花开  
->从明天起，和每一个亲人通信  
->告诉他们我的幸福  
->那幸福的闪电告诉我的  
->我将告诉每一个人  
->给每一条河每一座山取一个温暖的名字  
->陌生人，我也为你祝福  
->愿你有一个灿烂的前程  
->愿你有情人终成眷属  
->愿你在尘世获得幸福  
->我只愿面朝大海，春暖花开  
-
+>每个人心里都有一团火  
+>路过的人只看到烟  
+>但是总有一个人  
+>总有那么一个人能看到这火  
+>然后走过来, 陪我一起.  
+>      
+>我在人群中, 看到了她的火  
+>我快步走过去生怕慢一点她就会被淹没在岁月的尘埃里  
+>       
+>我带着我的热情, 我的冷漠, 我的狂暴  
+>我的温和以及对爱情毫无理由的相信  
+>走得上气不接下气  
+>        
+>我结结巴巴地对她说, 你叫什么名字  
+>从你叫什么名字开始  
+>后来, 有了一切  
 
 ## 写给未来
 
@@ -34,6 +34,6 @@ title: Welcome to Hong(Hammer) Wang's Blog
 
 ## 关于这个博客
 
-这个博客模板改自[**闫肃的博客**](http://yansu.org/)。它是通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll) 修改生成，非常感谢 [Peiwen Lu](https://github.com/P233) 开发出这么漂亮的主题。
+这个博客模板改自[**闫肃的博客**](http://yansu.org/), 修改过程也参考了[**林安雅的博客**](http://painterlin.com/).它是通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll) 修改生成，非常感谢 [Peiwen Lu](https://github.com/P233) 开发出这么漂亮的主题.
 
-我博客的源码托管在[Github](https://github.com/polyHong/polyHong.github.io)上，如果有任何改进意见，欢迎讨论。
+我博客的源码托管在[Github](https://github.com/polyHong/polyHong.github.io)上，如果有任何改进意见，欢迎讨论.
