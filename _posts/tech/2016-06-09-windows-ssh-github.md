@@ -13,14 +13,14 @@ description:
 
 # Part I: Git for windows配置SSH访问GitHub
 ***
-## 检查本机是否有ssh key设置
+## Step1. 检查本机是否有ssh key设置
 `$ cd ~/.ssh` 或 `cd .ssh`  
 如果没有则提示： 
 >No such file or directory
 
 如果有则进入~/.ssh路径下(ls查看当前路径文件, rm *删除所有文件)  
 
-## 使用Git Bash生成新的ssh key   
+## Step2. 使用Git Bash生成新的ssh key   
 `$ cd ~         #保证当前路径在"~"下`  
 `$ ssh-keygen -t rsa -C "your email addr"`  
 > Generating public/private rsa key pair.  
@@ -36,17 +36,17 @@ description:
 注释：可生成ssh key自定义名称的密钥，默认id_rsa。  
 `$ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/githug_blog_keys #生成ssh key的名称为githug_blog_keys`，慎用容易出现其它异常。*  
 
-## Step1. 添加ssh key到GitHub  
+## Step3. 添加ssh key到GitHub  
 1. 登陆到GitHub系统： 点击右上角账号头像的 "▼"→Settings→SSH kyes→Add SSH key. 
 2. 复制id_rsa.pub的公钥内容：  
 	1) 进入c:/Users/xxxx_000/.ssh/目录下，打开id_rsa.pub文件，全选复制公钥内容;  
 	2) Title自定义，将公钥粘贴到GitHub中Add an SSH key的key输入框，最后“Add Key”.
 
-## Step2. 配置账户
+## Step4. 配置账户
 1. `$ git config --global user.name “your_username”  #设置用户名`;
 2. `$ git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册giuhub的邮箱)`.  
 
-## Step3. 测试ssh keys是否设置成功  
+## Step5. 测试ssh keys是否设置成功  
 `$ ssh -T git@github.com`  
 > The authenticity of host 'github.com (192.30.252.129)' can't be established.  
 > RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.  
@@ -78,7 +78,7 @@ description:
 `$ git remote add origin 'the path of the test ssh key'`  
 `$ git push -u origin master`  
 
-## Step5. 刷新test ssh key仓库， 查看hello.md.
+## Step4. 刷新test ssh key仓库， 查看hello.md.
 
 
 
