@@ -12,7 +12,7 @@ description:
 >第一部分：在windows下通过Git for windows配置SSH Keys连接GitHub;  
 >第二部分：在GitHub上创建仓库，在本地创建项目，然后将本地项目通过SSH提交到GitHub仓库中。
 
-# Git for windows配置SSH访问GitHub
+## Git for windows配置SSH访问GitHub
 ***
 ## 检查本机是否有ssh key设置
 `$ cd ~/.ssh` 或 `cd .ssh`  
@@ -30,7 +30,7 @@ description:
 
 
 
-# 将本地项目通过SSH push到GitHub
+## 将本地项目通过SSH push到GitHub
 ***
 ## 在github上创建一个示例仓库， 如：test ssh key  
 
@@ -53,12 +53,4 @@ description:
 `$ git push -u origin master`  
 
 ## 刷新test ssh key仓库， 查看hello.md.
-
-
-
-
-
-
-
-
 
