@@ -2,7 +2,7 @@
 layout: post
 title: Windows下配置SSH连接GitHub
 category: 技术
-tags: Blog
+tags: github
 keywords: SSH, GitHub
 description: 
 ---
