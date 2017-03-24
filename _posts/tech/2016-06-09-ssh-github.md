@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows下配置SSH连接GitHub
+title: SSH连接GitHub
 category: 技术
 tags: github
 keywords: SSH, GitHub
@@ -8,10 +8,10 @@ description:
 ---
 
 本文可分为两部分：  
->第一部分：在windows下通过Git for windows配置SSH Keys连接GitHub;  
+>第一部分：通过Gits配置SSH Keys连接GitHub;  
 >第二部分：在GitHub上创建仓库，在本地创建项目，然后将本地项目通过SSH提交到GitHub仓库中。
 
-# Part I: Git for windows配置SSH访问GitHub
+# Part I: Git配置SSH访问GitHub
 ***
 ## Step1. 检查本机是否有ssh key设置
 `$ cd ~/.ssh` 或 `cd .ssh`  
