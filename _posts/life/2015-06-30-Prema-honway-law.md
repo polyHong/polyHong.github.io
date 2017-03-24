@@ -6,7 +6,7 @@ tags: 普瑞马法则
 keywords: 
 ---
 
-> 引自网络, 为更高效地学习和工作 -- Hong
+> from internet, for better study and work --- Hong
   
 
 **普瑞马法则，就是如果把一件更难完成的事情放在比较容易完成的事情前面做。

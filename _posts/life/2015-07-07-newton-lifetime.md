@@ -6,7 +6,7 @@ tags: Essay
 keywords: Newton
 ---
 
-> 文章引自网络. ---- Hammer Wang
+> 文章引自网络. --- Hong
 
 <center>
 ![newton-liefetime](/assets/img/newton-lifetime.jpg)

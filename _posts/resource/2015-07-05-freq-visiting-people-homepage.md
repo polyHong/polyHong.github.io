@@ -6,7 +6,7 @@ tags: resource
 keywords: Mathematics, Optimization, People
 ---
 
-> 1. [Xiaojun Chen](http://www.polyu.edu.hk/ama/staff/xjchen/ChenXJ.htm): My PhD supervisor
+> 1. [Xiaojun Chen](http://www.polyu.edu.hk/ama/staff/xjchen/ChenXJ.htm)
 > 2. [Xin Liu](http://lsec.cc.ac.cn/~liuxin/)
 > 3. [Ya-xiang Yuan](http://lsec.cc.ac.cn/~yyx/chinese/indexc.htm)
 > 4. [Wotao Yin](http://www.math.ucla.edu/~wotaoyin/)
