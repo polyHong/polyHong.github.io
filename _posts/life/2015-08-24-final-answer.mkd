@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 终极答案(阿西莫夫)
+title: 终极答案
 category: 生活
 tags: Article
 keywords: Philosophy, Thinking
