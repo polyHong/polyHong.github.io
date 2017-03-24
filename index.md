@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to Hong(Hammer) Wang's Blog
+title: Welcome to Hong's Blog
 ---
 
 ----------
