@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LaTex使用小技巧
+title: Tricks of Using LaTex
 category: 技术
 tags: Blog
 keywords: Latex
@@ -14,11 +14,11 @@ description:
 
 Latex中双引号的正确输入方式如下：  
 
-1. 找到Tab键上方的**~**和**`**键，如下图 
+1. 找到Tab键上方的*~*和*`*键，如下图 
 <center>
 ![pix1](/assets/img/tech/latex/double-quote-mark.jpg)
 </center>>
-2. 使用该键(即**~**和**`**键)连续键入两个**`**(即**``**)然后键入两个单引号(即**''**). 单引号的输入类似.  
+2. 使用该键(即*~*和*`*键)连续键入两个*`*(即*``*)然后键入两个单引号(即*''*). 单引号的输入类似.  
 3. 下面是一个例子. 下图是最终效果图,  
 <center>  
 ![pix2](/assets/img/tech/latex/double-quote-mark-example.png)
