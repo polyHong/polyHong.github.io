@@ -17,11 +17,11 @@ filter: 'category'
 recent_num: 20
 
 # Social account
-twitter: hong
-weibo: hong
+#twitter: hong
+#weibo: hong
 github: polyHong
-instagram: hong
-linkedin: hong
+#instagram: hong
+#linkedin: hong
 
 # avatar and Favicon
 avatar: /assets/img/foot.jpg
