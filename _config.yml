@@ -7,7 +7,7 @@ email: ama.hong.wang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    王洪的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://polyHong.github.io  # the base hostname & protocol for your cite
+url: http://hitwanghong.com  # the base hostname & protocol for your cite
 rss_url: /pages/feed.xml
 author: Hong Wang
 
