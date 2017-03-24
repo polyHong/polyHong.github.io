@@ -1,23 +1,32 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
+# Site settings
+title: 王洪的博客
+email: ama.hong.wang@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+   王洪的博客
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://polyhong.github.io    # the base hostname & protocol for your cite
+rss_url: /pages/feed.xml
+author: Hong Wang
 
-# 作者信息
-author: 
-  name: 王洪
-  email: ama.hong.wang@gmail.com
-  link: http://polyhong.github.io
-  github: http://github.com/polyHong
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in siderbar.
+filter: 'category'
+recent_num: 20
 
-# 站点信息
-title: Hammer|王洪的博客 
-description: my personal blog
-url: http://polyhong.github.io
-rss_url: /pages/atom.xml
+# Social account
+twitter: hong
+weibo: hong
+github: polyHong
+instagram: hong
+linkedin: hong
 
-# avatar头像及Favicon
+# avatar and Favicon
 avatar: /assets/img/foot.jpg
 favicon: /assets/img/boy.jpg
+
 
 # google analytics 设置
 #ga:
@@ -27,6 +36,7 @@ favicon: /assets/img/boy.jpg
 # disqus 设置
 #disqus:
 #  shortname: suyan-zh
+
 
 # 首页除了最新文章外显示分类
 cates: 
@@ -39,3 +49,22 @@ locals:
   about: 关于
   newest: 最新文章
   archive: 归档
+
+
+
+
+# Build settings
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
+
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
