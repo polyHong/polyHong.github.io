@@ -7,7 +7,7 @@ email: ama.hong.wang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    王洪的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://polyhong.github.io    # the base hostname & protocol for your cite
+url: hitwanghong.com    # the base hostname & protocol for your cite
 rss_url: /pages/feed.xml
 author: Hong Wang
 
@@ -36,21 +36,6 @@ favicon: /assets/img/boy.jpg
 # disqus 设置
 #disqus:
 #  shortname: suyan-zh
-
-
-# 首页除了最新文章外显示分类
-cates: 
-  - Optimization
-  - LaTeX
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-
-
 
 
 # Build settings
