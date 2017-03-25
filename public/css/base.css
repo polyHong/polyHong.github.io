@@ -93,10 +93,10 @@ body, html {
   color: #283444;
 }
 .aside3-content {
-  padding-left: 48px;
-  padding-right: 48px;
- 
-  padding: 0 5% 0 5%;
+/*  padding-left: 30px;
+  padding-right: 30px;
+*/ 
+  padding: 0 8% 0 8%;
   color: #283444;
   line-height: 1.6;
 }
