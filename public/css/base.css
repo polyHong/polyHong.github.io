@@ -22,6 +22,7 @@ body, html {
 .aside1 {
   background-color: #474d57;
   height: 100%;
+  width: 20%;
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
@@ -68,6 +69,7 @@ body, html {
 
   background-color: #f7f7f7;
   height: 100%;
+  width: 80%;
   border-right: 2px solid #303030;
   overflow-y: auto;
   font-color: #fff;
