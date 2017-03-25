@@ -4,10 +4,10 @@
   height: 100%;
 }
 body, html {
-  margin: 0px 135px 80px 135px;
+  margin: 0px 135px 120px 135px;
   height: 100%;
   overflow: hidden; 
-  background-color: #303030;
+  background-color: #BDBDBD;
 }
 .row {
   height: 100%;
