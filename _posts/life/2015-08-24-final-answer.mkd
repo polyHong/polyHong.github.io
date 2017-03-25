@@ -2,7 +2,7 @@
 layout: post
 title: 终极答案
 category: 生活
-tags: Article
+tags: Entertainment
 keywords: Philosophy, Thinking
 ---
 

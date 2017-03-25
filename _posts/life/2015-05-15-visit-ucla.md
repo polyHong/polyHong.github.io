@@ -2,7 +2,7 @@
 layout: post
 title: 访问UCLA
 category: 生活
-tags: Essay
+tags: Travel
 keywords: UCLA, visit
 ---
 

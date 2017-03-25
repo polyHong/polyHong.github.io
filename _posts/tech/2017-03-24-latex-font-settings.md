@@ -2,13 +2,13 @@
 layout: post
 title: LaTex字体设置
 category: 技术
-tags: Blog
+tags: Latex
 keywords: Latex
 description: 
 ---
 
 
-## LaTex字体设置  
+## 字体设置  
 
 使用`times new roman`字体应使用`usepackage{txfonts}`宏包. 使用粗体应使用
 `usepackage{bm}`宏包. 下面对常用字体命令做一个归纳:  
@@ -62,7 +62,7 @@ description:
 ```
 
 
-##  LaTex字号设置
+##  字号设置
 ### 方法一: LaTex默认命令  
 
 字体大小设置命令由小到大依次为:

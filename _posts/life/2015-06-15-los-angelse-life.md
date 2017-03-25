@@ -2,7 +2,7 @@
 layout: post
 title: 洛杉矶印象
 category: 生活
-tags: life
+tags: Travel
 keywords: Los Angeles, UCLA
 ---
 

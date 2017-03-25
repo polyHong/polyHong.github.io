@@ -2,14 +2,14 @@
 layout: post
 title: 牛逼顿的一生
 category: 生活
-tags: Essay
+tags: Entertainment
 keywords: Newton
 ---
 
 > 文章引自网络. --- Hong
 
 <center>
-![newton-liefetime](/assets/img/newton-lifetime.jpg)
+![newton-liefetime](/public/img/life/newton-lifetime.jpg)
 </center>
 
    

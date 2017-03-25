@@ -2,12 +2,12 @@
 layout: post
 title: Git常用命令表
 category: 技术
-tags: vim
-keywords: vim
+tags: Git
+keywords: Git
 description: 
 ---
 
-> 此文内容完全引自林安雅博客, 出于使用Git bash时方便查询命令考虑. 原文请点[这里](http://painterlin.com/2015/01/30/Git-Resources.html) --- Hong
+> 完全引自林安雅博客, 仅为方便查询命令. 原文请点[这里](http://painterlin.com/2015/01/30/Git-Resources.html) --- Hong
 
 master: 默认开发分支  
 origin: 默认远程版本库  

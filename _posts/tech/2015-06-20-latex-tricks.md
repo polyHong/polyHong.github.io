@@ -2,7 +2,7 @@
 layout: post
 title: Tricks of Using LaTex
 category: 技术
-tags: Blog
+tags: Latex
 keywords: Latex
 description: 
 ---
@@ -16,12 +16,12 @@ Latex中双引号的正确输入方式如下：
 
 1. 找到Tab键上方的*~*和*`*键，如下图 
 <center>
-![pix1](/assets/img/tech/latex/double-quote-mark.jpg)
+![pix1](/public/img/tech/latex/double-quote-mark.jpg)
 </center>>
 2. 使用该键(即*~*和*`*键)连续键入两个*`*(即*``*)然后键入两个单引号(即*''*). 单引号的输入类似.  
 3. 下面是一个例子. 下图是最终效果图,  
 <center>  
-![pix2](/assets/img/tech/latex/double-quote-mark-example.png)
+![pix2](/public/img/tech/latex/double-quote-mark-example.png)
 </center>
 
 下面是实现上图效果的代码:
@@ -64,7 +64,7 @@ Latex中双引号的正确输入方式如下：
 
 如下表格:  
 <center>
-![tabular-rule-color](/assets/img/tech/latex/tabular-rule-color.jpg)
+![tabular-rule-color](/public/img/tech/latex/tabular-rule-color.jpg)
 </center>  
 
 对应的代码如下:  

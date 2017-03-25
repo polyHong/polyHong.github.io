@@ -26,7 +26,7 @@ description:
 ```  
 
 公式显示结果为:  
-![google-chart-formula](/assets/img/tech/latex/markdown-insert-formula-example-google-chart.png)  
+![google-chart-formula](/public/img/tech/latex/markdown-insert-formula-example-google-chart.png)  
 
 Google Chart服务器的响应速度还可以, 但据说可能复杂的LaTex公式可能无法解析.  
 
@@ -48,7 +48,7 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 ```  
 
 显示结果是:  
-![forkosh-formula](/assets/img/tech/latex/markdown-insert-formula-example-forkosh.png)  
+![forkosh-formula](/public/img/tech/latex/markdown-insert-formula-example-forkosh.png)  
 
 因为网页插入公式的原理是调用"某某网站的服务器"动态生成的, 所以保证公式正常显示的前提是该网站公式生成服务一直有效. forkosh在这方面据说表现不错.  
 
