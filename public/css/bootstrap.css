@@ -5327,21 +5327,21 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .list-group-item-lay {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 0px 8px;
     margin-bottom: -1px;
     color: #fff;
-    background-color: #1abc9c;
-    border: 0px solid #1abc9c;/*115449;*/
+    background-color: #474d57;
+    border: 0px solid #474d57;/*115449;*/
     border-left: 0px;
     border-right: 0px;
     /*border: 0px solid #ddd;*/
-    margin-right: 0px; margin-left: 35px; 
+    margin-right: 0px; margin-left: 30px; 
 }
 
 a.list-group-item-lay:hover, a.list-group-item-lay:focus {
     text-decoration: none;
     color: #fff;
-    background-color: #16a085;
+    background-color: #E6EDEB;
 }
 
 .list-group-item-lay:first-child {
