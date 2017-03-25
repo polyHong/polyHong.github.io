@@ -65,8 +65,6 @@ body, html {
 }
 /* 中部目录栏 */
 .aside2 {
-  /*background-color: #fafaf6;*/
-  /*background-image: url(/public/img/body_bg.jpg);*/
 
   background-color: #f7f7f7;
   height: 100%;
@@ -74,6 +72,7 @@ body, html {
   overflow-y: auto;
   font-color: #fff;
   margin-top: 0px;
+  padding-top: 40px;
 }
 
 /* 右侧内容栏 */
