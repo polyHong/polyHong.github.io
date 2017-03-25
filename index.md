@@ -5,22 +5,54 @@ title: Welcome to Hong's Blog
 
 ----------
 
-每个人心里都有一团火  
+>每个人心里都有一团火  
 路过的人只看到烟  
 但是总有一个人  
 总有那么一个人能看到这火  
 然后走过来, 陪我一起  
       
-我在人群中, 看到了她的火  
+>我在人群中, 看到了她的火  
 我快步走过去生怕慢一点她就会被淹没在岁月的尘埃里  
        
-我带着我的热情, 我的冷漠, 我的狂暴  
+>我带着我的热情, 我的冷漠, 我的狂暴  
 我的温和以及对爱情毫无理由的相信  
 走得上气不接下气  
         
-我结结巴巴地对她说, 你叫什么名字  
+>我结结巴巴地对她说, 你叫什么名字  
 从你叫什么名字开始  
 后来, 有了一切  
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">{{ site.locals.newest }}</div>
+      {% for post in paginator.posts %}
+        <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
+          {{post.title}}
+          <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% for cate in site.cates %}
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{ cate }}</div>
+        {% for tag in site.tags %} 
+          {% if tag[0] == cate %}
+            {% for post in tag[1] %}
+              <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
+                {{post.title}}
+                <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
+              </a>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 
 ## 写给未来
