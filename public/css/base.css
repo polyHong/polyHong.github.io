@@ -14,7 +14,7 @@ body, html {
 }
 /* 导航栏 + 目录栏 */
 .aside {
-  width: 360px;
+  width: 320px;
   height: 100%;
   
 }
@@ -33,7 +33,7 @@ body, html {
   padding-right: 0px;
   border-radius: 0px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 10px;
 
 }
@@ -51,13 +51,13 @@ body, html {
 }
 
 .avatar {
-  width: 75px;
-  height: 75px;
-  margin: 20px auto 10px;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto 5px;
   border-radius: 50%;
-  box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
+  box-shadow: 0 0 0px 3px white, 0 0 3px 3px #eee;
   background-repeat: no-repeat;
-  background-size: 90px 90px;
+  background-size: 60px 60px;
   overflow: hidden;
   display: block; }
   #avatar:hover {
@@ -91,7 +91,7 @@ body, html {
   overflow-y: auto;
   font-color: #fff;
   margin-top: 0px;
-  padding-top: 140px;
+  padding-top: 120px;
 }
 
 /* 右侧内容栏 */
@@ -120,13 +120,13 @@ body, html {
   line-height: 1.6;
 }
 #content {
-  font-size: 18px;
+  font-size: 15px;
 }
 #content h2, h3 {
   line-height: 2;
 }
 blockquote p {
-  font-size: 18px;
+  font-size: 15px;
 }
 /* 其他配置 */
 .center {

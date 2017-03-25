@@ -3,8 +3,6 @@ layout: post
 title: Welcome to Hong's Blog
 ---
 
-----------
-
 >每个人心里都有一团火  
 路过的人只看到烟  
 但是总有一个人  
@@ -55,7 +53,7 @@ title: Welcome to Hong's Blog
 </div>
 
 
-## 写给未来
+## Why Blog
 
 2012年的时候，就想着应该有个自己的博客，来记录学习和生活的足迹. 
 记得当时一时兴起, 注册了个新浪博客，暗下决心, 一定要把它坚持下去，
@@ -67,7 +65,7 @@ jekyll和github搭建的博客，界面简洁，零广告. 甚至，它还可以
 排版公式和代码. 完美! 
 
 
-## 关于这个博客
+## About this Blog
 
 这个博客模板改自[**闫肃的博客**](http://yansu.org/). 
 它是通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，
