@@ -1,11 +1,12 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
+
 # Site settings
 title: 王洪的博客
 email: ama.hong.wang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   王洪的博客
+   Hong's Blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://hitwanghong.com  # the base hostname & protocol for your cite
 rss_url: /pages/feed.xml
@@ -24,27 +25,34 @@ github: polyHong
 #linkedin: hong
 
 # avatar and Favicon
-avatar: /assets/img/foot.jpg
-favicon: /assets/img/boy.jpg
+avatar: /public/img/apple.jpg
+favicon: /public/img/boy.jpg
 
 
 # google analytics 设置
-#ga:
-#  id: UA-54767140-1
-#  url: yansu.org
+ga:
+  id: UA-96196163-1
+  url: hitwanghong.com
 
 # disqus 设置
-#disqus:
-#  shortname: suyan-zh
+disqus:
+  shortname: polyhong
 
 
-# Build settings
-permalink: /:year/:month/:day/:title.html
-markdown: kramdown
-highlighter: rouge
-mathjax: disabled
-sass:
-  style: compressed
+# 主题设置，自动激活某个标签
+active: 技术
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
 
 # Jekyll Plugin
 # https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
