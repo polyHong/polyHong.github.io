@@ -2,7 +2,7 @@
 layout: post
 title: LaTex字体设置
 category: 技术
-tags: LaTex
+tags: LaTeX
 keywords: Latex
 description: 
 ---

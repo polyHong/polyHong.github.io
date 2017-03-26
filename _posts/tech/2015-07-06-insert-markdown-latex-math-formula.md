@@ -2,7 +2,7 @@
 layout: post
 title: Markdown中插入LaTex公式的方法
 category: 技术
-tags: Markdown
+tags: [Markdown,LaTeX]
 keywords: Latex, Markdown, Mathematics formula
 description: 
 ---

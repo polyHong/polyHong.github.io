@@ -2,8 +2,8 @@
 layout: post
 title: Tricks of Using LaTex
 category: 技术
-tags: LaTex
-keywords: Latex
+tags: LaTeX
+keywords: LateX
 description: 
 ---
 
