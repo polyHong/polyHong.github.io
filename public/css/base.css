@@ -6,9 +6,9 @@
 body, html {
   width: 85%;
   height: 90%;
-  margin: auto;
+  margin: 30px auto;
   overflow: hidden; 
-  background-color: #BDBDBD;
+  background-color: #6D7993;
 }
 .row {
   height: 100%;
