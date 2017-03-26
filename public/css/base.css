@@ -4,6 +4,7 @@
   height: 100%;
 }
 body, html {
+  width: 90%;
   height: 100%;
   overflow: hidden; 
   background-color: #BDBDBD;
