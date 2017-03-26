@@ -4,7 +4,7 @@
   height: 100%;
 }
 body, html {
-  width: 80%;
+  width: 85%;
   height: 90%;
   margin: auto;
   overflow: hidden; 
@@ -15,7 +15,7 @@ body, html {
 }
 /* 导航栏 + 目录栏 */
 .aside {
-  width: 8%;
+  width: 20%;
   height: 100%;
   
 }
