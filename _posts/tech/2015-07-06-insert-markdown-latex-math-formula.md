@@ -62,7 +62,7 @@ forkosh上提供了关于LaTex公式的一份简短而很有用的帮助.
 ```
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ```  
-然后, 直接使用Tex编辑公式即可. `$$公式$$`表示行间公式, 本来Tex中使用`\(公式\)`表示行内公式, 但因为`\`是Markdown的转移字符, 所以在Markdown中输入行内公式应使用`\\(公式\\)`, 下面行间公式代码,
+然后, 直接使用Tex编辑公式即可. `$$公式$$`表示行间公式, 本来Tex中使用`\(公式\)`表示行内公式, 但因为`\`是Markdown的转义字符, 所以在Markdown中输入行内公式应使用`\\(公式\\)`, 下面行间公式代码,
 
 ```tex
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$$
