@@ -32,7 +32,7 @@ body, html {
   padding-right: 0px;
   border-radius: 0px;
   color: #fff;
-  font-size: 16px;
+  font-size: 16pt;
   padding: 10px 10px;
 
 }
@@ -119,13 +119,13 @@ body, html {
   line-height: 1.6;
 }
 #content {
-  font-size: 15px;
+  font-size: 15pt;
 }
 #content h2, h3 {
   line-height: 2;
 }
 blockquote p {
-  font-size: 15px;
+  font-size: 15pt;
 }
 /* 其他配置 */
 .center {
