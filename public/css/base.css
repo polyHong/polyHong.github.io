@@ -5,8 +5,8 @@
 }
 body, html {
   width: 85%;
-  height: 90%;
-  margin: 30px auto;
+  height: 88%;
+  margin: 25px auto;
   overflow: hidden; 
   background-color: #6D7993;
 }
@@ -15,7 +15,7 @@ body, html {
 }
 /* 导航栏 + 目录栏 */
 .aside {
-  width: 20%;
+  width: 23.8%;
   height: 100%;
   
 }
@@ -34,7 +34,7 @@ body, html {
   padding-right: 0px;
   border-radius: 0px;
   color: #fff;
-  font-size: 13pt;
+  font-size: 12pt;
   padding: 10px 10px;
 
 }
