@@ -2,7 +2,7 @@
 layout: post
 title: SSH连接GitHub
 category: 技术
-tags: Git, GitHub, SSH
+tags: Git
 keywords: SSH, GitHub
 description: 
 ---

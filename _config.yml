@@ -3,7 +3,7 @@ paginate: 10
 markdown: redcarpet
 
 # Site settings
-title: 王洪的博客
+title: Hong's Blog
 email: ama.hong.wang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    Hong's Blog
@@ -45,12 +45,11 @@ active: 技术
 # 首页除了最新文章外显示分类
 cates: 
   - Optimization
-  - LaTeX
+  - LaTex
 
 # 中文本地化
 locals:
   tags: 标签
-  about: 关于
   newest: 最新文章
   archive: 归档
 

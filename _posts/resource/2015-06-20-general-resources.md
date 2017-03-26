@@ -2,7 +2,7 @@
 layout: post
 title: 常用资源列表
 category: 资源
-tags: resource
+tags: Resource
 keywords: Latex, Matrix Optimization
 ---
 

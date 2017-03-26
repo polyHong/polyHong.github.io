@@ -2,7 +2,7 @@
 layout: post
 title: Tricks of Using LaTex
 category: 技术
-tags: Latex
+tags: LaTex
 keywords: Latex
 description: 
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: 学者个人主页列表
 category: 资源
-tags: resource
+tags: Resource
 keywords: Mathematics, Optimization, People
 ---
 
