@@ -5,8 +5,8 @@
 }
 body, html {
   width: 80%;
-  height: 88%;
-  margin: 25px auto;
+  height: 100%;
+  margin: auto;
   overflow: hidden; 
   background-color: #6D7993;
 }
