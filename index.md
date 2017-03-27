@@ -1,8 +1,14 @@
 ---
-layout: post
-title: Welcome to Hong's Blog
+layout: page_title
+title: <i class="fa fa-home fa-lg"></i>
+titlename: HomePage
 ---
 
+<center>
+<h3>
+Welcome to Hong's Blog
+</h3>
+</center>
 
 <div class="row">
   <div class="col-md-12">
