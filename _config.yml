@@ -2,27 +2,20 @@ permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
 
+# author info
+author:
+  name: Hong Wang
+  email: ama.hong.wang@gmail.com
+  github: https://github.com/polyHong
+
+
 # Site settings
 title: Hong's Blog
 email: ama.hong.wang@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-   Hong's Blog
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: Hong's personal blog
 url: http://hitwanghong.com  # the base hostname & protocol for your cite
 rss_url: /pages/feed.xml
-author: Hong Wang
 
-# Sidebar filter
-# Choose 'tag' or 'category' as filter in siderbar.
-filter: 'category'
-recent_num: 20
-
-# Social account
-#twitter: hong
-#weibo: hong
-github: polyHong
-#instagram: hong
-#linkedin: hong
 
 # avatar and Favicon
 gavatar: /public/img/foot.jpg
@@ -52,11 +45,3 @@ locals:
   tags: 标签
   newest: 最新文章
   archive: 归档
-
-# Jekyll Plugin
-# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-
