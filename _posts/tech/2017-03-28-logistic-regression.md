@@ -37,6 +37,13 @@ $1-p$，取1和0的概率之比为$\frac{p}{1-p}$，称为事件的优势比(odd
 即得Logistic变换${\mathrm{Logit}(p)=\ln\left( \frac{p}{1-p}\right)}$.  
 
 
+令$\mathrm{Logit}(p)=\ln\left(\frac{p}{1-p}\right)$，则$p={1 \over 1 + e^{-z}}$即为
+Logistic函数，如下图所示。
+<center>
+![logistic-fun](/public/img/tech/ml/logistic_regression.jpg)
+</center>
+
+
 
 
 
