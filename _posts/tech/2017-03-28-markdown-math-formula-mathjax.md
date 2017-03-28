@@ -30,9 +30,9 @@ HTML、SVG 或 MathML 格式的同等式正确显示，它不要求客户端进�
 
 #### TeX或LaTeX格式
 
-这种格式通过用* 数学分隔符*将数学式包围起来，使Mathjax能区分哪些是数学式，
-哪些是普通文本。有两种形式：一种是在段落内的，叫*in-line mathematics*；
-另一种是独立成段的，叫*displayed mathematics*。
+这种格式通过用 *数学分隔符*将数学式包围起来，使Mathjax能区分哪些是数学式，
+哪些是普通文本。有两种形式：一种是在段落内的，叫 *in-line mathematics*；
+另一种是独立成段的，叫 *displayed mathematics*。
 
 
 *displayed mathematics*的默认分隔符是`$$...$$` 和`\[...\]`，而*in-line mathematics*的默认分隔符是`(\...\)`,
@@ -77,19 +77,19 @@ When <span>$a \ne 0$</span>, there are two solutions to <span>$ax^2 + bx + c = 0
 
 
 TeX中的几个特殊符号：
-- `^`表示上标
-- `\_`表示下标
-- `{}`用于分组
+- `^`表示上标  
+- `\_`表示下标  
+- `{}`用于分组  
 
 
 更多的基本使用教程见[tuicoll上的一篇文章](www.tuicool.com/articles/7zqYFb3).
 
 
 Markdown LaTeX的参数文章：
-- [Mathjax](https://cdn.mathjax.org/mathjax/latest/test/examples.html)
-- [Markdown LaTeX在线编辑器](https://kerzol.github.io/markdown-mathjax/editor.html)
-- [LaTeX完整教程](http://www.forkosh.com/mathtextutorial.html)
-- [LaTeX数学符号表，PDF文件](http://mirror.lzu.edu.cn/CTAN/info/symbols/math/maths-symbols.pdf)
+- [Mathjax](https://cdn.mathjax.org/mathjax/latest/test/examples.html)  
+- [Markdown LaTeX在线编辑器](https://kerzol.github.io/markdown-mathjax/editor.html)  
+- [LaTeX完整教程](http://www.forkosh.com/mathtextutorial.html)   
+- [LaTeX数学符号表，PDF文件](http://mirror.lzu.edu.cn/CTAN/info/symbols/math/maths-symbols.pdf)   
 
 
 
