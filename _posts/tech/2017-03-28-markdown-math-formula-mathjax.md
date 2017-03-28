@@ -77,19 +77,19 @@ When <span>$a \ne 0$</span>, there are two solutions to <span>$ax^2 + bx + c = 0
 
 
 TeX中的几个特殊符号：  
-* `^`表示上标  
-* `\_`表示下标  
-* `{}`用于分组  
+- `^`表示上标  
+- `\_`表示下标  
+- `{}`用于分组  
 
 
 更多的基本使用教程见[tuicoll上的一篇文章](www.tuicool.com/articles/7zqYFb3).
 
 
 Markdown LaTeX的参数文章：  
-* [Mathjax](https://cdn.mathjax.org/mathjax/latest/test/examples.html)  
-* [Markdown LaTeX在线编辑器](https://kerzol.github.io/markdown-mathjax/editor.html)  
-* [LaTeX完整教程](http://www.forkosh.com/mathtextutorial.html)   
-* [LaTeX数学符号表，PDF文件](http://mirror.lzu.edu.cn/CTAN/info/symbols/math/maths-symbols.pdf)   
+- [Mathjax](https://cdn.mathjax.org/mathjax/latest/test/examples.html)  
+- [Markdown LaTeX在线编辑器](https://kerzol.github.io/markdown-mathjax/editor.html)  
+- [LaTeX完整教程](http://www.forkosh.com/mathtextutorial.html)   
+- [LaTeX数学符号表，PDF文件](http://mirror.lzu.edu.cn/CTAN/info/symbols/math/maths-symbols.pdf)   
 
 
 
