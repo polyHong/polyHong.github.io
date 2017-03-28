@@ -77,9 +77,9 @@ When <span>$a \ne 0$</span>, there are two solutions to <span>$ax^2 + bx + c = 0
 
 
 TeX中的几个特殊符号：  
-* `^`表示上标  
-* `\_`表示下标  
-* `{}`用于分组  
+*`^`表示上标  
+*`\_`表示下标  
+*`{}`用于分组  
 
 
 更多的基本使用教程见[tuicoll上的一篇文章](www.tuicool.com/articles/7zqYFb3).
