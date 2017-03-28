@@ -21,7 +21,7 @@ description:
 
 
 
-逻辑回归属于概率型非线性回归，非为二分类和多分类的回归模型。对于二分类的逻辑回归，
+逻辑回归属于概率型非线性回归，分为二分类和多分类的回归模型。对于二分类的逻辑回归，
 因变量$ y $只有“是、否”两个取值，记为1和0。假设在自变量$ x\_1,x\_2,\ldots,x\_p$ 作用下，
 $ y$取“是”的概率是$ p$，则取否的概率是$ 1-p$，研究的是当$ y$取"是"发生的概率$ p$与
 自变量$ x\_1,x\_2,\ldots, x\_p$的关系。
@@ -33,7 +33,7 @@ $ y$取“是”的概率是$ p$，则取否的概率是$ 1-p$，研究的是当
 
 Logistic回归模型中的因变量的值只有1-0(如是和否、发生和不发生)两种取值。假设在$ p$
 个独立自变量$ x\_1, x\_2,\ldots,x\_p$作用下，记$y$取1的概率是$ p=P(y=1|X)$，取0的概率是
-$1-p$，取1和0的概率之比为$\frac{p}{1-p}$，称为事件的优势比(odds)，对odds去自然对数
+$1-p$，取1和0的概率之比为$\frac{p}{1-p}$，称为事件的优势比(odds)，对odds取自然对数
 即得Logistic变换${\mathrm{Logit}(p)=\ln\left( \frac{p}{1-p}\right)}$.  
 
 
@@ -54,13 +54,13 @@ Logistic函数，如下图所示。
 逻辑回归模型为：
 $$\ln\left( {p\over 1-p} \right)=\beta\_0 + \beta\_1x\_1 + \cdots + \beta\_p x\_p + \varepsilon$$
 因为$\ln\left( {p\over 1-p} \right)$的取值范围是$(-\infty,+\infty)$，这样，自变量$x\_1,x\_2,\cdots,x\_p$
-可在任意范围内取值。记$g(x)=\beta\_0 + \beta\_1 x\_1 + \cdots + \beta\_p x_p$，得到：
+可在任意范围内取值。记$g(x)=\beta\_0 + \beta\_1 x\_1 + \cdots + \beta\_p x\_p$，得到：
 $$p = P(y=1|X)={1 \over 1 + e^{-g(x)}}$$
 $$1-p = P(y=0|X)=1 - {1\over 1 + e^{-g(x)}}= {1\over 1 + e^{g(x)}}$$
 
 
 #### (3) 逻辑回归模型解释
-$${p\over 1-p}= e^{\beta_0 + \beta\_1 x\_1 + \cdots + \beta\_p x_p + \varepsilon}$$
+$${p\over 1-p}= e^{\beta\_0 + \beta\_1 x\_1 + \cdots + \beta\_p x\_p + \varepsilon}$$
 $\beta\_0$: 在没有自变量，即$x\_1,x\_2,\cdots,x\_p$全部取0, $y=1$与$y=0$发生概率之比的自然
 对数; $\beta\_i$: 某自变量$x\_i$变化时，即$x\_i=1$与$x\_i=0$相比，$y=1$优势比的对数值。
 
