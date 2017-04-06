@@ -11,7 +11,7 @@ description:
 因为硬件发展迅速，传统式(Legacy)BIOS成为进步的包袱，现在已发展出最新的UEFI(Unified
 Extensible Firmware Interface)可扩展固件接口，对于第三方的开发，前者基本上做不到，除非
 参与BIOS的设计，但是还要收到ROM的大小限制，而后者就便利多了。相比传统的BIOS来说，未来
-将是一个``没有特定BIOS''的电脑时代。用的是UEFI引导。         
+将是一个"没有特定BIOS"的电脑时代。用的是UEFI引导。         
 
 #### GRUB
 GNU GRUB (GRand Unified Bootloader简称``GRUB'')是一个来自GNU项目的多操作系统启动
@@ -20,8 +20,8 @@ GNU GRUB (GRand Unified Bootloader简称``GRUB'')是一个来自GNU项目的多�
 用于向这些内核传递启动参数。         
 
 #### UEFI
-新型UEFI，全程``统一的可扩展固件接口'' (Unified Extensible Firmware Interface), 是
-一种所谓的``固件''，负责在开机时做硬件启动和检测等工作，并且担任操作系统控制硬件时
+新型UEFI，全程"统一的可扩展固件接口" (Unified Extensible Firmware Interface), 是
+一种所谓的"固件"，负责在开机时做硬件启动和检测等工作，并且担任操作系统控制硬件时
 的中介角色。         
 
 #### Xubuntu
