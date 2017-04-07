@@ -7,7 +7,7 @@ keywords: Ubuntu, Linux, UEFI
 description: 
 ---
 
-### 知识普及
+### **知识普及**
 因为硬件发展迅速，传统式(Legacy)BIOS成为进步的包袱，现在已发展出最新的UEFI(Unified
 Extensible Firmware Interface)可扩展固件接口，对于第三方的开发，前者基本上做不到，除非
 参与BIOS的设计，但是还要收到ROM的大小限制，而后者就便利多了。相比传统的BIOS来说，未来
@@ -31,7 +31,7 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 和Ubuntu相同的更新源，能够使用绝大部分Ubuntu下的软件(仅有用户界面的细微差别)。      
 
 
-### 安装过程
+### **安装过程**
 下面安装过程步骤详细解析。    
 
 #### **第一步：数据备份**    
@@ -41,7 +41,7 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 #### **第二步：创建磁盘分区**     
 ##### **1. `Win+X`，选择`磁盘管理`：**
 <center>
-![disk-manager](/public/img/tech/bisys/disk_manager.png)
+![disk-manager](/public/img/tech/bisys/disk_manager.png=100x100)
 </center>
 
 
