@@ -41,7 +41,7 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 #### **第二步：创建磁盘分区**     
 ##### **1. `Win+X`，选择`磁盘管理`：**
 <center>
-![disk-manager](/public/img/tech/bisys/disk_manager.png=100x100)
+![disk-manager](/public/img/tech/bisys/disk_manager.png)
 </center>
 
 
