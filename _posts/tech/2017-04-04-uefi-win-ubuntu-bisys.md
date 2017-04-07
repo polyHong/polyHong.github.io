@@ -45,4 +45,18 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 </center>
 
 
+#### **2. 选择剩余空间较大的可分磁盘，右键并选择`压缩卷`，磁盘空间大小的选择
+视实际情况而定，我分出了120G左右的空间：**
+<center>
+![disk-split-1](/public/img/tech/bisys/disk_split_space1.png)
+</center>
+
+
+#### **点击“压缩”之后，磁盘尾部会出现黑色的120G“未分配空间”**
+<center>
+![disk-split-2](/public/img/tech/bisys/disk_split_space2.png)
+</center>
+
+到这里，磁盘分区过程完成。
+
 
