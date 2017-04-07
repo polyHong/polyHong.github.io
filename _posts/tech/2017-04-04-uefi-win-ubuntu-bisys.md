@@ -56,6 +56,34 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 ![disk-split-2](/public/img/tech/bisys/disk_split_space2.png)
 </center>
 
-到这里，磁盘分区过程完成。
+到这里，磁盘分区过程完成。     
+
+
+### **第三步：制作Xubuntu的启动U盘**    
+#### **1. 备份待写入的U盘**     
+
+#### **2. 进入UltraISO，打开文件：**
+<center>
+![ultriso-gui](/public/img/tech/bisys/ultrISO_gui.png)
+</center>
+
+
+#### **3. 启动->写入硬盘映像：**
+<center>
+![ultraiso-write](/public/img/tech/bisys/ultraISO_write.png)
+</center>
+
+
+#### **4. 按默认值写入：**
+<center>
+![ultraISO-default-para](/public/img/tech/bisys/ultraISO_default_para.png)
+</center>
+
+
+#### **完成写入：**
+<center>
+![ultraiso-finished](/public/img/tech/bisys/ultraISO_finished.png)
+</center>
+
 
 
