@@ -187,12 +187,23 @@ Ext4和“挂载点/”：
 ![add-disk](/public/img/tech/bisys/boot_start.jpg)
 </center>
 
+将改动写入磁盘，去喝杯咖啡：
+<center>
+![add-disk](/public/img/tech/bisys/write_to_disk.jpg)
+</center>
 
+咖啡喝完，刚好进入最后的设置：
+<center>
+![add-disk](/public/img/tech/bisys/time_zone_setting.jpg)
+</center>
 
+<center>
+![add-disk](/public/img/tech/bisys/keyboard_choice.jpg)
+</center>
 
+<center>
+![add-disk](/public/img/tech/bisys/user_info.jpg)
+</center>
+填完必要信息，点击“继续”，等待系统安装完成，再重启就大功告成了。
 
-
-
-
-
-
+重启的时候会进入grub2引导界面，让你选择Ubuntu还是windows boot management.
