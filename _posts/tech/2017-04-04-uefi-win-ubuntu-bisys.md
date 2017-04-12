@@ -155,9 +155,44 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 ![other-choice-install](/public/img/tech/bisys/other_choice_install.jpg)
 </center>
 
-进入如下界面，这是最重要的一步，
+选定空闲磁盘，点击+，首先分配16G空间给/分区，选择“主分区”、“空间起始位置”、
+Ext4和“挂载点/”：
 <center>
-![add-disk](/public/img/tech/bisys/add_disk.jpg)
+![add-disk](/public/img/tech/bisys/add_disk_primary.jpg)
 </center>
+
+注：实际上，一块硬盘最多容纳4个主分区，或3个主分区外加1个扩展分区，在选择分区类型时，
+可能会出现“安装系统时空闲分区不可用”状况，为了解决问题，下面一律选择“逻辑分区”。
+
+
+重复创建步骤，分配16G空间给swap分区，选择“逻辑分区”(主分区已满)、
+“空间起始位置”、用于“交换空间”：
+<center>
+![add-disk](/public/img/tech/bisys/add_disk_swap.jpg)
+</center>
+
+接着分配2GB空间给/boot分区，选择“逻辑分区”(主分区已满)、“空间起始位置”、
+“Ext4”和“挂载点/boot”：
+<center>
+![add-disk](/public/img/tech/bisys/add_disk_boot.jpg)
+</center>
+
+最后将所有剩余空间分配给/home分区，选择“逻辑分区”(主分区已满)、“空间起
+始位置”、“Ext4”和“挂载点/home”：
+<center>
+![add-disk](/public/img/tech/bisys/add_disk_home.jpg)
+</center>
+选择/boot对应的盘符作为“安装启动引导器的设备”，务必保证一致：
+<center>
+![add-disk](/public/img/tech/bisys/boot_start.jpg)
+</center>
+
+
+
+
+
+
+
+
 
 
