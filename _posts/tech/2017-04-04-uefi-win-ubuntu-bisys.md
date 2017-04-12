@@ -80,10 +80,26 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 </center>
 
 
-#### **完成写入：**
+#### **5. 完成写入：**
 <center>
 ![ultraiso-finished](/public/img/tech/bisys/ultraISO_finished.png)
 </center>
+
+
+### **第四步：设置Bios**  
+重新启动机器，进入到BIOS SETUP后(大多数笔记本是按F12, F11, F10或者F2，不同品牌的
+电脑会稍微有些区别，可以多试几次)。关闭secure boot, secure boot一定要关闭。
+设置设置USB启动为首选启动项，制作好的U盘是支持UEFI引导的。最后保存并退出。   
+<center>
+![secure-boot-1](/public/img/tech/bisys/secure_boot_close1.jpg)
+</center>
+
+<center>
+![secure-boot-1](/public/img/tech/bisys/secure_boot_close2.jpg)
+</center>
+
+
+
 
 
 
