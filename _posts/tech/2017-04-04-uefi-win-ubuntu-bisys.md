@@ -116,7 +116,7 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 直接进入安装Linux的图形界面。   
 
 
-我选择第一步，进入Linux Live  
+我选择第一个选项，进入Linux Live  
 <center>
 ![linux-live](/public/img/tech/bisys/linux_live.jpg)
 </center>
@@ -138,6 +138,26 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 ![beginning-install](/public/img/tech/bisys/beginning_install.jpg)
 </center>
 
+#### **2. 为空闲磁盘分区**
+这步是重点，选择其他选项，自己来创建挂载点(挂载点就是分区的意思).  
 
+在这一步会看到我们之前分配的为使用磁盘空间，我们要为这块空闲磁盘分区，
+为了方便理解接下来的操作，我们先来简单介绍一下安装过程涉及到的几个主要
+的Linux分区：
+
+- `/`：存储系统文件，建议10GB-15GB;  
+- `swap`：交换分区，即Linux系统的虚拟内存，建议是物理内存的2倍；  
+- `/home`：home目录，存放、图片及下载等文件的空间，建议最后分配所有剩下的空间；   
+- `/boot`：包含系统内核和系统启动所需要的文件，实现双系统的关键所在，建议大一点比如2GB
+左右。一开始我分配了200M，后来在更新的过程中总是提示无法完成更新，因为boot空间不够，
+后来又重新装了一遍才解决这个问题。
+<center>
+![other-choice-install](/public/img/tech/bisys/other_choice_install.jpg)
+</center>
+
+进入如下界面，这是最重要的一步，
+<center>
+![add-disk](/public/img/tech/bisys/add_disk.jpg)
+</center>
 
 
