@@ -45,13 +45,16 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 </center>
 
 
-#### **2. 选择剩余空间较大的可分磁盘，右键并选择`压缩卷`，磁盘空间大小的选择视实际情况而定，我分出了120G左右的空间：**
+#### **2. 选择待压缩磁盘和空间：**
+选择剩余空间较大的可分磁盘，右键并选择`压缩卷`，磁盘空间大小的选择视实际
+情况而定，我分出了120G左右的空间。
 <center>
 ![disk-split-1](/public/img/tech/bisys/disk_split_space1.png)
 </center>
 
 
-#### **3. 点击“压缩”之后，磁盘尾部会出现黑色的120G“未分配空间”**
+#### **3. 分出Ubuntu安装的磁盘空间：**
+点击“压缩”之后，磁盘尾部会出现黑色的120G“未分配空间”。
 <center>
 ![disk-split-2](/public/img/tech/bisys/disk_split_space2.png)
 </center>
@@ -99,6 +102,41 @@ Unity桌面环境。Xubuntu使用适于旧式计算机的Xfce桌面环境(占用
 </center>
 
 
+### **第五步：从U盘安装Xubuntu**
+到此，万事俱备，只欠最后的“东风”了。插上U盘，根据机器找到进入Boot的快捷键。
+以下图片来自网络，仅用作示意，并非安装XUbuntu的图片。    
+
+#### **1. 找到U盘镜像，选择并启动**
+<center>
+![boot-from-usb](/public/img/tech/bisys/boot_from_usb.jpg)
+</center>
+
+从U盘启动后，进入一个选择界面。第一个选项是进入U盘Linux Live，直接在U盘里面
+体验Linux而不安装。第二个选项是安装Linux，第三个忘了。如果选择第二个的话，则
+直接进入安装Linux的图形界面。   
+
+
+我选择第一步，进入Linux Live  
+<center>
+![linux-live](/public/img/tech/bisys/linux_live.jpg)
+</center>
+
+点击桌面上的安装Ubuntu，确保安装过程中已经连接上网络，用于安装更新和一些必要
+的媒体设备。当然这个步骤也可以待安装完成以后再进行，但是此时进行可以节省安装后
+的配置时间。
+<center>
+![install-ubuntu](/public/img/tech/bisys/install_ubuntu_desktop.jpg)
+</center>
+
+选择语言
+<center>
+![language-choice](/public/img/tech/bisys/language_choice.jpg)
+</center>
+
+选择是否安装更新和多媒体软件
+<center>
+![beginning-install](/public/img/tech/bisys/beginning_install.jpg)
+</center>
 
 
 
