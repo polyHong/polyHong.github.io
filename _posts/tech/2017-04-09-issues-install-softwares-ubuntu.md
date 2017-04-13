@@ -11,13 +11,13 @@ description:
 
 #### **1. TexLive的在线安装**
 最新的安装包已经在Ubuntu 16.10的官方仓库中。    
-1) 打开终端(`Ctrl+Alt+T`)，运行如下命令添加PPA：    
+**1) 打开终端(`Ctrl+Alt+T`)，运行如下命令添加PPA：**    
 
 ```shell
 $ sudo add-apt-repository ppa:jonathonf/texlive
 ```
 
-2) 升级软件源并安装：    
+**2) 升级软件源并安装：**    
 
 ```shell
 $ sudo apt-get update
@@ -34,12 +34,12 @@ $ sudo apt-get install texworks
 
 #### **2. Matlab 2016a的光盘安装**
 
-##### 1) 下载Matlab    
+##### **1) 下载Matlab**    
 
 首先自然需要现在一个Linux版本的Matlab及其破解文件，Matlab2016a大概10GB左右。
 
 
-##### 2) 挂在ISO文件    
+##### **2) 挂在ISO文件**    
 
 在终端执行以下命令，会将ISO文件挂载到Ubuntu，出现图形界面开始安装。
 
@@ -50,13 +50,13 @@ $ cd /media/matlab
 $ sudo ./install
 ```
 
-##### 3) 注册选项   
+##### **3) 注册选项**   
 安装过程会出现注册激活的选项，选择“install manually without using the internet”，
 序列号在Crack目录下的Readme.txt里。相应地还要选择Crack目录下.lic文件作为license。
 这一步和Windows下的安装没有区别。
 
 
-##### 4) 激活破解    
+##### **4) 激活破解**    
 进入Matlab安装目录下的bin目录并新建子目录licenses：    
 
 ```shell
@@ -65,9 +65,11 @@ $ sudo mkdir licenses
 $ sudo chmod 777  licenses
 ```
 将破解文件Crack目录下的     
+
 - Matlab_R2016a_glnxa64.lic   
 - libmwservices.so    
 - libcufft.so.7.5.18    
+
 分别拷贝值上述新建的目录"licenses"和"./bin/glnxa64"下面:    
 
 ```shell
@@ -76,7 +78,7 @@ $ sudo cp libmwservices.so [安装目录]/R2016a/bin/glnxa64
 $ sudo cp libcufft.so.7.5.18 [安装目录]/R2016a/bin/glnxa64
 ```
 
-##### 5) 快捷方式     
+##### **5) 快捷方式**     
 安装Matlab支持包，`sudo apt-get install matlab-support`.    
 
 
@@ -84,11 +86,11 @@ $ sudo cp libcufft.so.7.5.18 [安装目录]/R2016a/bin/glnxa64
 `./matlab`或`sudo ./matlab`.
 
 
-##### 6) 可能的问题及解决办法     
+##### **6) 可能的问题及解决办法**     
 按照上面的步骤安装完Matlab，最后Matlab也可能无法正常启动。这可能有两方面的原因，
 一方面可能是权限的问题，这个问题解决起来相对比较简单，只要赋予相应目录足够权限即可。
 另一方面可能是安装文件里的一个库文件冲突。解决办法是将安装目录下的文件名修改一下。
-即：将[安装目录]/R2016a/sys/os/glnxa64/libstdc++.so.6改为[安装目录]/R2016a/sys/os/glnxa64/libstdc++.so.6.old.
+即：将"[安装目录]/R2016a/sys/os/glnxa64/libstdc++.so.6"改为"[安装目录]/R2016a/sys/os/glnxa64/libstdc++.so.6.old".
 命令为：    
 
 ```shell
