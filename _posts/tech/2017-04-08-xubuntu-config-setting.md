@@ -179,11 +179,38 @@ $ sudo fc-cache
 4. KMPlayer: 多媒体播放软件，几乎可以播放所有的媒体格式。     
 5. [TexLive](https://www.tug.org/texlive/): 跨平台的Tex排版编译引擎套装，开源，由
    来自世界各地的Tex爱好者共同开发和维护。     
+6. Gvim: Vi/Vim的图形化版。    
+7. Chrome: Google浏览器。     
+8. Skype: 远程视频和会议。      
+9. f.lux: 过滤屏幕蓝光，保护眼睛。     
+10. Fcitx: 输入法框架。    
+11. Gparted: 硬盘管理软件。     
+12. Ipython(Ipython3): Python(Python3)的增强版客户端。    
+13. terminator: 非常优秀的终端模拟器，可以在一个窗口打开多个终端。     
+14. code::Blocks IDE: 集成开发环境。    
+15. Foxit Reader: 福昕PDF阅读器，小巧而功能强大。    
+16. TEXStudio: Tex文档编辑器，集成环境。     
+17. Emacs: 强大的文本编辑器。    
+18. ClassicMenu Indicator: 一个非常方便的小插件，应用程序列表。    
+19. PDF Mod: PDF编辑工具。      
+20. NetEase Cloud Music: 网易云音乐。     
+21. GIMP image editor: 图像编辑器，免费的Photoshop.    
 
 
+##### **ThunderBird add-on列表：**    
 
-
-
+1. color folders     
+2. ExQuilla for Microsoft Exchange     
+3. Hide Local Folders      
+4. Lighting      
+5. LookOut      
+6. Manually sort folders     
+7. OutlookAlike     
+8. Provider for Google Calendar    
+9. ReFwdWithHeader     
+10. ReplyWithHeader    
+11. SmartTemplate4    
+12. Theme Font & Size Changer   
 
 
 
