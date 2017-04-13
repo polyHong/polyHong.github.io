@@ -115,6 +115,7 @@ $ sudo apt-get install fcitx fcitx-googlepinyin fcitx-table-wbpy fcitx-pinyin fc
 
 ##### **1. Ubuntu 16.04安装Windows字体**
 安装ttf-mscorefonts-installer    
+
 ```shell
 $ sudo apt-get update
 $ sudo apt-get install ttf-mscorefonts-installer
@@ -161,7 +162,7 @@ $ sudo fc-cache
 
 
 ##### **测试**
-breOffice，查看字体：
+打开LibreOffice，查看字体：
 <center>
 ![language-support](/public/img/tech/xconfig/win_fonts_test_lib_office.png)
 </center>
