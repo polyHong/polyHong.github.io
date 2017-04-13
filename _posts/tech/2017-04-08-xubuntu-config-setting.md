@@ -47,6 +47,34 @@ $ xfconf-query -c xfwm4 -p /general/theme -s "Numix Daily"
     4. 随时可按Alt+F2或Alt+F3呼叫App Finder
 
 
+#### **二、解决Ubuntu与Windows双系统时间不同步**  
+
+##### 为什么Ubuntu和Windows双系统会有时间差
+之所以Windows与Ubuntu双系统之间有时间差，是因为这两个系统使用了不同的
+方式来识别硬件时钟（Hardware Clock）。Ubuntu 将硬件时钟当作 UTC 时间，而
+Windows将硬件时钟当作本地时间（Local time）。由于时间的处理方式不同，
+Windows不管重启多少次都识别Local time，时间都不会改变。而当我们从
+Ubuntu重启到Windows时，硬件时钟已经被Ubuntu认为UTC方式，而Windows
+再将其强制转换成Local time，这就造成了时间差。
+
+##### 如何解决Ubuntu和Windows双系统时间不同步(以下办法选其一)
+
+1. 在Ubuntu中解决
+    - Ubuntu 16.04+  
+    ```shell
+    timedatectl set-local-rtc 1
+    ```
+    - Ubuntu 15.10及更早版本，将`/etc/default/rcS`文件中的`UTC=yes`改为`UTC=no`   
+    ```shell
+    sudo sed -i 's/UTC=yes/UTC=no' /etc/default/rcS
+    ```
+    - 以上是在Ubuntu系统中操作，还可以在Windows中更改相关设置
+2. 在Windows中解决
+    - 下载[windowstimefixutc.reg](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/windowstimefixutc.reg)
+    - 管理员身份运行命令行工具
+    ```shell
+    sc config w32time start=disabled
+    ```
 
 
 
