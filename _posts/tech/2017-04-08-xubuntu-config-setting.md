@@ -161,7 +161,7 @@ $ sudo fc-cache
 ```
 
 
-##### **测试**
+##### **3. 测试**
 打开LibreOffice，查看字体：
 <center>
 ![language-support](/public/img/tech/xconfig/win_fonts_test_lib_office.png)
