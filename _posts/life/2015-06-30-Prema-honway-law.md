@@ -2,7 +2,7 @@
 layout: post
 title: 普瑞马法则
 category: 生活
-tags: Study
+tags: Entertainment
 keywords: 
 ---
 
