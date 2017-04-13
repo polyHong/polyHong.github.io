@@ -61,19 +61,19 @@ Ubuntu重启到Windows时，硬件时钟已经被Ubuntu认为UTC方式，而Wind
 
 1. 在Ubuntu中解决
     - Ubuntu 16.04+  
-```shell
-timedatectl set-local-rtc 1
+```
+$ timedatectl set-local-rtc 1
 ```
     - Ubuntu 15.10及更早版本，将`/etc/default/rcS`文件中的`UTC=yes`改为`UTC=no`   
-```shell
-sudo sed -i 's/UTC=yes/UTC=no' /etc/default/rcS
+```
+$ sudo sed -i 's/UTC=yes/UTC=no' /etc/default/rcS
 ```
     - 以上是在Ubuntu系统中操作，还可以在Windows中更改相关设置
 2. 在Windows中解决
     - 下载[windowstimefixutc.reg](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/windowstimefixutc.reg)
     - 管理员身份运行命令行工具  
 
-```shell
+```
 sc config w32time start=disabled
 ```
 
@@ -109,6 +109,57 @@ $ sudo apt-get install fcitx fcitx-googlepinyin fcitx-table-wbpy fcitx-pinyin fc
 
 <center>
 ![language-support](/public/img/tech/xconfig/input_method_test2.png)
+</center>
+
+#### **四、安装Windows字体**
+
+##### **1. Ubuntu 16.04安装Windows字体**
+安装ttf-mscorefonts-installer    
+```shell
+$ sudo apt-get update
+$ sudo apt-get install ttf-mscorefonts-installer
+```
+接受协议，开始安装：
+<center>
+![language-support](/public/img/tech/xconfig/ttf_mscorefonts_installer.png)
+</center>
+
+<center>
+![language-support](/public/img/tech/xconfig/ttf_mscorefonts_installer2.png)
+</center>
+注：用Tab键来选择。    
+
+
+更新字体缓存：
+```shell
+$ sudo fc-cache -f -v
+```
+
+##### **2. 另一种方法**
+拷贝已有Windows系统字体。
+
+在Linux创建一个目录用来存放Windows字体：
+```shell
+$ sudo mkdir /usr/share/fonts/WindowsFonts
+```
+Windows的字体文件目录位于C盘的`Windows/Fonts`，把字体文件拷贝到
+`/usr/share/fonts/WindowsFonts`目录。
+
+更改字体文件的权限：
+```shell
+$ sudo chmod 755 /usr/share/fonts/WindowsFonts/*
+```
+
+更新字体缓存：
+```shell
+$ sudo fc-cache
+```
+
+
+##### **测试**
+breOffice，查看字体：
+<center>
+![language-support](/public/img/tech/xconfig/win_fonts_test_lib_office.png)
 </center>
 
 
