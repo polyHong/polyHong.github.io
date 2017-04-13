@@ -130,7 +130,8 @@ $ sudo apt-get install ttf-mscorefonts-installer
 注：用Tab键来选择。    
 
 
-更新字体缓存：
+更新字体缓存：     
+
 ```shell
 $ sudo fc-cache -f -v
 ```
@@ -138,19 +139,22 @@ $ sudo fc-cache -f -v
 ##### **2. 另一种方法**
 拷贝已有Windows系统字体。
 
-在Linux创建一个目录用来存放Windows字体：
+在Linux创建一个目录用来存放Windows字体：    
+
 ```shell
 $ sudo mkdir /usr/share/fonts/WindowsFonts
 ```
 Windows的字体文件目录位于C盘的`Windows/Fonts`，把字体文件拷贝到
 `/usr/share/fonts/WindowsFonts`目录。
 
-更改字体文件的权限：
+更改字体文件的权限：     
+
 ```shell
 $ sudo chmod 755 /usr/share/fonts/WindowsFonts/*
 ```
 
-更新字体缓存：
+更新字体缓存：     
+
 ```shell
 $ sudo fc-cache
 ```
