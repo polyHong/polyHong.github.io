@@ -2,8 +2,8 @@
 layout: post
 title: 逻辑回归(Logistic Regression)原理
 category: 技术
-tags: [Machine Learning,Statistics]
-keywords: 
+tags: [ML,Statistics]
+keywords: Machine Learning, Statistics
 description: 
 ---
 
