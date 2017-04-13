@@ -172,6 +172,7 @@ $ sudo fc-cache
 要想完成日常一些工作，必然少不了需要安装一些必要的软件。下面是我学习和
 工作过程中常常需要用到的软件列表。列表按照最近一次安装Xubuntu安装他们的
 顺序列下来：    
+
 1. [Calibre](https://calibre-ebook.com/): 一个跨平台电子书管理软件，功能相当强大。     
 2. [Mendeley](https://www.mendeley.com/): 一个跨平台的文献管理软件。     
 3. Matlab: 这个不用介绍，一个强大的科学计算和工程仿真超级大平台。在Linux下，常常使用终端无桌面的启动，设置方法是: `alias matlb='matlab -nodesktop'`.      
