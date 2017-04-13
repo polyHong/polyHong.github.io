@@ -63,14 +63,11 @@ Ubuntu重启到Windows时，硬件时钟已经被Ubuntu认为UTC方式，而Wind
     - Ubuntu 16.04+  
 ```shell
 timedatectl set-local-rtc 1
-```     
-
-
+```
     - Ubuntu 15.10及更早版本，将`/etc/default/rcS`文件中的`UTC=yes`改为`UTC=no`   
 ```shell
 sudo sed -i 's/UTC=yes/UTC=no' /etc/default/rcS
-```      
-
+```
     - 以上是在Ubuntu系统中操作，还可以在Windows中更改相关设置
 2. 在Windows中解决
     - 下载[windowstimefixutc.reg](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/windowstimefixutc.reg)
