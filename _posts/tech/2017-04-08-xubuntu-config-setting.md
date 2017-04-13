@@ -77,5 +77,45 @@ sudo sed -i 's/UTC=yes/UTC=no' /etc/default/rcS
 sc config w32time start=disabled
 ```
 
+#### **三、Fcitx拼音输入法**  
+- **Fcitx**: 它是Linux世界开源的输入法框架，提供Google PinYin、
+ShuangPin、SunPinYin、Wubi、ZhengMa、Hong Kong和TaiWan繁体等输入法。
+- **搜狗拼音**：搜狗出品面向Linux的输入法。
+
+##### **安装Fcitx：**
+
+```shell
+$ sudo apt-get install fcitx fcitx-googlepinyin fcitx-table-wbpy fcitx-pinyin fcitx-sunpinyin
+```
+
+##### **在语言设置里选择Fcitx：**
+<center>
+![language-support](/public/img/tech/xconfig/language_support.png)
+</center>
+
+##### **重启系统；配置Fcitx：**
+<center>
+![language-support](/public/img/tech/xconfig/fcitx_config.png)
+</center>
+
+##### **Ctrl+空格**或**Ctrl+Shift**切换输入法
+<center>
+![language-support](/public/img/tech/xconfig/input_method_shift.png)
+</center>
+
+<center>
+![language-support](/public/img/tech/xconfig/input_method_test1.png)
+</center>
+
+<center>
+![language-support](/public/img/tech/xconfig/input_method_test2.png)
+</center>
+
+
+
+
+
+
+
 
 
