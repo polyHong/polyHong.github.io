@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xubuntu下TexLive和Matlab的安装
+title: Xubuntu下TexLive，Matlab和f.lux的安装
 category: 技术
 tags: [Ubuntu,LaTex,TexLive,Matlab]
 keywords: Ubuntu, Linux
@@ -101,4 +101,45 @@ $ sudo mv [安装目录]/R2016a/sys/os/glnxa64/libstdc++.so.6 [安装目录]/R20
 ```
 
 当然如果前5步完成以后，Matlab可以正常启动，那么第6步自然就是多余的了。
+
+#### **3. f.lux indicator的安装**
+f.lux是一个可以过滤电脑屏幕蓝光的软件。自动同步时间，根据时间不同，自动调整
+屏幕的蓝光输出量，保护眼睛。
+
+
+##### **1) Ubuntu/Debian手动安装：**
+
+```shell
+# Install dependencies
+$ sudo apt-get install git python-appindicator python-xdg python-pexpect python-gconf python-gtk2 python-glade2 libxxf86vm1
+
+# Download xflux-gui
+$ cd /tmp
+$ git clone "https://github.com/xflux-gui/xflux-gui.git"
+$ cd xflux-gui
+$ python download-xflux.py
+
+# EITHER install globally
+$ sudo python setup.py install
+# EXCLUSIVE OR, install in your home directory. The binary installs
+# into ~/.local/bin, so be sure to add that to you PATH if installing locally.
+$ python setup.py install --user
+
+# Run flux
+fluxgui
+```
+
+##### **2) Ubuntu/Debian手动卸载：**
+如果flux是手动安装的话，可以通过`setup.py`来卸载。该文件可以给出安装文件的位置，
+这是我们只需要删除所有安装文件即可。     
+
+```shell
+# EITHER uninstall globally
+$ sudo python setup.py install --record installed.txt
+$ sudo xargs rm -vr < installed.txt
+
+# EXCLUSIVE OR uinstall in your home directory
+$ python setup.oy install --user --record installed.txt
+$ xargs rm -vr < installed.txt
+```
 
