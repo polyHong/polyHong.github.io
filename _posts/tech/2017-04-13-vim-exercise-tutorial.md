@@ -45,7 +45,7 @@ Vim the Six Billion Dollar editor
 </ul>
 
 
-#### **第一级--存活**
+<h4>第一级 – 存活</h4>
 <ol>
 <li>安装&nbsp;<a href="http://www.vim.org">vim</a></li>
 <li>启动 vim</li>
@@ -92,7 +92,7 @@ Vim the Six Billion Dollar editor
 </ul>
 
 
-#### **第二级--感觉良好**
+<h4 id="nd-level----feel-comfortable">第二级 – 感觉良好</h4>
 上面的那些命令只能让你存活下来，现在是时候学习一些更多的命令了，下面是我的建议：
 <ol>
 <li><strong>各种插入模式</strong><br>
@@ -149,10 +149,11 @@ Vim the Six Billion Dollar editor
 花点时间熟悉一下上面的命令，一旦你掌握他们了，你就几乎可以干其它编辑器都能干的事了。但是到现在为止，你还是觉得使用vim还是有点笨拙，不过没关系，你可以进阶到第三级了。
 
 
-#### **第三级--更好，更强，更快**
+<h4 id="rd-level----better-stronger-faster">第三级&nbsp;– 更好，更强，更快</h4>
+
 先恭喜你！你干的很不错。我们可以开始一些更为有趣的事了。在第三级，我们只谈那些和vi可以兼容的命令。
 
-##### **更好**
+<h5 id="better">更好</h5>
 下面，让我们看一下vim是怎么重复自己的：
 
 <ol>
@@ -172,7 +173,7 @@ Vim the Six Billion Dollar editor
 </blockquote>
 
 
-##### **更强**
+<h5 id="stronger">更强</h5>
 <p>你要让你的光标移动更有效率，你一定要了解下面的这些命令，<strong>千万别跳过</strong>。</p>
 <ol>
 <li>N<code>G</code> → 到第 N 行 （陈皓注：注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
@@ -202,7 +203,7 @@ Vim the Six Billion Dollar editor
 
 
 
-##### **更快**
+<h5 id="faster">更快</h5>
 你一定要记住光标的移动，因为很多命令都可以和这些移动光标的命令连动。很多命令都可以如下来干：
 <p><code>&lt;start position&gt;&lt;command&gt;&lt;end position&gt;</code></p>
 
@@ -365,7 +366,7 @@ Vim the Six Billion Dollar editor
 <p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/split.gif" alt="Split"></p>
 
 
-#### **结束语**
+<h4 id="conclusion">结束语</h4>
 
 
 <ul>
