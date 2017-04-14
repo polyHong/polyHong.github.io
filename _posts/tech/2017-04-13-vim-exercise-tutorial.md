@@ -12,11 +12,7 @@ VIM的学习曲线相当的大(参看[各种文本编辑器的学习曲线](http
 所以，如果你一开始看到的是一大堆VIM的命令分类，你一定会对这个编辑器失去兴趣的。下面的文章翻译自
 《[Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)》，
 
-<center>
-<p>
----------------------正文开始---------------------
-</p>
-</center>
+<p style="text-align: center;">——————————正文开始——————————</p>
 
 你想以最快的速度学习人类史上最好的文本编辑器VIM吗？你先得懂得如何在VIM幸存下来，然后一点一点地学习各种戏法。
 
@@ -164,7 +160,7 @@ Vim the Six Billion Dollar editor
 
 <ol>
 <li><code>.</code> → (小数点) 可以重复上一次的命令</li>
-<li><code>N&lt;command &gt</code>; → 重复某个命令N次</li>
+<li><code>N&lt;command&gt</code>; → 重复某个命令N次</li>
 </ol>
 
 下面是一个示例，找开一个文件你可以试试下面的命令：
@@ -393,11 +389,7 @@ Vim the Six Billion Dollar editor
 
 学习vim就像学弹钢琴一样，一旦学会，受益无穷。
 
-<center>
-<p>
----------------------正文结束---------------------
-</p>
-</center>
+<p style="text-align: center;">——————————正文结束——————————</p>
 
 <p>对于vi/vim只是点评一点：这是一个你不需要使用鼠标，不需使用小键盘，只需要
 使用大键盘就可以完成很多复杂功能文本编辑的编辑器。不然，
