@@ -183,9 +183,7 @@ Vim the Six Billion Dollar editor
 </blockquote>
 </li>
 <li><strong>几个实例</strong><br>
-<blockquote>
-<ul>
-<li>连续行注释</li>
+<p>连续行注释</p>
 <blockquote>
 <ul>
 <li><code>:n1,n2s/^/#/g</code> → 在行首加#号</li>
@@ -193,12 +191,10 @@ Vim the Six Billion Dollar editor
 <li><code>:n1,n2s/^/\/\//g</code> → 在行首加//</li>
 </ul>
 </blockquote>
-<li>替换</li>
-<li><code>:ab sammail samlee@gmail.com</code> → 将a用b替换</li>
+<p>替换</p>
 <blockquote>
 <ul>
-</ul>
-</blockquote>
+<li><code>:ab sammail samlee@gmail.com</code> → 将a用b替换</li>
 </ul>
 </blockquote>
 </li>
