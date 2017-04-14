@@ -182,7 +182,9 @@ Vim the Six Billion Dollar editor
 <h5 id="stronger">更强</h5>
 <p>你要让你的光标移动更有效率，你一定要了解下面的这些命令，<strong>千万别跳过</strong>。</p>
 <ol>
-<li>N<code>G</code> → 到第 N 行 （注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
+<li>:set nu →   设置行号</li>
+<li>:set nonu → 取消行号</li>
+<li>N<code>G</code> → 到第N行 （注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
 <li><code>gg</code> → 到第一行。（相当于1G，或 :1）</li>
 <li><code>G</code> → 到最后一行。</li>
 <li>按单词移动：<br>
