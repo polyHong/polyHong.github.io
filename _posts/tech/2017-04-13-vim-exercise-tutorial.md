@@ -364,7 +364,10 @@ Vim the Six Billion Dollar editor
 
 <p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/split.gif" alt="Split"></p>
 
+
 #### **结束语**
+
+
 <ul>
 <li>上面是作者最常用的90%的命令。</li>
 <li>我建议你每天都学1到2个新的命令。</li>
