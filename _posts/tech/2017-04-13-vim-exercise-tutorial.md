@@ -174,8 +174,8 @@ Vim the Six Billion Dollar editor
 <li><code>:! &lt;command&gt;</code> → 在Vim模式下执行系统命令</li>
 <blockquote>
 <ul>
-<li><code>:! ls</code> → 在Vim模式下执行<code>ls<code>，按<code>Enter<code>键返回Vim</li>
-<li><code>:!</code>命令还可以和<code>:r<code>结合使用，如</li>
+<li><code>:! ls</code> → 在Vim模式下执行<code>ls</code>，按<code>Enter</code>键返回Vim</li>
+<li><code>:!</code>命令还可以和<code>:r</code>结合使用，如</li>
 <li><code>:r !date</code> → 在Vim中导入系统当前时间</li>
 </ul>
 </blockquote>
