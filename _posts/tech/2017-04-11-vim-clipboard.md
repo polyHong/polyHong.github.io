@@ -113,4 +113,38 @@ P
 - 将Vim默认剪贴板设为系统剪贴板: `set clipboard=unnameplus`
 
 
+##### **3) 制定寄存器**
+在复制或删除文本时，可以使用`"register`命令将文本放入指定的寄存器中。例如一下
+命令，将复制的文本放到寄存器`a`中，同时文本也会被放入未命名寄存器中。  
+
+```vim
+"ayy
+```
+
+如果在使用相应的大写字母来指定寄存器，那么将当前行内容追加到寄存器`a`中，这时
+该寄存器中就有了两行文本。    
+
+```vim
+"Ayy
+```
+
+##### **4) 查看寄存器**
+使用`registers name`命令，可以查看特定寄存器中的内容：   
+<center>
+![vim-register-a](/public/img/tech/vimreg/vim_register_a.jpg)
+</center>
+
+如果想要查看所有寄存器中的内容，可以使用如下命令：
+
+```vim
+:registers
+```
+
+<center>
+![vim-registers](/public/img/tech/vimreg/vim_registers.jpg)
+</center>
+
+
+
+
 
