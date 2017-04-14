@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Vi/Vim的配置
+title: Ubuntu下Vi/Vim的配置
 category: 技术
-tags: Vim
+tags: [Vim,Ubuntu]
 keywords: Ubuntu, Linux
 description: 
 ---
@@ -100,5 +100,29 @@ set sw=2
 set iskeyword+=:"}
 ```
 
+##### **3) 安装帮助文件**
+安装`latex-suite.txt`和`latexhelp.txt`文件作为帮助文件，启动vim，并且键入
+如下命令：   
 
+```vim
+helptags ~/.vim/doc
+```
+
+##### **4) 完成**
+至此，我们就算完成了插件的安装。现在我们可以在vim中编辑Tex文件，并且Latex-Suite
+应该会自动启动。我们还可以通过如下命令：   
+
+```vim
+:help latex-suite.txt
+```
+来获得在线的Latex-Suite帮助文档。
+
+
+
+相关链接：
+- [dot-vimrc in GitHub](https://github.com/humiaozuzu/dot-vimrc)   
+- [use-vim-as-IDE in GitHub](https://github.com/yangyangwithgnu/use_vim_as_ide)   
+- [list-of-vim](http://mirnazim.org/writings/vim-plugins-i-use/)    
+- [Manual,LaTex Reference,Tutorial](http://vim-latex.sourceforge.net/index.php?subject=manual&title=Tutorial#tutorial)    
+- [LatTex-Suite Reference](http://vim-latex.sourceforge.net/documentation/latex-suite.html#recommended-settings)    
 
