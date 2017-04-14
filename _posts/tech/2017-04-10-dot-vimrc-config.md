@@ -39,7 +39,7 @@ $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #### **4) 安装bundles**   
 启动Vim(忽略当前错误，在安装完所需插件后，它们会消失)，并且运行   
 
-```shell
+```vim
 :BundleInstall
 ```
 
