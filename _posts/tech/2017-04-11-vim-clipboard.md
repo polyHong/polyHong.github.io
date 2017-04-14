@@ -145,6 +145,44 @@ P
 </center>
 
 
+##### **5) 寄存器类别**
+寄存器可以分为一下9类：    
+
+<table summary="special registers" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<th>类别</th><th>符号</th><th>描述</th>
+</tr>
+<tr>
+<td>未命名寄存器</td><td>"</td><td>上一次复制或删除的文本</td>
+</tr>
+<tr>
+<td>数字寄存器</td><td>0-9</td><td>文本删除历史</td>
+</tr>
+<tr>
+<td>短删除寄存器</td><td>-</td><td>删除少于一行的文本</td>
+</tr>
+<tr>
+<td>命名寄存器</td><td>a-z,A-Z</td><td>存放文本</td>
+</tr>
+<tr>
+<td rowspan="4">只读寄存器</td>
+<td>%</td><td>当前文件的名字</td>
+</tr><tr>
+<td>#</td><td>交替文件的名字</td>
+</tr><tr>
+<td>.</td><td>上一次插入的文本</td>
+</tr><tr>
+<td>:</td><td>上一次执行的命令</td></tr>
+<tr><td>表达式寄存器</td><td>＝</td><td>返回表达式结果</td></tr>
+<tr><td rowspan="3">选择和拖拽寄存器</td>
+<td>\*</td><td>系统剪切板</td></tr>
+<tr><td>+</td><td>系统剪切板（X11）</td></tr>
+<tr><td>~</td><td>拖拽的文本</td></tr>
+<tr><td>黑洞寄存器</td><td>\_</td><td>永久删除的文本</td></tr>
+<tr><td>搜索模式寄存器</td><td>/</td><td>搜索模式</td></tr>
+</tbody>
+</table>
 
 
 
