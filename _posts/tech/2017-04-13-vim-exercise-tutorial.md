@@ -261,7 +261,20 @@ Vim the Six Billion Dollar editor
 <ul>
 <li>action可以是任何的命令，如&nbsp;<code>d</code> (删除), <code>y</code> (拷贝), <code>v</code> (可以视模式选择)。</li>
 <li>object 可能是：&nbsp;<code>w</code> 一个单词，&nbsp;<code>W</code> 一个以空格为分隔的单词，&nbsp;<code>s</code> 一个句字，&nbsp;<code>p</code> 一个段落。也可以是一个特别的字符：<code>"、</code>&nbsp;<code>'、</code>&nbsp;<code>)、</code>&nbsp;<code>}、</code>&nbsp;<code>]。</code></li>
-</ul>'"
+</ul>
+
+<p>假设你有一个字符串&nbsp;<code>(map (+) ("foo"))</code>.而光标键在第一个&nbsp;<code>o&nbsp;</code>的位置。</p>
+
+<blockquote>
+<ul>
+<li><code>vi"</code> → 会选择&nbsp;<code>foo</code>.</li>
+<li><code>va"</code> → 会选择&nbsp;<code>"foo"</code>.</li>
+<li><code>vi)</code> → 会选择&nbsp;<code>"foo"</code>.</li>
+<li><code>va)</code> → 会选择<code>("foo")</code>.</li>
+<li><code>v2i)</code> → 会选择&nbsp;<code>map (+) ("foo")</code></li>
+<li><code>v2a)</code> → 会选择&nbsp;<code>(map (+) ("foo"))</code></li>
+</ul>
+</blockquote>
 
 
 
