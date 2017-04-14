@@ -324,6 +324,12 @@ Vim the Six Billion Dollar editor
 </ul>
 </blockquote>
 
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/macros.gif" alt="Macros"></p>
+
+<h5 id="visual-selection-vvc-v">可视化选择：&nbsp;<code>v</code>,<code>V</code>,<code>&lt;C-v&gt;</code></h5>
+
+<p>前面，我们看到了&nbsp;<code>&lt;C-v&gt;</code>的示例 （在Windows下应该是&lt;C-q&gt;），我们可以使用&nbsp;<code>v</code> 和 <code>V</code>。一但被选好了，你可以做下面的事：</p>
+
 
 
 
