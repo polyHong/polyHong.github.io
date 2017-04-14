@@ -39,7 +39,7 @@ $ sudo apt-get install texworks
 首先自然需要下载一个Linux版本的Matlab及其破解文件，Matlab2016a大概10GB左右。
 
 
-##### **2) 挂在ISO文件**    
+##### **2) 挂载ISO文件**    
 
 在终端执行以下命令，会将ISO文件挂载到Ubuntu，出现图形界面开始安装。
 
@@ -70,7 +70,7 @@ $ sudo chmod 777  licenses
 - libmwservices.so    
 - libcufft.so.7.5.18    
 
-分别拷贝值上述新建的目录"licenses"和"./bin/glnxa64"下面:    
+分别拷贝至上述新建的目录"licenses"和"./bin/glnxa64"下面:    
 
 ```shell
 $ sudo cp Matlab_r2016a_glnxa64.lic [安装目录]/R2016a/bin/licenses
@@ -79,8 +79,11 @@ $ sudo cp libcufft.so.7.5.18 [安装目录]/R2016a/bin/glnxa64
 ```
 
 ##### **5) 快捷方式**     
-安装Matlab支持包，`sudo apt-get install matlab-support`.    
+安装Matlab支持包:    
 
+```shell
+$ sudo apt-get install matlab-support
+```
 
 至此，Matlab安装工作就完成了。可以进入安装目录下的bin目录终端尝试键入
 `./matlab`或`sudo ./matlab`.
