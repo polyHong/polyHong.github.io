@@ -172,6 +172,13 @@ Vim the Six Billion Dollar editor
 <li><code>:q!</code> → 退出不保存&nbsp;<code>:qa!</code>&nbsp;强行退出所有的正在编辑的文件，就算别的文件有更改。</li>
 <li><code>:bn</code>&nbsp;和&nbsp;<code>:bp</code>&nbsp;→ 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（我喜欢使用:n到下一个文件）</li>
 <li><code>:! &lt;command&gt;</code> → 在Vim模式下执行系统命令</li>
+<blockquote>
+<ul>
+<li><code>:! ls</code> → 在Vim模式下执行<code>ls<code>，按<code>Enter<code>键返回Vim</li>
+<li><code>:!</code>命令还可以和<code>:r<code>结合使用，如</li>
+<li><code>:r !date</code> → 在Vim中导入系统当前时间</li>
+</ul>
+</blockquote>
 </ul>
 </blockquote>
 </li>
