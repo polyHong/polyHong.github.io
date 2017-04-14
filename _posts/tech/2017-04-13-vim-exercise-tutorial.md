@@ -364,7 +364,32 @@ Vim the Six Billion Dollar editor
 
 <p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/split.gif" alt="Split"></p>
 
+#### **结束语**
+<ul>
+<li>上面是作者最常用的90%的命令。</li>
+<li>我建议你每天都学1到2个新的命令。</li>
+<li>在两到三周后，你会感到vim的强大的。</li>
+</ul>
 
+<ul>
+<li>有时候，学习VIM就像是在死背一些东西。</li>
+<li>幸运的是，vim有很多很不错的工具和优秀的文档。</li>
+<li>运行vimtutor直到你熟悉了那些基本命令。</li>
+<li>其在线帮助文档中你应该要仔细阅读的是&nbsp;<code>:help usr_02.txt</code>.</li>
+<li>你会学习到诸如&nbsp;&nbsp;<code>!，</code>&nbsp;目录，寄存器，插件等很多其它的功能。</li>
+</ul>
+
+学习vim就像学弹钢琴一样，一旦学会，受益无穷。
+
+<center>
+<p>
+---------------------正文结束---------------------
+</p>
+</center>
+
+<p>对于vi/vim只是点评一点：这是一个你不需要使用鼠标，不需使用小键盘，只需要
+使用大键盘就可以完成很多复杂功能文本编辑的编辑器。不然，
+<a title="Visual Studio的Vim插件" href="http://coolshell.cn/articles/1901.html" target="_blank">Visual Studio也不就会有vim的插件了</a>。</p>
 
 
 
