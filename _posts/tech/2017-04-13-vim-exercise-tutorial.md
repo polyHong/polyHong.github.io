@@ -206,3 +206,53 @@ Vim the Six Billion Dollar editor
 你一定要记住光标的移动，因为很多命令都可以和这些移动光标的命令连动。很多命令都可以如下来干：
 <p><code>&lt;start position&gt;&lt;command&gt;&lt;end position&gt;</code></p>
 
+<p>例如&nbsp;<code>0y$</code> 命令意味着：</p>
+
+<ul>
+<li><code>0</code> → 先到行头</li>
+<li><code>y</code> → 从这里开始拷贝</li>
+<li><code>$</code> → 拷贝到本行最后一个字符</li>
+</ul>
+
+<p>你可可以输入&nbsp;<code>ye</code>，从当前位置拷贝到本单词的最后一个字符。</p>
+
+<p>你也可以输入&nbsp;<code>y2/foo</code>&nbsp;来拷贝2个 “foo” 之间的字符串。</p>
+
+
+还有很多时间并不一定你就一定要按y才会拷贝，下面的命令也会被拷贝：
+
+<ul>
+<li><code>d</code> (删除 )</li>
+<li><code>v</code> (可视化的选择)</li>
+<li><code>gU</code> (变大写)</li>
+<li><code>gu</code> (变小写)</li>
+<li>等等</li>
+</ul>
+
+
+#### **第四级--Vim超能力**
+你只需要掌握前面的命令，你就可以很舒服的使用VIM了。但是，现在，我们向你介绍的是VIM杀手级的功能。
+下面这些功能是我只用vim的原因。
+
+<h5 id="move-on-current-line-0---f-f-t-t--">在当前行上移动光标: <code>0</code> <code>^</code> <code>$</code> <code>f</code> <code>F</code> <code>t</code> <code>T</code> <code>,</code> <code>;</code></h5>
+
+<blockquote>
+<ul>
+<li><code>0</code> → 到行头</li>
+<li><code>^</code> → 到本行的第一个非blank字符</li>
+<li><code>$</code> → 到行尾</li>
+<li><code>g\_</code>&nbsp;→ 到本行最后一个不是blank字符的位置。</li>
+<li><code>fa</code> → 到下一个为a的字符处，你也可以fs到下一个为s的字符。</li>
+<li><code>t,</code> → 到逗号前的第一个字符。逗号可以变成其它字符。</li>
+<li><code>3fa</code> → 在当前行查找第三个出现的a。</li>
+<li><code>F</code>&nbsp;和&nbsp;<code>T</code> → 和&nbsp;<code>f</code>&nbsp;和&nbsp;<code>t</code>&nbsp;一样，只不过是相反方向。<br>
+<img src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/line_moves.jpg" alt="Line moves"></li>
+</ul>
+</blockquote>
+
+<p>还有一个很有用的命令是&nbsp;<code>dt"</code> → 删除所有的内容，直到遇到双引号——&nbsp;<code>"。</code></p>
+
+<h5 id="zone-selection-actionaobject-or-actioniobject">区域选择&nbsp;<code>&lt;action&gt;a&lt;object&gt;</code>&nbsp;或&nbsp;<code>&lt;action&gt;i&lt;object&gt;</code></h5>
+
+<p>在visual 模式下，这些命令很强大，其命令格式为</p>
+
