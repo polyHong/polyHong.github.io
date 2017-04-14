@@ -293,6 +293,36 @@ Vim the Six Billion Dollar editor
 
 <p>在Windows下的vim，你需要使用&nbsp;<code>&lt;C-q&gt;</code> 而不是&nbsp;<code>&lt;C-v&gt;</code>&nbsp;，<code>&lt;C-v&gt;</code>&nbsp;是拷贝剪贴板。</p>
 
+<h5 id="completion-c-n-and-c-p">自动提示：&nbsp;<code>&lt;C-n&gt;</code>&nbsp;和&nbsp;<code>&lt;C-p&gt;</code></h5>
+
+<p>在 Insert 模式下，你可以输入一个词的开头，然后按&nbsp;<code>&lt;C-p&gt;或是&lt;C-n&gt;，自动补齐功能就出现了……</code></p>
+
+<p><code></code><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/completion.gif" alt="Completion"></p>
+
+<h5 id="macros--qa-do-something-q-a-">宏录制：&nbsp;<code>qa</code> 操作序列&nbsp;<code>q</code>, <code>@a</code>, <code>@@</code></h5>
+
+<ul>
+<li><code>qa</code>&nbsp;把你的操作记录在寄存器&nbsp;<code>a。</code></li>
+<li>于是&nbsp;<code>@a</code>&nbsp;会replay被录制的宏。</li>
+<li><code>@@</code>&nbsp;是一个快捷键用来replay最新录制的宏。</li>
+</ul>
+
+<blockquote><p><strong><em>示例</em></strong></p>
+<p>在一个只有一行且这一行只有“1”的文本中，键入如下命令：</p>
+<ul>
+<li><code>qaYp&lt;C-a&gt;q</code>→
+<ul>
+<li><code>qa</code>&nbsp;开始录制</li>
+<li><code>Yp</code> 复制行.</li>
+<li><code>&lt;C-a&gt;</code> 增加1.</li>
+<li><code>q</code> 停止录制.</li>
+</ul>
+</li>
+<li><code>@a</code> → 在1下面写下 2</li>
+<li><code>@@</code> → 在2 正面写下3</li>
+<li>现在做&nbsp;<code>100@@</code> 会创建新的100行，并把数据增加到 103.</li>
+</ul>
+</blockquote>
 
 
 
