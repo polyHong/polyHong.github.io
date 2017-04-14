@@ -143,3 +143,11 @@ $ python setup.oy install --user --record installed.txt
 $ xargs rm -vr < installed.txt
 ```
 
+
+
+相关链接：   
+
+- [Linux下安装TeXLive 2016](http://seisman.info/install-texlive-under-linux.html)    
+- [TeX User Group](https://www.tug.org/texlive/)    
+- [CTAN: Comprehensive TEX Archive Network](https://www.ctan.org/)    
+- [xflux-gui in GitHub](https://github.com/xflux-gui/xflux-gui)    
