@@ -161,15 +161,17 @@ Vim the Six Billion Dollar editor
 </ul>
 </blockquote>
 </li>
-<li><strong>打开/保存/退出/改变文件</strong>(Buffer)<br>
+<li><strong>打开/导入/保存/退出/改变文件/执行命令</strong>(Buffer)<br>
 <blockquote>
 <ul>
 <li><code>:e &lt;path/to/file&gt;</code> → 打开一个文件</li>
+<li><code>:r filename</code> → 导入文件内容到当前文件</li>
 <li><code>:w</code> → 存盘</li>
 <li><code>:saveas &lt;path/to/file&gt;</code> → 另存为&nbsp;<code>&lt;path/to/file&gt;</code></li>
 <li><code>:x</code>，&nbsp;<code>ZZ</code> 或&nbsp;<code>:wq</code> → 保存并退出 (<code>:x</code>&nbsp;表示仅在需要时保存，ZZ不需要输入冒号并回车)</li>
 <li><code>:q!</code> → 退出不保存&nbsp;<code>:qa!</code>&nbsp;强行退出所有的正在编辑的文件，就算别的文件有更改。</li>
 <li><code>:bn</code>&nbsp;和&nbsp;<code>:bp</code>&nbsp;→ 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（我喜欢使用:n到下一个文件）</li>
+<li><code>:! &lt;command&gt;</code> → 在Vim模式下执行系统命令</li>
 </ul>
 </blockquote>
 </li>
