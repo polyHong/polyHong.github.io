@@ -258,77 +258,10 @@ Vim the Six Billion Dollar editor
 
 <p><code>&lt;action&gt;a&lt;object&gt;</code> 和 <code>&lt;action&gt;i&lt;object&gt;</code></p>
 
-<ul>
-<li>action可以是任何的命令，如&nbsp;<code>d</code> (删除), <code>y</code> (拷贝), <code>v</code> (可以视模式选择)。</li>
-<li>object 可能是：&nbsp;<code>w</code> 一个单词，&nbsp;<code>W</code> 一个以空格为分隔的单词，&nbsp;<code>s</code> 一个句字，&nbsp;<code>p</code> 一个段落。也可以是一个特别的字符：<code>"、</code>&nbsp;<code>'、</code>&nbsp;<code>)、</code>&nbsp;<code>}、</code>&nbsp;<code>]。</code></li>
-</ul>
 
-<p>假设你有一个字符串&nbsp;<code>(map (+) ("foo"))</code>.而光标键在第一个&nbsp;<code>o&nbsp;</code>的位置。</p>
 
-<blockquote>
-<ul>
-<li><code>vi"</code> → 会选择&nbsp;<code>foo</code>.</li>
-<li><code>va"</code> → 会选择&nbsp;<code>"foo"</code>.</li>
-<li><code>vi)</code> → 会选择&nbsp;<code>"foo"</code>.</li>
-<li><code>va)</code> → 会选择<code>("foo")</code>.</li>
-<li><code>v2i)</code> → 会选择&nbsp;<code>map (+) ("foo")</code></li>
-<li><code>v2a)</code> → 会选择&nbsp;<code>(map (+) ("foo"))</code></li>
-</ul>
-</blockquote>
 
-<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/textobjects.png" alt="Text objects selection"></p>
 
-<h5 id="select-rectangular-blocks-c-v">块操作: <code>&lt;C-v&gt;</code></h5>
-
-<p>块操作，典型的操作：&nbsp;<code>0 &lt;C-v&gt; &lt;C-d&gt; I-- [ESC]</code></p>
-
-<ul>
-<li><code>^</code> → 到行头</li>
-<li><code>&lt;C-v&gt;</code> → 开始块操作</li>
-<li><code>&lt;C-d&gt;</code> → 向下移动 (你也可以使用hjkl来移动光标，或是使用%，或是别的)</li>
-<li><code>I-- [ESC]</code> → I是插入，插入“<code>--</code>”，按ESC键来为每一行生效。</li>
-</ul>
-
-<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/rectangular-blocks.gif" alt="Rectangular blocks"></p>
-
-<p>在Windows下的vim，你需要使用&nbsp;<code>&lt;C-q&gt;</code> 而不是&nbsp;<code>&lt;C-v&gt;</code>&nbsp;，<code>&lt;C-v&gt;</code>&nbsp;是拷贝剪贴板。</p>
-
-<h5 id="completion-c-n-and-c-p">自动提示：&nbsp;<code>&lt;C-n&gt;</code>&nbsp;和&nbsp;<code>&lt;C-p&gt;</code></h5>
-
-<p>在 Insert 模式下，你可以输入一个词的开头，然后按&nbsp;<code>&lt;C-p&gt;或是&lt;C-n&gt;，自动补齐功能就出现了……</code></p>
-
-<p><code></code><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/completion.gif" alt="Completion"></p>
-
-<h5 id="macros--qa-do-something-q-a-">宏录制：&nbsp;<code>qa</code> 操作序列&nbsp;<code>q</code>, <code>@a</code>, <code>@@</code></h5>
-
-<ul>
-<li><code>qa</code>&nbsp;把你的操作记录在寄存器&nbsp;<code>a。</code></li>
-<li>于是&nbsp;<code>@a</code>&nbsp;会replay被录制的宏。</li>
-<li><code>@@</code>&nbsp;是一个快捷键用来replay最新录制的宏。</li>
-</ul>
-
-<blockquote><p><strong><em>示例</em></strong></p>
-<p>在一个只有一行且这一行只有“1”的文本中，键入如下命令：</p>
-<ul>
-<li><code>qaYp&lt;C-a&gt;q</code>→
-<ul>
-<li><code>qa</code>&nbsp;开始录制</li>
-<li><code>Yp</code> 复制行.</li>
-<li><code>&lt;C-a&gt;</code> 增加1.</li>
-<li><code>q</code> 停止录制.</li>
-</ul>
-</li>
-<li><code>@a</code> → 在1下面写下 2</li>
-<li><code>@@</code> → 在2 正面写下3</li>
-<li>现在做&nbsp;<code>100@@</code> 会创建新的100行，并把数据增加到 103.</li>
-</ul>
-</blockquote>
-
-<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/macros.gif" alt="Macros"></p>
-
-<h5 id="visual-selection-vvc-v">可视化选择：&nbsp;<code>v</code>,<code>V</code>,<code>&lt;C-v&gt;</code></h5>
-
-<p>前面，我们看到了&nbsp;<code>&lt;C-v&gt;</code>的示例 （在Windows下应该是&lt;C-q&gt;），我们可以使用&nbsp;<code>v</code> 和 <code>V</code>。一但被选好了，你可以做下面的事：</p>
 
 
 
