@@ -347,7 +347,9 @@ Vim the Six Billion Dollar editor
 <li><code>A</code>, 输入字符串，按&nbsp;<code>ESC。</code></li>
 </ul>
 
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/append-to-many-lines.gif" alt="Append to many lines"></p>
 
+<h5 id="splits-split-and-vsplit">分屏: <code>:split</code>&nbsp;和&nbsp;<code>vsplit</code>.</h5>
 
 
 
