@@ -168,7 +168,24 @@ $ sudo fc-cache
 </center>
 
 
-#### **五、常用软件列表**
+#### **五、蓝牙问题修复**
+我尝试用Xubuntu去连接小米音箱，然而总是连接不上。后来查了很多网上的资料，终于
+解决。这里记下来做个备份。     
+
+##### **1) 安装蓝牙音频模块**
+
+```shell
+$ sudo apt-get install pulseaudio-module-bluetooth
+```
+
+##### **2) 如果蓝牙设备还是连不上，那么**
+
+```shell
+$ pactl load-module module-bluetooth-discover
+```
+
+
+#### **六、常用软件列表**
 要想完成日常一些工作，必然少不了需要安装一些必要的软件。下面是我学习和
 工作过程中常常需要用到的软件列表。列表按照最近一次安装Xubuntu安装他们的
 顺序列下来：    
@@ -210,6 +227,4 @@ $ sudo fc-cache
 10. ReplyWithHeader    
 11. SmartTemplate4    
 12. Theme Font & Size Changer   
-
-
 
