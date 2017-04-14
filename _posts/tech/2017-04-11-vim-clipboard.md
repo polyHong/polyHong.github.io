@@ -189,7 +189,7 @@ description:
 有3个寄存器用于保存选中的文本：<span style="font-weight:bold;background:lightblue">"*</span>
 用于访问系统剪切板。在Windows下，"*和<span style="font-weight:bold;background:lightblue">"+</span>相同；
 在Linux下，"+包含选中的文本，"\*包含复制的文本。使用<code class="inset">"+y</code>命令，
-可以将当前选中的文文本复制到系统剪切板中。而<code class="inset">"+p</code>命令，
+可以将当前选中的文本复制到系统剪切板中。而<code class="inset">"+p</code>命令，
 则可以粘贴系统剪切板中的内容。通过剪切板寄存器，能够在不同的Vim编辑器或者是其他应用程序之间，
 进行文本交换。<span style="font-weight:bold;background:lightblue">"~</span>包含上次从其它应
 用程序拖拽到Gvim中的文本。</p>
