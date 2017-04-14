@@ -231,7 +231,7 @@ Vim the Six Billion Dollar editor
 </ul>
 
 
-#### **第四级--Vim超能力**
+<h4 id="th-level----vim-superpowers">第四级 – Vim 超能力</h4>
 你只需要掌握前面的命令，你就可以很舒服的使用VIM了。但是，现在，我们向你介绍的是VIM杀手级的功能。
 下面这些功能是我只用vim的原因。
 
@@ -394,6 +394,4 @@ Vim the Six Billion Dollar editor
 <p>对于vi/vim只是点评一点：这是一个你不需要使用鼠标，不需使用小键盘，只需要
 使用大键盘就可以完成很多复杂功能文本编辑的编辑器。不然，
 <a title="Visual Studio的Vim插件" href="http://coolshell.cn/articles/1901.html" target="_blank">Visual Studio也不就会有vim的插件了</a>。</p>
-
-
 
