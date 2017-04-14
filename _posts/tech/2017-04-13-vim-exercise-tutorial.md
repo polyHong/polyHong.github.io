@@ -164,7 +164,7 @@ Vim the Six Billion Dollar editor
 
 <ol>
 <li><code>.</code> → (小数点) 可以重复上一次的命令</li>
-<li>N&lt;command&gt; → 重复某个命令N次</li>
+<li><code>N&lt;command &gt</code>; → 重复某个命令N次</li>
 </ol>
 
 下面是一个示例，找开一个文件你可以试试下面的命令：
@@ -182,9 +182,9 @@ Vim the Six Billion Dollar editor
 <h5 id="stronger">更强</h5>
 <p>你要让你的光标移动更有效率，你一定要了解下面的这些命令，<strong>千万别跳过</strong>。</p>
 <ol>
-<li>:set nu →   设置行号</li>
-<li>:set nonu → 取消行号</li>
-<li>N<code>G</code> → 到第N行 （注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
+<li><code>:set nu</code> →   设置行号</li>
+<li><code>:set nonu</code> → 取消行号</li>
+<li><code>NG</code> → 到第N行 （注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
 <li><code>gg</code> → 到第一行。（相当于1G，或 :1）</li>
 <li><code>G</code> → 到最后一行。</li>
 <li>按单词移动：<br>
