@@ -72,7 +72,7 @@ Vim the Six Billion Dollar editor
 <p><strong>推荐</strong>:</p>
 <ul>
 <li><code>hjkl</code> (强例推荐使用其移动光标，但不必需) →你也可以使用光标键 (←↓↑→). 注: <code>j</code> 就像下箭头。</li>
-<li><code>:help &lt;command&gt;</code> → 显示相关命令的帮助。你也可以就输入&nbsp;<code>:help</code>&nbsp;而不跟命令。（退出帮助需要输入:q）</li>
+<li><code>:help &lt;command&gt;</code> → 显示相关命令的帮助。你也可以就输入&nbsp;<code>:help</code>&nbsp;而不跟命令。（退出帮助需要输入<code>:q</code>）</li>
 </ul>
 </blockquote>
 
@@ -133,16 +133,31 @@ Vim the Six Billion Dollar editor
 <li><strong>拷贝、剪切/粘贴</strong> （p/P都可以，p是表示在当前位置之后，P表示在当前位置之前）<br>
 <blockquote>
 <ul>
-<li><code>P</code> → 粘贴</li>
-<li><code>yy</code> → 拷贝当前行当行于&nbsp;<code>ddP</code></li>
+<li><code>yy、Y</code> → 复制当前行相当于&nbsp;<code>ddP</code></li>
+<li><code>nyy、nY</code> → 复制当前行以下n行</li>
+<li><code>dd</code> → 剪切当前行</li>
+<li><code>ndd</code> → 剪切当前行以下n行</li>
+<li><code>p、P</code> → 粘贴</li>
 </ul>
 </blockquote>
 </li>
-<li><strong>Undo/Redo</strong><br>
+<li><strong>替换/取消命令</strong><br>
 <blockquote>
 <ul>
+<li><code>r</code> → 取代光标所在处字符</li>
+<li><code>R</code> → 从光标处开始替代字符，按<code>ESC</code></li>
 <li><code>u</code> → undo</li>
 <li><code>&lt;C-r&gt;</code> → redo</li>
+</ul>
+</blockquote>
+</li>
+<li><strong>搜索/替换命令</strong><br>
+<blockquote>
+<ul>
+<li><code>/string</code> → 向前搜索指定字符串，搜索时忽略大小写<code>:set ic</code></li>
+<li><code>n</code> → 搜索指定字符串的下一个出现位置</li>
+<li><code>:%s/old/new/g</code> → 全文替换指定字符串符</li>
+<li><code>:n1,n2s/old/new/g</code> → 在一定范围内替换指定字符串</li>
 </ul>
 </blockquote>
 </li>
