@@ -194,13 +194,15 @@ Vim the Six Billion Dollar editor
 <blockquote>
 <ul>
 <li><code>%</code>&nbsp;: 匹配括号移动，包括&nbsp;<code>(</code>, <code>{</code>, <code>[</code>. （陈皓注：你需要把光标先移到括号上）</li>
-<li><code>*</code>&nbsp;和&nbsp;<code>#</code>: &nbsp;匹配光标当前所在的单词，移动光标到下一个（或上一个）匹配单词（*是下一个，#是上一个）</li>
+<li><code>\*</code>&nbsp;和&nbsp;<code>#</code>: &nbsp;匹配光标当前所在的单词，移动光标到下一个（或上一个）匹配单词（\*是下一个，#是上一个）</li>
 </ul>
-</blockquote>]})
+</blockquote>
 
 相信我，上面这三个命令对程序员来说是相当强大的。
 
 
 
 ##### **更快**
+你一定要记住光标的移动，因为很多命令都可以和这些移动光标的命令连动。很多命令都可以如下来干：
+<p><code>&lt;start position&gt;&lt;command&gt;&lt;end position&gt;</code></p>
 
