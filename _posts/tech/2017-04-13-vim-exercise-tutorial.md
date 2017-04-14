@@ -351,6 +351,19 @@ Vim the Six Billion Dollar editor
 
 <h5 id="splits-split-and-vsplit">分屏: <code>:split</code>&nbsp;和&nbsp;<code>vsplit</code>.</h5>
 
+<p>下面是主要的命令，你可以使用VIM的帮助&nbsp;<code>:help split</code>. 你可以参考本站以前的一篇文章<a title="Vim的分屏功能" href="http://coolshell.cn/articles/1679.html" target="_blank">VIM分屏</a>。</p>
+
+<blockquote>
+<ul>
+<li><code>:split</code> → 创建分屏 (<code>:vsplit</code>创建垂直分屏)</li>
+<li><code>&lt;C-w&gt;&lt;dir&gt;</code>&nbsp;: dir就是方向，可以是&nbsp;<code>hjkl</code> 或是 ←↓↑→ 中的一个，其用来切换分屏。</li>
+<li><code>&lt;C-w&gt;\_</code> (或&nbsp;<code>&lt;C-w&gt;|</code>)&nbsp;: 最大化尺寸 (&lt;C-w&gt;|&nbsp;垂直分屏)</li>
+<li><code>&lt;C-w&gt;+</code> (或 <code>&lt;C-w&gt;-</code>)&nbsp;: 增加尺寸</li>
+</ul>
+</blockquote>
+
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/split.gif" alt="Split"></p>
+
 
 
 
