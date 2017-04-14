@@ -336,6 +336,17 @@ Vim the Six Billion Dollar editor
 <li><code>=</code> → 自动给缩进 （陈皓注：这个功能相当强大，我太喜欢了）</li>
 </ul>
 
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/autoindent.gif" alt="Autoindent"></p>
+
+在所有被选择的行后加上点东西：
+
+<ul>
+<li><code>&lt;C-v&gt;</code></li>
+<li>选中相关的行 (可使用&nbsp;<code>j</code>&nbsp;或&nbsp;<code>&lt;C-d&gt;</code>&nbsp;或是&nbsp;<code>/pattern</code>&nbsp;或是&nbsp;<code>%</code>&nbsp;等……)</li>
+<li><code>$</code> 到行最后</li>
+<li><code>A</code>, 输入字符串，按&nbsp;<code>ESC。</code></li>
+</ul>
+
 
 
 
