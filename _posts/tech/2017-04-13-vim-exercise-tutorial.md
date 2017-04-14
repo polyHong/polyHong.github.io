@@ -330,6 +330,12 @@ Vim the Six Billion Dollar editor
 
 <p>前面，我们看到了&nbsp;<code>&lt;C-v&gt;</code>的示例 （在Windows下应该是&lt;C-q&gt;），我们可以使用&nbsp;<code>v</code> 和 <code>V</code>。一但被选好了，你可以做下面的事：</p>
 
+<ul>
+<li><code>J</code> → 把所有的行连接起来（变成一行）</li>
+<li><code>&lt;</code> 或 <code>&gt;</code>&nbsp;→ 左右缩进</li>
+<li><code>=</code> → 自动给缩进 （陈皓注：这个功能相当强大，我太喜欢了）</li>
+</ul>
+
 
 
 
