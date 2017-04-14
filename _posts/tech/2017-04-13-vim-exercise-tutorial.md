@@ -115,6 +115,9 @@ Vim the Six Billion Dollar editor
 <li><code>^</code> → 到本行第一个不是blank字符的位置（所谓blank字符就是空格，tab，换行，回车等）</li>
 <li><code>$</code> → 到本行行尾</li>
 <li><code>g\_</code> → 到本行最后一个不是blank字符的位置。</li>
+<li><code>H</code> → 到屏幕上端</li>
+<li><code>M</code> → 到屏幕中央</li>
+<li><code>L</code> → 到屏幕下端</li>
 <li><code>/pattern</code> → 搜索&nbsp;<code>pattern</code> 的字符串（陈皓注：如果搜索出多个匹配，可按n键到下一个）</li>
 </ul>
 </blockquote>
@@ -179,8 +182,8 @@ Vim the Six Billion Dollar editor
 <h5 id="stronger">更强</h5>
 <p>你要让你的光标移动更有效率，你一定要了解下面的这些命令，<strong>千万别跳过</strong>。</p>
 <ol>
-<li>N<code>G</code> → 到第 N 行 （陈皓注：注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
-<li><code>gg</code> → 到第一行。（陈皓注：相当于1G，或 :1）</li>
+<li>N<code>G</code> → 到第 N 行 （注意命令中的G是大写的，另我一般使用 : N 到第N行，如 :137 到第137行）</li>
+<li><code>gg</code> → 到第一行。（相当于1G，或 :1）</li>
 <li><code>G</code> → 到最后一行。</li>
 <li>按单词移动：<br>
 <blockquote>
