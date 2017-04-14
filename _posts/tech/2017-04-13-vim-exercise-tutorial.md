@@ -45,5 +45,40 @@ Vim the Six Billion Dollar editor
 </ul>
 
 
+#### **第一级--存活**
+<ol>
+<li>安装&nbsp;<a href="http://www.vim.org">vim</a></li>
+<li>启动 vim</li>
+<li><strong>什么也别干！</strong>请先阅读</li>
+</ol>
+
+当你安装好一个编辑器后，你一定会想在其中输入点什么东西，
+然后看看这个编辑器是什么样子。但vim不是这样的，请按照下面的命令操作：
+
+<ul>
+<li>启动Vim后，vim在&nbsp;<em>Normal</em>&nbsp;模式下。</li>
+<li>让我们进入&nbsp;<em>Insert</em> 模式，请按下键 i 。</li>
+<li>此时，你可以输入文本了，就像你用“记事本”一样。</li>
+<li>如果你想返回&nbsp;<em>Normal</em>&nbsp;模式，请按&nbsp;<code>ESC</code> 键。</li>
+</ul>)
+
+<p>现在，你知道如何在&nbsp;<em>Insert</em>&nbsp;和&nbsp;<em>Normal</em> 模式下切换了。
+下面是一些命令，可以让你在&nbsp;<em>Normal</em> 模式下幸存下来：</p>
+
+<blockquote>
+<ul>
+<li><code>i</code> → <em>Insert</em> 模式，按&nbsp;<code>ESC</code>&nbsp;回到 <em>Normal</em> 模式.</li>
+<li><code>x</code> → 删当前光标所在的一个字符。</li>
+<li><code>:wq</code> → 存盘 + 退出 (<code>:w</code> 存盘, <code>:q</code> 退出) &nbsp; （`:w` 后可以跟文件名）</li>
+<li><code>dd</code> → 删除当前行，并把删除的行存到剪贴板里</li>
+<li><code>p</code> → 粘贴剪贴板</li>
+</ul>
+<p><strong>推荐</strong>:</p>
+<ul>
+<li><code>hjkl</code> (强例推荐使用其移动光标，但不必需) →你也可以使用光标键 (←↓↑→). 注: <code>j</code> 就像下箭头。</li>
+<li><code>:help &lt;command&gt;</code> → 显示相关命令的帮助。你也可以就输入&nbsp;<code>:help</code>&nbsp;而不跟命令。（陈皓注：退出帮助需要输入:q）</li>
+</ul>
+</blockquote>
+
 
 
