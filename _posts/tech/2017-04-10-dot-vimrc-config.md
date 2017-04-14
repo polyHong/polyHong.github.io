@@ -119,7 +119,7 @@ helptags ~/.vim/doc
 
 
 
-相关链接：
+相关链接：     
 - [dot-vimrc in GitHub](https://github.com/humiaozuzu/dot-vimrc)   
 - [use-vim-as-IDE in GitHub](https://github.com/yangyangwithgnu/use_vim_as_ide)   
 - [list-of-vim](http://mirnazim.org/writings/vim-plugins-i-use/)    
