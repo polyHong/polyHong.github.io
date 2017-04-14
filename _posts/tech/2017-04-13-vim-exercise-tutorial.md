@@ -182,6 +182,26 @@ Vim the Six Billion Dollar editor
 </ul>
 </blockquote>
 </li>
+<li><strong>几个实例</strong><br>
+<blockquote>
+<ul>
+<li>连续行注释</li>
+<blockquote>
+<ul>
+<li><code>:n1,n2s/^/#/g</code> → 在行首加#号</li>
+<li><code>:n1,n2s/^#//g</code> → 在行首去掉#号</li>
+<li><code>:n1,n2s/^/\/\//g</code> → 在行首加//</li>
+</ul>
+</blockquote>
+<li>替换</li>
+<li><code>:ab sammail samlee@gmail.com</code> → 将a用b替换</li>
+<blockquote>
+<ul>
+</ul>
+</blockquote>
+</ul>
+</blockquote>
+</li>
 </ol>
 
 花点时间熟悉一下上面的命令，一旦你掌握他们了，你就几乎可以干其它编辑器都能干的事了。但是到现在为止，你还是觉得使用vim还是有点笨拙，不过没关系，你可以进阶到第三级了。
