@@ -289,6 +289,11 @@ Vim the Six Billion Dollar editor
 <li><code>I-- [ESC]</code> → I是插入，插入“<code>--</code>”，按ESC键来为每一行生效。</li>
 </ul>
 
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/rectangular-blocks.gif" alt="Rectangular blocks"></p>
+
+<p>在Windows下的vim，你需要使用&nbsp;<code>&lt;C-q&gt;</code> 而不是&nbsp;<code>&lt;C-v&gt;</code>&nbsp;，<code>&lt;C-v&gt;</code>&nbsp;是拷贝剪贴板。</p>
+
+
 
 
 
