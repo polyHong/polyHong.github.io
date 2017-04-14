@@ -256,3 +256,39 @@ Vim the Six Billion Dollar editor
 
 <p>在visual 模式下，这些命令很强大，其命令格式为</p>
 
+<p><code>&lt;action&gt;a&lt;object&gt;</code> 和 <code>&lt;action&gt;i&lt;object&gt;</code></p>
+
+<ul>
+<li>action可以是任何的命令，如&nbsp;<code>d</code> (删除), <code>y</code> (拷贝), <code>v</code> (可以视模式选择)。</li>
+<li>object 可能是：&nbsp;<code>w</code> 一个单词，&nbsp;<code>W</code> 一个以空格为分隔的单词，&nbsp;<code>s</code> 一个句字，&nbsp;<code>p</code> 一个段落。也可以是一个特别的字符：<code>"、</code>&nbsp;<code>'、</code>&nbsp;<code>)、</code>&nbsp;<code>}、</code>&nbsp;<code>]。</code></li>
+</ul>
+
+<p>假设你有一个字符串&nbsp;<code>(map (+) ("foo"))</code>.而光标键在第一个&nbsp;<code>o&nbsp;</code>的位置。</p>
+
+<blockquote>
+<ul>
+<li><code>vi"</code> → 会选择&nbsp;<code>foo</code>.</li>
+<li><code>va"</code> → 会选择&nbsp;<code>"foo"</code>.</li>
+<li><code>vi)</code> → 会选择&nbsp;<code>"foo"</code>.</li>
+<li><code>va)</code> → 会选择<code>("foo")</code>.</li>
+<li><code>v2i)</code> → 会选择&nbsp;<code>map (+) ("foo")</code></li>
+<li><code>v2a)</code> → 会选择&nbsp;<code>(map (+) ("foo"))</code></li>
+</ul>
+</blockquote>
+
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/textobjects.png" alt="Text objects selection"></p>
+
+<h5 id="select-rectangular-blocks-c-v">块操作: <code>&lt;C-v&gt;</code></h5>
+
+<p>块操作，典型的操作：&nbsp;<code>0 &lt;C-v&gt; &lt;C-d&gt; I-- [ESC]</code></p>
+
+<ul>
+<li><code>^</code> → 到行头</li>
+<li><code>&lt;C-v&gt;</code> → 开始块操作</li>
+<li><code>&lt;C-d&gt;</code> → 向下移动 (你也可以使用hjkl来移动光标，或是使用%，或是别的)</li>
+<li><code>I-- [ESC]</code> → I是插入，插入“<code>--</code>”，按ESC键来为每一行生效。</li>
+</ul>
+
+<p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/rectangular-blocks.gif" alt="Rectangular blocks"></p>
+
+
