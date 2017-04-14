@@ -36,7 +36,7 @@ $ sudo apt-get install texworks
 
 ##### **1) 下载Matlab**    
 
-首先自然需要现在一个Linux版本的Matlab及其破解文件，Matlab2016a大概10GB左右。
+首先自然需要下载一个Linux版本的Matlab及其破解文件，Matlab2016a大概10GB左右。
 
 
 ##### **2) 挂在ISO文件**    
