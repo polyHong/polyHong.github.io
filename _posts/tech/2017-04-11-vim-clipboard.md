@@ -13,7 +13,7 @@ description:
 ##### **1) 复制粘贴基本命令**
 
 <center>
-<table>
+<table summary="special registers" border="1" cellspacing="0" cellpadding="3">
 <tbody><tr>
 <td>
 yy
@@ -148,6 +148,7 @@ P
 ##### **5) 寄存器类别**
 寄存器可以分为一下9类：    
 
+<center>
 <table summary="special registers" border="1" cellspacing="0" cellpadding="3">
 <tbody>
 <tr>
@@ -183,6 +184,6 @@ P
 <tr><td>搜索模式寄存器</td><td>/</td><td>搜索模式</td></tr>
 </tbody>
 </table>
-
+</center>
 
 
