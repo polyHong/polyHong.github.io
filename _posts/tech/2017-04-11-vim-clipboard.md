@@ -185,5 +185,64 @@ description:
 表达式寄存器来得到环境变量的值（例如"=$HOME）。如果没有输入任何表达式而直接按回车键，
 那么Vim将执行最近使用过的表达式。</p>
 
+<p><strong>选择和拖拽寄存器（The Selection and Drop Registers）</strong> 
+有3个寄存器用于保存选中的文本：<span style="font-weight:bold;background:lightblue">"*</span>
+用于访问系统剪切板。在Windows下，"*和<span style="font-weight:bold;background:lightblue">"+</span>相同；
+在Linux下，"+包含选中的文本，"\*包含复制的文本。使用<code class="inset">"+y</code>命令，
+可以将当前选中的文文本复制到系统剪切板中。而<code class="inset">"+p</code>命令，
+则可以粘贴系统剪切板中的内容。通过剪切板寄存器，能够在不同的Vim编辑器或者是其他应用程序之间，
+进行文本交换。<span style="font-weight:bold;background:lightblue">"~</span>包含上次从其它应
+用程序拖拽到Gvim中的文本。</p>
 
+<p><strong>黑洞寄存器（The Black Hole Register）</strong> 
+任何放入<span style="font-weight:bold;background:lightblue">"_</span>中
+的文本都将不复存在。如果想要永久删除某些文本而不是将他放入1-9中的某个寄存中，就可以使用黑洞寄存器。
+例如：命令dd将删除一行文本并将其放入寄存器1中；而命令<code class="inset">"_dd</code>
+则将该行文本放入黑洞寄存器中，这些文本也就会永久消失了，而寄存器1中的文本
+会保持不变。</p>
+
+<p><strong>搜索模式寄存器（Search Pattern Register）</strong> 
+当你通过/命令进行搜索时，所使用的模式将自动被放入<span style="font-weight:bold;background:lightblue">"/</span>
+寄存器。</p>"
+
+
+##### **6) 粘贴寄存器**
+命令:put会将寄存中的内容粘贴到指定的文本行后面。使用以下命令，可以将寄存器
+中的内容粘贴到第五行的后面:   
+
+```vim
+:5put a
+```
+
+如果要将文本放在这一行的前面，可以用一下命令：   
+
+```vim
+:5put! a
+```
+
+你也可以使用`p`命令，将`x`寄存中的文本粘贴到光标之后：  
+
+```vim
+"xp
+```
+
+而`P`命令，则将`x`寄存器中的文本粘贴到光标之前：   
+
+```vim
+"xP
+```
+
+如果直接使用`p`或`P`命令，而没有特定寄存器，那么将粘贴未命名寄存器中的内容。
+使用一下命令，可以粘贴上次插入的文本，方便你录入重复的内容：   
+
+```vim
+".p
+```
+
+如果要粘贴系统剪切板中的内容，在Insert mode下可以利用快捷键`Shift+Insert`，
+而在Normal mode下，可以使用以下命令：    
+
+```vim
+"*p
+```
 
