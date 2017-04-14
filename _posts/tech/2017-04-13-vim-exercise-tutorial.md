@@ -114,11 +114,23 @@ Vim the Six Billion Dollar editor
 <li><code>H</code> → 到屏幕上端</li>
 <li><code>M</code> → 到屏幕中央</li>
 <li><code>L</code> → 到屏幕下端</li>
-<li><code>/pattern</code> → 搜索&nbsp;<code>pattern</code> 的字符串（陈皓注：如果搜索出多个匹配，可按n键到下一个）</li>
+<li><code>/pattern</code> → 搜索&nbsp;<code>pattern</code> 的字符串（如果搜索出多个匹配，可按n键到下一个）</li>
 </ul>
 </blockquote>
 </li>
-<li><strong>拷贝/粘贴</strong> （陈皓注：p/P都可以，p是表示在当前位置之后，P表示在当前位置之前）<br>
+<li><strong>删除命令</strong> 
+<blockquote>
+<ul>
+<li><code>x</code> → 删除光标所在处字符</li>
+<li><code>nx</code> → 删除光标所在处后n个字符</li>
+<li><code>dd</code> → 删除光标所在行，<code>ndd</code>删除n行</li>
+<li><code>dG</code> → 删除光标所在行到末尾的内容</li>
+<li><code>D</code> → 删除光标所在处到行尾</li>
+<li><code>:n1,n2d</code> → 删除指定范围的行</li>
+</ul>
+</blockquote>
+</li>
+<li><strong>拷贝、剪切/粘贴</strong> （p/P都可以，p是表示在当前位置之后，P表示在当前位置之前）<br>
 <blockquote>
 <ul>
 <li><code>P</code> → 粘贴</li>
@@ -142,7 +154,7 @@ Vim the Six Billion Dollar editor
 <li><code>:saveas &lt;path/to/file&gt;</code> → 另存为&nbsp;<code>&lt;path/to/file&gt;</code></li>
 <li><code>:x</code>，&nbsp;<code>ZZ</code> 或&nbsp;<code>:wq</code> → 保存并退出 (<code>:x</code>&nbsp;表示仅在需要时保存，ZZ不需要输入冒号并回车)</li>
 <li><code>:q!</code> → 退出不保存&nbsp;<code>:qa!</code>&nbsp;强行退出所有的正在编辑的文件，就算别的文件有更改。</li>
-<li><code>:bn</code>&nbsp;和&nbsp;<code>:bp</code>&nbsp;→ 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（陈皓注：我喜欢使用:n到下一个文件）</li>
+<li><code>:bn</code>&nbsp;和&nbsp;<code>:bp</code>&nbsp;→ 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（我喜欢使用:n到下一个文件）</li>
 </ul>
 </blockquote>
 </li>
@@ -189,8 +201,8 @@ Vim the Six Billion Dollar editor
 <li><code>w</code> → 到下一个单词的开头。</li>
 <li><code>e</code> → 到下一个单词的结尾。</li>
 </ol>
-<p>&gt; 如果你认为单词是由默认方式，那么就用小写的e和w。默认上来说，一个单词由字母，数字和下划线组成（陈皓注：程序变量）</p>
-<p>&gt; 如果你认为单词是由blank字符分隔符，那么你需要使用大写的E和W。（陈皓注：程序语句）</p>
+<p>&gt; 如果你认为单词是由默认方式，那么就用小写的e和w。默认上来说，一个单词由字母，数字和下划线组成（程序变量）</p>
+<p>&gt; 如果你认为单词是由blank字符分隔符，那么你需要使用大写的E和W。（程序语句）</p>
 <p><img src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/word_moves.jpg" alt="Word moves example"></p></blockquote>
 </li>
 </ol>
@@ -198,7 +210,7 @@ Vim the Six Billion Dollar editor
 下面，让我来说说最强的光标移动：    
 <blockquote>
 <ul>
-<li><code>%</code>&nbsp;: 匹配括号移动，包括&nbsp;<code>(</code>, <code>{</code>, <code>[</code>. （陈皓注：你需要把光标先移到括号上）</li>
+<li><code>%</code>&nbsp;: 匹配括号移动，包括&nbsp;<code>(</code>, <code>{</code>, <code>[</code>. （你需要把光标先移到括号上）</li>
 <li><code>\*</code>&nbsp;和&nbsp;<code>#</code>: &nbsp;匹配光标当前所在的单词，移动光标到下一个（或上一个）匹配单词（\*是下一个，#是上一个）</li>
 </ul>
 </blockquote>
@@ -338,7 +350,7 @@ Vim the Six Billion Dollar editor
 <ul>
 <li><code>J</code> → 把所有的行连接起来（变成一行）</li>
 <li><code>&lt;</code> 或 <code>&gt;</code>&nbsp;→ 左右缩进</li>
-<li><code>=</code> → 自动给缩进 （陈皓注：这个功能相当强大，我太喜欢了）</li>
+<li><code>=</code> → 自动给缩进 （这个功能相当强大，我太喜欢了）</li>
 </ul>
 
 <p><img class="aligncenter" src="http://yannesposito.com/Scratch/img/blog/Learn-Vim-Progressively/autoindent.gif" alt="Autoindent"></p>
