@@ -99,6 +99,9 @@ Vim the Six Billion Dollar editor
 <blockquote>
 <ul>
 <li><code>a</code> → 在光标后插入</li>
+<li><code>A</code> → 在本行行末插入</li>
+<li><code>i</code> → 在光标前插入</li>
+<li><code>I</code> → 在本行行首插入</li>
 <li><code>o</code> → 在当前行后插入一个新行</li>
 <li><code>O</code> → 在当前行前插入一个新行</li>
 <li><code>cw</code> → 替换从光标所在位置后到一个单词结尾的字符</li>
