@@ -133,3 +133,41 @@ mkdir&nbsp;[选项]&nbsp;目录
 </ul>
 </ol>
 
+
+<h5><strong>(5) rm命令</strong></h5>
+<p>
+rm是常用的命令，该命令的功能为删除一个目录中的一个或多个文件或目录，它也可以将某个目录
+及其下的所有文件及子目录均删除。对于链接文件，只是删除了链接，原有文件均保持不变。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+rm&nbsp;[选项]&nbsp;文件/目录
+<li><strong>命令功能：</strong></li>
+删除一个目录中的一个或多个文件或目录，如果没有使用- r选项，则rm不会删除目录。如果使用
+rm来删除文件，通常仍可以将该文件恢复原状。
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-f, --force &nbsp;忽略不存在的文件，从不给出提示。</li>
+<li>-i, --interactive&nbsp;进行交互式删除</li>
+<li>-r,-R,--recursive&nbsp;指示rm将参数中列出的全部目录和子目录均递归地删除。</li>
+<li>-v,--verbose&nbsp;详细显示进行的步骤</li>
+<li>--help&nbsp;显示此帮助信息并退出</li>
+<li>--version&nbsp;输出版本信息并退出</li>
+</ul>
+<li><strong>常用范例：</strong></li>
+<p><strong>例1：</strong>删除文件file，系统会先询问是否删除
+<strong>命令：</strong><code>rm 文件名</code></p>
+<p><strong>例2：</strong>强行删除file，系统不再提示
+<strong>命令：</strong><code>rm -f log1.log</code></p>
+<p><strong>例3：</strong>将 test2 子目录及子目录中所有档案删除,并且不用一一确认
+<strong>命令：</strong><code>rm -rf test2</code></p>
+</ol>
+
+
+
+
+
+
+
+
