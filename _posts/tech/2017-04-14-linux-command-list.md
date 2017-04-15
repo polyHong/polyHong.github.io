@@ -250,6 +250,36 @@ cp&nbsp;[选项]...&nbsp;源&nbsp;目录
 </ol>
 
 
+<h4><strong>(9) touch命令</strong></h4>
+<p>
+Linux的touch命令不常用，一般在使用make的时候可能会用到，用来修改文件时间戳，
+或者新建一个不存在的文件。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+touch&nbsp;[选项]&nbsp;文件
+<li><strong>命令功能：</strong></li>
+touch命令参数可更改文档或目录的日期时间，包括存取时间和更改时间。 
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-a&nbsp;只更改存取时间</li>
+<li>-c&nbsp;不建立任何文档</li>
+<li>-d&nbsp;使用指定的日期时间，而非现在的时间。</li>
+<li>-f&nbsp;此参数将忽略不予处理，仅负责解决BSD版本touch指令的兼容性问题。</li>
+<li>-m&nbsp;只更改变动时间。</li>
+<li>-r&nbsp;把指定文档或目录的日期时间，统统设成和参考文档或目录的日期时间相同。</li>
+<li>-t&nbsp;使用指定的日期时间，而非现在的时间。</li>
+</ul>
+<li><strong>常用范例：</strong></li>
+<p><strong>例1：</strong>创建不存在的文件
+<strong>命令：</strong><code>touch log2012.log log2013.log</code></p>
+<p><strong>例2：</strong>更新log.log的时间和log2012.log时间戳相同
+<strong>命令：</strong><code>touch -r log.log log2012.log</code></p>
+<p><strong>例3：</strong>设定文件的时间戳
+<strong>命令：</strong><code>touch -t 201211142234.50 log.log</code>
+</p>
+</ol>
 
 
 
