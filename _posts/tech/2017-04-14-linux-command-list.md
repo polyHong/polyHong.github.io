@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux常用命令总结 
+title: Linux常用命令之文件处理命令
 category: 技术
 tags: Linux 
 keywords: Ubuntu, Linux
@@ -10,10 +10,7 @@ description:
 
 本文对Linux常用命令做一个总结，方便日后查阅。
 
-
-<h4><strong> 一、文件处理命令</strong></h4>
-
-<h5><strong>(1) ls命令</strong></h5>
+<h4><strong>(1) ls命令</strong></h4>
 <p>
 ls命令是linux下最常用的命令。ls命令就是list的缩写，缺省下ls用来打印出当前目录的清单，
 如果ls指定其他目录，那么就会显示指定目录里的文件及文件夹清单。通过ls命令不
@@ -55,7 +52,7 @@ ls&nbsp;[选项]&nbsp;[目录名]
 </ol>
 
 
-<h5><strong>(2) cd命令</strong></h5>
+<h4><strong>(2) cd命令</strong></h4>
 <p>
 Linux cd命令可以说是Linux中最基本的命令语句，其他的命令语句要进行操作，
 都是建立在使用cd命令上的。所以，学习Linux常用命令，首先就要学好cd命令的使用方法技巧。
@@ -88,7 +85,7 @@ cd&nbsp;[目录名]
 <strong>命令：</strong><code>cd !$</code></p>
 </ol>
 
-<h5><strong>(3) pwd命令</strong></h5>
+<h4><strong>(3) pwd命令</strong></h4>
 <p>
 Linux中用pwd命令来查看”当前工作目录“的完整路径。
 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。
@@ -109,7 +106,7 @@ pwd&nbsp;[选项]
 </ol>
 
 
-<h5><strong>(4) mkdir命令</strong></h5>
+<h4><strong>(4) mkdir命令</strong></h4>
 <p>
 Linux mkdir命令用来创建指定的名称的目录，要求创建目录的用户在当前目录
 中具有写权限，并且指定的目录名不能是当前目录中已有的目录。
@@ -134,7 +131,7 @@ mkdir&nbsp;[选项]&nbsp;目录
 </ol>
 
 
-<h5><strong>(5) rm命令</strong></h5>
+<h4><strong>(5) rm命令</strong></h4>
 <p>
 rm是常用的命令，该命令的功能为删除一个目录中的一个或多个文件或目录，它也可以将某个目录
 及其下的所有文件及子目录均删除。对于链接文件，只是删除了链接，原有文件均保持不变。
@@ -169,7 +166,7 @@ rm来删除文件，通常仍可以将该文件恢复原状。
 </ol>
 
 
-<h5><strong>(6) rmdir命令</strong></h5>
+<h4><strong>(6) rmdir命令</strong></h4>
 <p>
 mdir是常用的命令，该命令的功能是删除空目录，一个目录被删除之前必须是空的。
 （注意，rm - r dir命令可代替rmdir，但是有很大危险性。）删除某目录时也必须具有对父目录的写权限。
@@ -187,7 +184,7 @@ rmdir&nbsp;[选项]&nbsp;目录
 </ul>
 </ol>
 
-<h5><strong>(7) mv命令</strong></h5>
+<h4><strong>(7) mv命令</strong></h4>
 <p>
 mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），
 是Linux系统下常用的命令，经常用来备份文件或者目录。
@@ -228,6 +225,47 @@ mv&nbsp;[选项]&nbsp;源文件/目录&nbsp;源文件/目录
 <strong>命令：</strong><code>mv test3/\*.txt test5</code></p>
 </ol>
 
+
+<h4><strong>(8) cp命令</strong></h4>
+<p>
+mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），
+是Linux系统下常用的命令，经常用来备份文件或者目录。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+mv&nbsp;[选项]&nbsp;源文件/目录&nbsp;源文件/目录
+<li><strong>命令功能：</strong></li>
+视mv命令中第二个参数类型的不同（是目标文件还是目标目录），mv命令将文件重命
+名或将其移至一个新的目录中。当第二个参数类型是文件时，mv命令完成文件重命名，
+此时，源文件只能有一个（也可以是源目录名），它将所给的源文件或目录重命名为给定的
+目标文件名。当第二个参数是已存在的目录名称时，源文件或目录参数可以有多个，mv命
+令将各参数指定的源文件均移至目标目录中。在跨文件系统移动文件时，mv先拷贝，再将
+原有文件删除，而链至该文件的链接也将丢失。
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-b&nbsp;若需覆盖文件，则覆盖前先行备份</li>
+<li>-f&nbsp;force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖</li>
+<li>-i&nbsp;若目标文件 (destination) 已经存在时，就会询问是否覆盖</li>
+<li>-u&nbsp;若目标文件已经存在，且source比较新，才会更新(update)</li>
+<li>-t&nbsp;即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后</li>
+</ul>
+<li><strong>常用范例：</strong></li>
+<p><strong>例1：</strong>文件改名
+<strong>命令：</strong><code>mv test.log test1.txt</code></p>
+<p><strong>例2：</strong>移动文件
+<strong>命令：</strong><code>mv test1.txt test3</code></p>
+<p><strong>例3：</strong>将文件log1.txt,log2.txt,log3.txt移动到目录test3中
+<strong>命令：</strong><code>mv log1.txt log2.txt log3.txt test3</code>
+<code>mv -t /opt/soft/test/test4/ log1.txt log2.txt log3.txt </code>
+</p>
+<p><strong>例4：</strong>目录的移动
+<strong>命令：</strong><code>mv dir1 dir2 </code></p>
+<p><strong>例5：</strong>移动当前文件夹下的所有文件到上一级目录
+<strong>命令：</strong><code>mv \* ../</code></p>
+<p><strong>例6：</strong>把当前目录的一个子目录里的文件移动到另一个子目录里
+<strong>命令：</strong><code>mv test3/\*.txt test5</code></p>
+</ol>
 
 
 
