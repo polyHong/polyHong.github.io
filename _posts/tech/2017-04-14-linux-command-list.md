@@ -304,7 +304,7 @@ cat主要有三大功能：
 <li>-e&nbsp;等价于 -vE</li>
 <li>-E&nbsp;在每行结束处显示$</li>
 </ul>
-
+</ol>
 
 <h4><strong>(11) nl命令</strong></h4>
 <p>
