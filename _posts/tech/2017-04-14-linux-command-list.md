@@ -49,9 +49,8 @@ ls&nbsp;[选项]&nbsp;[目录名]
 <strong>例5：</strong>列出目前工作目录下所有档案及目录;目录于名称后加"/", 可执行档于名称后加"\*"
 <p><strong>命令：</strong><code>ls -AF</code></p>
 <strong>例6：</strong>计算当前目录下的文件数和目录数
-<p><strong>命令：</strong></p>
-<p>
-<code>ls -l * |grep "^-"|wc -l</code>文件个数
+<<p>strong>命令：</strong>     
+<code>ls -l * |grep "^-"|wc -l</code>文件个数    
 <code>ls -l * |grep "^d"|wc -l </code>目录个数
 </p>
 </ol>
