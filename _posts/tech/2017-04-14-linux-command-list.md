@@ -31,8 +31,13 @@ ls&nbsp;[选项]&nbsp;[目录名]
 <li>-a, -all 列出目录下的所有文件，包括以.开头的隐含文件</li>
 <li>-A&nbsp;同-a，但不列出“.”(表示当前目录)和“..”(表示当前目录的父目录)</li>
 <li>-l&nbsp;除了文件名之外，还将文件的权限、所有者、文件大小等信息详细列出来</li>
+<li>-t&nbsp;以文件修改时间排序</li>
+<li>-x&nbsp;逐行列出项目而不是逐栏列出</li>
+<li>-1&nbsp;每行只列出一个文件</li>
 </ul>
 <li><strong>常用范例：</strong></li>
+**例1**：列出/home/peidachang文件夹下的所有文件和目录的详细资料
+<p><strong>命令：</strong><code>ls -l -R /home/peidachang</code></p>
 </ol>
 
 
