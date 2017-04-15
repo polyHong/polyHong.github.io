@@ -68,11 +68,68 @@ cd&nbsp;[目录名]
 切换当前目录至dirName
 <li><strong>常用参数：</strong></li>
 <ul>
-<li>&nbsp;&nbsp;-m,&nbsp;--mode=模式，设定权限&lt;模式&gt;&nbsp;(类似&nbsp;chmod)，而不是&nbsp;rwxrwxrwx&nbsp;减&nbsp;umask</li>
-<li>-p, --parents&nbsp;可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </li>
-<li>-v, --verbose &nbsp;每次创建新目录都显示信息</li>
-<li>--help &nbsp;显示此帮助信息并退出</li>
-<li>--version &nbsp;输出版本信息并退出</li>
+<li>-a, -all 列出目录下的所有文件，包括以.开头的隐含文件</li>
+<li>-A&nbsp;同-a，但不列出“.”(表示当前目录)和“..”(表示当前目录的父目录)</li>
+<li>-l&nbsp;除了文件名之外，还将文件的权限、所有者、文件大小等信息详细列出来</li>
+<li>-t&nbsp;以文件修改时间排序</li>
+<li>-x&nbsp;逐行列出项目而不是逐栏列出</li>
+<li>-1&nbsp;每行只列出一个文件</li>
+</ul>
+<li><strong>常用范例：</strong></li>
+<p><strong>例1：</strong>进入系统根目录
+<strong>命令：</strong><code>cd /</code></p>
+<p><strong>例2：</strong>进入上一级目录
+<strong>命令：</strong><code>cd ..</code></p>
+<p><strong>例3：</strong>进入用户主目录
+<strong>命令：</strong><code>cd</code></p>
+<p><strong>例4：</strong>返回进入此目录之前所在的目录
+<strong>命令：</strong><code>cd -</code></p>
+<p><strong>例5：</strong>把上个命令的参数作为cd参数使用
+<strong>命令：</strong><code>cd !$</code></p>
+</ol>
+
+<h5><strong>(3) pwd命令</strong></h5>
+<p>
+Linux中用pwd命令来查看”当前工作目录“的完整路径。
+简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。
+在不太确定当前位置时，就会使用pwd来判定当前目录在文件系统内的确切位置。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+pwd&nbsp;[选项]
+<li><strong>命令功能：</strong></li>
+查看”当前工作目录“的完整路径
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>一般情况下不带任何参数</li>
+<li>如果目录是链接时：</li>
+<li>格式：<code>pwd -P</code>显示出实际路径，而非使用连接（link）路径</li>
+</ul>
+</ol>
+
+
+<h5><strong>(4) mkdir命令</strong></h5>
+<p>
+Linux mkdir命令用来创建指定的名称的目录，要求创建目录的用户在当前目录
+中具有写权限，并且指定的目录名不能是当前目录中已有的目录。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+mkdir&nbsp;[选项]&nbsp;目录
+<li><strong>命令功能：</strong></li>
+通过mkdir命令可以实现在指定位置创建以 DirName(指定的文件名)命名的文件夹或
+目录。要创建文件夹或目录的用户必须对所创建的文件夹的父文件夹具有写权限。
+并且，所创建的文件夹(目录)不能与其父目录(即父文件夹)中的文件名重名，
+即同一个目录下不能有同名的(区分大小写)。
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-m, --mode=模式, 设定权限<模式> (类似 chmod)，而不是 rwxrwxrwx 减 umask</li>
+<li>-p&nbsp;--parents，可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </li>
+<li>-v&nbsp;--verbose 每次创建新目录都显示信息</li>
+<li>--help&nbsp;显示此帮助信息并退出</li>
+<li>--version&nbsp;输出版本信息并退出</li>
 </ul>
 </ol>
 
