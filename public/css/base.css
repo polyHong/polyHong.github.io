@@ -126,6 +126,14 @@ body, html {
 #content h2, h3 {
   line-height: 2;
 }
+#content h4{
+  line-height: 2;
+  font-size: 16pt;
+}
+#content h5{
+  line-height: 2;
+  font-size: 15pt;
+}
 blockquote p {
   font-size: 13pt;
 }
