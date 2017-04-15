@@ -68,16 +68,16 @@ cd&nbsp;[目录名]
 切换当前目录至dirName
 <li><strong>常用范例：</strong></li>
 <strong>例1：</strong>进入系统根目录
-<p><strong>命令：</strong><code>cd /</code></p>
-<p><strong>命令：</strong><code>ls -lR /home/peidachang</code></p>
+<strong>命令：</strong><code>cd /</code>
+<strong>命令：</strong><code>ls -lR /home/peidachang</code>
 <strong>例2：</strong>进入上一级目录
-<p><strong>命令：</strong><code>cd ..</code></p>
+<strong>命令：</strong><code>cd ..</code>
 <strong>例3：</strong>进入用户主目录
-<p><strong>命令：</strong><code>cd</code></p>
+<strong>命令：</strong><code>cd</code>
 <strong>例4：</strong>返回进入此目录之前所在的目录
-<p><strong>命令：</strong><code>cd -</code></p>
+<strong>命令：</strong><code>cd -</code>
 <strong>例5：</strong>把上个命令的参数作为cd参数使用
-<p><strong>命令：</strong><code>cd !$</code></p>
+<strong>命令：</strong><code>cd !$</code>
 </ol>
 
 
