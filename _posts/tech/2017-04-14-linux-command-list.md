@@ -15,6 +15,9 @@ description:
 
 ##### **1) ls命令**
 
+<span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'宋体'; ">命令格式：</span>
+<p style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; "><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; ">ls&nbsp;[选项]&nbsp;[目录名]</span></p>
+
 
 
 
