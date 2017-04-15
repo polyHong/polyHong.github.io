@@ -282,5 +282,172 @@ touch命令参数可更改文档或目录的日期时间，包括存取时间和
 </ol>
 
 
+<h4><strong>(10) cat命令</strong></h4>
+<p>
+cat命令的用途是连接文件或标准输入并打印。这个命令常用来显示文件内容，或者将几个文件连接起来显示，或者从标准输入读取内容并显示，它常与重定向符号配合使用。 
+</p>
 
+<ol>
+<li><strong>命令格式：</strong></li>
+cat&nbsp;[选项]&nbsp;[文件]
+<li><strong>命令功能：</strong></li>
+cat主要有三大功能：
+<ol>
+<li>一次显示整个文件:cat filename</li>
+<li>从键盘创建一个文件:cat > filename 只能创建新文件,不能编辑已有文件.</li>
+<li>将几个文件合并为一个文件:cat file1 file2 > file</li>
+</ol>
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-A&nbsp;等价于 -vET</li>
+<li>-b&nbsp;对非空输出行编号</li>
+<li>-e&nbsp;等价于 -vE</li>
+<li>-E&nbsp;在每行结束处显示$</li>
+</ul>
+
+
+<h4><strong>(11) nl命令</strong></h4>
+<p>
+nl命令在Linux系统中用来计算文件中行号。nl可以将输出的文件内容自动的加上行号！其默认的结果与 cat -n 有点不太一样， nl 可以将行号做比较多的显示设计，包括位数与是否自动补齐0等等的功能。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+nl&nbsp;[选项]&nbsp;文件
+<li><strong>命令功能：</strong></li>
+ nl 命令读取 File 参数（缺省情况下标准输入），计算输入中的行号，将计算过的行号写入标准输出。 在输出中，nl 命令根据您在命令行中指定的标志来计算左边的行。 输入文本必须写在逻辑页中。每个逻辑页有头、主体和页脚节（可以有空节）。 除非使用 -p 标志，nl 命令在每个逻辑页开始的地方重新设置行号。 可以单独为头、主体和页脚节设置行计算标志（例如，头和页脚行可以被计算然而文本行不能）。
+</ol>
+
+
+<h4><strong>(12) more命令</strong></h4>
+<p>
+more命令，功能类似 cat ，cat命令是整个文件的内容从上到下显示在屏幕上。 more会以一页一页的显示方便使用者逐页阅读，而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示，而且还有搜寻字串的功能 。more命令从前向后读取文件，因此在启动时就加载整个文件。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+more&nbsp;[-dlfpcsu ]&nbsp;[-num ]&nbsp;[+/pattern]&nbsp;[+linenum]&nbsp;[file]
+<li><strong>命令功能：</strong></li>
+more命令和cat的功能一样都是查看文件里的内容，但有所不同的是more可以按页来查看文件的内容，还支持直接跳转行等功能。
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>+n&nbsp;从笫n行开始显示</li>
+<li>-n&nbsp;定义屏幕大小为n行</li>
+<li>+/pattern&nbsp;在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示</li>
+<li>-c&nbsp;从顶部清屏，然后显示</li>
+</ul>
+</ol>
+
+
+<h4><strong>(13) less命令</strong></h4>
+<p>
+less工具也是对文件或其它输出进行分页显示的工具，应该说是linux正统查
+看文件内容的工具，功能极其强大。less 的用法比起 more 更加的有弹性。
+在more的时候，我们并没有办法向前面翻，只能往后面看，但若使用了less时，
+就可以使用[pageup][pagedown]等按键的功能来往前往后翻看文件，更容易用来
+查看一个文件的内容！除此之外，在 less 里头可以拥有更多的搜索功能，不止可
+以向下搜，也可以向上搜。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+less&nbsp;[选项]&nbsp;文件
+<li><strong>命令功能：</strong></li>
+less与more类似，但使用less可以随意浏览文件，而more仅能向前移动，却不能向后移动，而且less在查看之前不会加载整个文件。
+</ol>
+
+
+<h4><strong>(14) head命令</strong></h4>
+<p>
+head与tail就像它的名字一样的浅显易懂，它是用来显示开头或结尾某个数量的文字区块，head 用来显示档案的开头至标准输出中，而tail想当然尔就是看档案的结尾。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+head&nbsp;[选项]&nbsp;文件
+<li><strong>命令功能：</strong></li>
+head用来显示档案的开头至标准输出中，默认head命令打印其相应文件的开头10行。 
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-q&nbsp;隐藏文件名</li>
+<li>-v&nbsp;显示文件名</li>
+<li>-c&nbsp;显示字节数</li>
+<li>-n&nbsp;显示的行数</li>
+</ul>
+</ol>
+
+
+<h4><strong>(15) tail命令</strong></h4>
+<p>
+tail 命令从指定点开始将文件写到标准输出.使用tail命令的-f选项可以方便的查阅正在改变的日志文件,tail -f filename会把filename里最尾部的内容显示在屏幕上,并且不但刷新,使你看到最新的文件内容. 
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+tail&nbsp;[必要参数]&nbsp;[选择参数]&nbsp;文件
+<li><strong>命令功能：</strong></li>
+用于显示指定文件末尾内容，不指定文件时，作为输入信息进行处理。常用查看日志文件。
+</ol>
+
+
+<h4><strong>(16) ln命令</strong></h4>
+<p>
+ln是Linux中又一个非常重要命令，它的功能是为某一个文件在另外一个位置建立一个同步的链接.当我们需要在不同的目录，用到相同的文件时，我们不需要在每一个需要的目录下都放一个必须相同的文件，我们只要在某个固定的目录，放上该文件，然后在 其它的目录下用ln命令链接（link）它就可以，不必重复的占用磁盘空间。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+ln&nbsp;[参数]&nbsp;[源文件或目录名]&nbsp;[目标文件或目录名]
+<li><strong>命令功能：</strong></li>
+Linux文件系统中，有所谓的链接(link)，我们可以将其视为档案的别名，而链接又可分为两种 : 硬链接(hard link)与软链接(symbolic link)，硬链接的意思是一个档案可以有多个名称，而软链接的方式则是产生一个特殊的档案，该档案的内容是指向另一个档案的位置。硬链接是存在同一个文件系统中，而软链接却可以跨越不同的文件系统。
+<ul>
+<li><strong>软链接:</strong></li>
+<ol>
+<li>软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式</li>
+<li>软链接可以跨文件系统，硬链接不可以</li>
+<li>软链接可以对一个不存在的文件名进行链接</li>
+<li>软链接可以对目录进行链接</li>
+</ol>
+<li><strong>硬链接：</strong></li>
+<ol>
+<li>硬链接，以文件副本的形式存在。但不占用实际空间。</li>
+<li>不允许给目录创建硬链接</li>
+<li>硬链接只有在同一个文件系统中才能创建</li>
+</ol>
+<li><strong>有两点要注意：</strong></li>
+<li>ln命令会保持每一处链接文件的同步性，也就是说，不论你改动了哪一处，其它的文件都会发生相同的变化；</li>
+<li>ln的链接又分软链接和硬链接两种，软链接就是ln –s 源文件 目标文件，它只会在你选定的位置上生成一个文件的镜像，不会占用磁盘空间，硬链接 ln 源文件 目标文件，没有参数-s， 它会在你选定的位置上生成一个和源文件大小相同的文件，无论是软链接还是硬链接，文件都保持同步变化。</li>
+ln指令用在链接文件或目录，如同时指定两个以上的文件或目录，且最后的目的地是一个已经存在的目录，则会把前面指定的所有文件或目录复制到该目录中。若同时指定多个文件或目录，且最后的目的地并非是一个已存在的目录，则会出现错误信息。
+</ul>
+<li><strong>命令参数：</strong></li>
+<ul>
+<li><strong>必要参数：</strong></li>
+<ul>
+<li>-b&nbsp;删除，覆盖以前建立的链接</li>
+<li>-d&nbsp;允许超级用户制作目录的硬链接</li>
+<li>-f&nbsp;强制执行</li>
+<li>-i&nbsp;交互模式，文件存在则提示用户是否覆盖</li>
+<li>-n&nbsp;把符号链接视为一般目录</li>
+<li>-s&nbsp;软链接(符号链接)</li>
+<li>-v&nbsp;显示详细的处理过程</li>
+</ul>
+<li>选择参数：</li>
+<ul>
+<li>-S&nbsp;“-S<字尾备份字符串> ”或 “--suffix=<字尾备份字符串>”</li>
+<li>-V&nbsp;“-V<备份方式>”或“--version-control=<备份方式>”</li>
+<li>--help&nbsp;显示帮助信息</li>
+<li>--version&nbsp;显示版本信息</li>
+</ul>
+</ul>
+<li><strong>常用范例：</strong></li>
+<strong>例1：</strong>给文件创建软链接
+<p><strong>命令：</strong><code>ln -s log2013.log link2013</code></p>
+<p><strong>命令：</strong><code>ls -lR /home/peidachang</code></p>
+<strong>例2：</strong>给文件创建硬链接
+<p><strong>命令：</strong><code>ln log2013.log ln2013</code></p>
+<strong>例3：</strong>将文件链接为另一个目录中的相同名字
+<p><strong>命令：</strong><code>ln log2013.log test3</code></p>
+<strong>例4：</strong>给目录创建软链接
+<p><strong>命令：</strong><code>ln -sv /opt/soft/test/test3 /opt/soft/test/test5</code></p>
+</ol>
 
