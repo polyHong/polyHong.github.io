@@ -162,8 +162,71 @@ rm来删除文件，通常仍可以将该文件恢复原状。
 <strong>命令：</strong><code>rm -f log1.log</code></p>
 <p><strong>例3：</strong>将 test2 子目录及子目录中所有档案删除,并且不用一一确认
 <strong>命令：</strong><code>rm -rf test2</code></p>
+<p><strong>例4：</strong>删除任何.log文件；删除前逐一询问确认
+<strong>命令：</strong><code>rm -i \*.log</code></p>
+<p><strong>例5：</strong>删除以-f开头的文件
+<strong>命令：</strong><code>rm -- -f</code></p>
 </ol>
 
+
+<h5><strong>(6) rmdir命令</strong></h5>
+<p>
+mdir是常用的命令，该命令的功能是删除空目录，一个目录被删除之前必须是空的。
+（注意，rm - r dir命令可代替rmdir，但是有很大危险性。）删除某目录时也必须具有对父目录的写权限。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+rmdir&nbsp;[选项]&nbsp;目录
+<li><strong>命令功能：</strong></li>
+该命令从一个目录中删除一个或多个子目录项，删除某目录时也必须具有对父目录的写权限。 
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-p&nbsp;递归删除目录dirname</li>
+<li>-v,--verbose&nbsp;详细显示进行的步骤</li>
+</ul>
+</ol>
+
+<h5><strong>(7) mv命令</strong></h5>
+<p>
+mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），
+是Linux系统下常用的命令，经常用来备份文件或者目录。
+</p>
+
+<ol>
+<li><strong>命令格式：</strong></li>
+mv&nbsp;[选项]&nbsp;源文件/目录&nbsp;源文件/目录
+<li><strong>命令功能：</strong></li>
+视mv命令中第二个参数类型的不同（是目标文件还是目标目录），mv命令将文件重命
+名或将其移至一个新的目录中。当第二个参数类型是文件时，mv命令完成文件重命名，
+此时，源文件只能有一个（也可以是源目录名），它将所给的源文件或目录重命名为给定的
+目标文件名。当第二个参数是已存在的目录名称时，源文件或目录参数可以有多个，mv命
+令将各参数指定的源文件均移至目标目录中。在跨文件系统移动文件时，mv先拷贝，再将
+原有文件删除，而链至该文件的链接也将丢失。
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>-b&nbsp;若需覆盖文件，则覆盖前先行备份</li>
+<li>-f&nbsp;force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖</li>
+<li>-i&nbsp;若目标文件 (destination) 已经存在时，就会询问是否覆盖</li>
+<li>-u&nbsp;若目标文件已经存在，且source比较新，才会更新(update)</li>
+<li>-t&nbsp;即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后</li>
+</ul>
+<li><strong>常用范例：</strong></li>
+<p><strong>例1：</strong>文件改名
+<strong>命令：</strong><code>mv test.log test1.txt</code></p>
+<p><strong>例2：</strong>移动文件
+<strong>命令：</strong><code>mv test1.txt test3</code></p>
+<p><strong>例3：</strong>将文件log1.txt,log2.txt,log3.txt移动到目录test3中
+<strong>命令：</strong><code>mv log1.txt log2.txt log3.txt test3</code>
+<code>mv -t /opt/soft/test/test4/ log1.txt log2.txt log3.txt </code>
+</p>
+<p><strong>例4：</strong>目录的移动
+<strong>命令：</strong><code>mv dir1 dir2 </code></p>
+<p><strong>例5：</strong>移动当前文件夹下的所有文件到上一级目录
+<strong>命令：</strong><code>mv \* ../</code></p>
+<p><strong>例6：</strong>把当前目录的一个子目录里的文件移动到另一个子目录里
+<strong>命令：</strong><code>mv test3/\*.txt test5</code></p>
+</ol>
 
 
 
