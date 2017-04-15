@@ -14,28 +14,23 @@ description:
 #### **1. 文件处理命令**
 
 ##### **1) ls命令**
-<p style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; ">
-<span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; ">
+<p>
 ls命令是linux下最常用的命令。ls命令就是list的缩写，缺省下ls用来打印出当前目录的清单，
 如果ls指定其他目录那么就会显示指定目录里的文件及文件夹清单。&nbsp;通过ls&nbsp;命令不
 仅可以查看linux文件夹包含的文件而且可以查看文件权限(包括目录、文件夹、文件权限)
-查看目录信息等等</span>
-<span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; ">。l</span>
-<span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'Times New Roman'; ">s&nbsp;
-命令在日常的linux操作中用的很多</span><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; ">!</span></p>
+查看目录信息等等。ls命令在日常的linux操作中用的很多！
+</p>
 
 <ol>
 <li><strong>命令格式：</strong></li>
-<blockquote>
 ls&nbsp;[选项]&nbsp;[目录名]
-</blockquote>
 <li><strong>命令功能：</strong></li>
+列出目标目录中所有的子目录和文件
 <li><strong>常用参数：</strong></li>
+<li><strong>常用范例：</strong></li>
 </ol>
 
 
-<span style="mso-spacerun:'yes'; font-weight:bold; font-size:10.5000pt; font-family:'宋体'; ">命令功能：</span>
-<p style="text-indent:21.0000pt; margin-bottom:0pt; margin-top:0pt; "><span style="mso-spacerun:'yes'; font-size:10.5000pt; font-family:'宋体'; ">列出目标目录中所有的子目录和文件。</span></p>
 
 
 
