@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 逻辑回归(Logistic Regression)原理
-category: 技术
+category: 科研 
 tags: [ML,Statistics]
 keywords: Machine Learning, Statistics
 description: 
