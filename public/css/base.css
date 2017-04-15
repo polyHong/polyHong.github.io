@@ -121,21 +121,21 @@ body, html {
   line-height: 1.6;
 }
 #content {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 #content h2, h3 {
   line-height: 2;
 }
 #content h4{
   line-height: 2;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 #content h5{
   line-height: 2;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 blockquote p {
-  font-size: 13pt;
+  font-size: 11pt;
 }
 /* 其他配置 */
 .center {

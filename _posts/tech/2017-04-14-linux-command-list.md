@@ -47,7 +47,7 @@ ls&nbsp;[选项]&nbsp;[目录名]
 <strong>例4：</strong>列出目前工作目录下所有名称是s开头的档案，愈新的排愈后面
 <p><strong>命令：</strong><code>ls -ltr s\*</code></p>
 <strong>例5：</strong>列出目前工作目录下所有档案及目录;目录于名称后加"/", 可执行档于名称后加"\*"
-<p><strong>命令：</strong><code>ls -AF</code></p>
+<p><strong>命令
 <strong>例6：</strong>计算当前目录下的文件数和目录数
 <p><strong>命令：</strong></p>
 <p><code>ls -l * |grep "^-"|wc -l</code>文件个数</p>
@@ -55,7 +55,7 @@ ls&nbsp;[选项]&nbsp;[目录名]
 </ol>
 
 
-<h5><strong>(2)cd命令</strong></h5>
+<h5><strong>(2) cd命令</strong></h5>
 
 
 
