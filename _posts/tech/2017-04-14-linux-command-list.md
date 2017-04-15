@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux常用命令之文件处理命令
+title: Linux常用命令一之文件处理命令
 category: 技术
 tags: Linux 
 keywords: Ubuntu, Linux
@@ -228,43 +228,25 @@ mv&nbsp;[选项]&nbsp;源文件/目录&nbsp;源文件/目录
 
 <h4><strong>(8) cp命令</strong></h4>
 <p>
-mv命令是move的缩写，可以用来移动文件或者将文件改名（move (rename) files），
-是Linux系统下常用的命令，经常用来备份文件或者目录。
+cp命令用来复制文件或者目录，是Linux系统中最常用的命令之一。一般情况下，shell会
+设置一个别名，在命令行下复制文件时，如果目标文件已经存在，就会询问是否覆盖，不管
+你是否使用-i参数。但是如果是在shell脚本中执行cp时，没有-i参数时不会询问是否覆盖。
+这说明命令行和shell脚本的执行方式有些不同。
 </p>
 
 <ol>
 <li><strong>命令格式：</strong></li>
-mv&nbsp;[选项]&nbsp;源文件/目录&nbsp;源文件/目录
+cp&nbsp;[选项]...&nbsp;源&nbsp;目录
 <li><strong>命令功能：</strong></li>
-视mv命令中第二个参数类型的不同（是目标文件还是目标目录），mv命令将文件重命
-名或将其移至一个新的目录中。当第二个参数类型是文件时，mv命令完成文件重命名，
-此时，源文件只能有一个（也可以是源目录名），它将所给的源文件或目录重命名为给定的
-目标文件名。当第二个参数是已存在的目录名称时，源文件或目录参数可以有多个，mv命
-令将各参数指定的源文件均移至目标目录中。在跨文件系统移动文件时，mv先拷贝，再将
-原有文件删除，而链至该文件的链接也将丢失。
+将源文件复制至目标文件，或将多个源文件复制至目标目录。
 <li><strong>常用参数：</strong></li>
 <ul>
-<li>-b&nbsp;若需覆盖文件，则覆盖前先行备份</li>
-<li>-f&nbsp;force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖</li>
-<li>-i&nbsp;若目标文件 (destination) 已经存在时，就会询问是否覆盖</li>
-<li>-u&nbsp;若目标文件已经存在，且source比较新，才会更新(update)</li>
-<li>-t&nbsp;即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后</li>
+<li>-b&nbsp;类似--backup 但不接受参数</li>
+<li>-f&nbsp;如果目标文件无法打开则将其移除并重试(当-n选项存在时则不需再选此项)</li>
+<li>-i&nbsp;覆盖前询问(使前面的 -n 选项失效)</li>
+<li>-r&nbsp;复制目录及目录内的所有项目</li>
+<li>-l&nbsp;链接文件而不复制</li>
 </ul>
-<li><strong>常用范例：</strong></li>
-<p><strong>例1：</strong>文件改名
-<strong>命令：</strong><code>mv test.log test1.txt</code></p>
-<p><strong>例2：</strong>移动文件
-<strong>命令：</strong><code>mv test1.txt test3</code></p>
-<p><strong>例3：</strong>将文件log1.txt,log2.txt,log3.txt移动到目录test3中
-<strong>命令：</strong><code>mv log1.txt log2.txt log3.txt test3</code>
-<code>mv -t /opt/soft/test/test4/ log1.txt log2.txt log3.txt </code>
-</p>
-<p><strong>例4：</strong>目录的移动
-<strong>命令：</strong><code>mv dir1 dir2 </code></p>
-<p><strong>例5：</strong>移动当前文件夹下的所有文件到上一级目录
-<strong>命令：</strong><code>mv \* ../</code></p>
-<p><strong>例6：</strong>把当前目录的一个子目录里的文件移动到另一个子目录里
-<strong>命令：</strong><code>mv test3/\*.txt test5</code></p>
 </ol>
 
 
