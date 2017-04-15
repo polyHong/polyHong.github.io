@@ -40,7 +40,14 @@ ls&nbsp;[选项]&nbsp;[目录名]
 <p><strong>命令：</strong><code>ls -l -R /home/peidachang</code></p>
 <p><strong>命令：</strong><code>ls -lR /home/peidachang</code></p>
 <strong>例2：</strong>列出当前目录中所有以“t”开头的目录的详细内容
-<p><strong>命令：</strong><code>ls -l t*</code></p>
+<p><strong>命令：</strong><code>ls -l t\*</code></p>
+<strong>例3：</strong>只列出文件下的子目录
+<p><strong>命令：</strong><code>ls -F /opt/soft |grep /$ </code>列出/opt/soft文件下面的子目录</p>
+<p><strong>命令：</strong><code>ls -l /opt/soft | grep "^d"</code>列出/opt/soft文件下面的子目录详细情况</p>
+<strong>例4：</strong>列出目前工作目录下所有名称是s开头的档案，愈新的排愈后面
+<p><strong>命令：</strong><code>ls -ltr s\*</code></p>
+<strong>例4：</strong>列出目前工作目录下所有档案及目录;目录于名称后加"/", 可执行档于名称后加"\*"
+<p><strong>命令：</strong><code>ls -AF</code></p>
 </ol>
 
 
