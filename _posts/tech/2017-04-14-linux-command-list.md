@@ -66,19 +66,13 @@ Linux cd命令可以说是Linux中最基本的命令语句，其他的命令语�
 cd&nbsp;[目录名]
 <li><strong>命令功能：</strong></li>
 切换当前目录至dirName
-<li><strong>常用范例：</strong></li>
-<p><strong>例1：</strong>进入系统根目录
-<strong>命令：</strong><code>cd /</code></p>
-<p><strong>例2：</strong>进入上一级目录
-<strong>命令：</strong><code>cd ..</code></p>
-<p><strong>例3：</strong>进入用户主目录
-<strong>命令：</strong><code>cd</code></p>
-<p><strong>例4：</strong>返回进入此目录之前所在的目录
-<strong>命令：</strong><code>cd -</code></p>
-<p><strong>例5：</strong>把上个命令的参数作为cd参数使用
-<strong>命令：</strong><code>cd !$</code></p>
+<li><strong>常用参数：</strong></li>
+<ul>
+<li>&nbsp;&nbsp;-m,&nbsp;--mode=模式，设定权限&lt;模式&gt;&nbsp;(类似&nbsp;chmod)，而不是&nbsp;rwxrwxrwx&nbsp;减&nbsp;umask</li>
+<li>-p, --parents&nbsp;可以是一个路径名称。此时若路径中的某些目录尚不存在,加上此选项后,系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </li>
+<li>-v, --verbose &nbsp;每次创建新目录都显示信息</li>
+<li>--help &nbsp;显示此帮助信息并退出</li>
+<li>--version &nbsp;输出版本信息并退出</li>
+</ul>
 </ol>
-
-
-
 
