@@ -36,8 +36,11 @@ ls&nbsp;[选项]&nbsp;[目录名]
 <li>-1&nbsp;每行只列出一个文件</li>
 </ul>
 <li><strong>常用范例：</strong></li>
-**例1**：列出/home/peidachang文件夹下的所有文件和目录的详细资料
+<strong>例1：</strong>列出/home/peidachang文件夹下的所有文件和目录的详细资料
 <p><strong>命令：</strong><code>ls -l -R /home/peidachang</code></p>
+<p><strong>命令：</strong><code>ls -lR /home/peidachang</code></p>
+<strong>例2：</strong>列出当前目录中所有以“t”开头的目录的详细内容
+<p><strong>命令：</strong><code>ls -l t*</code></p>
 </ol>
 
 
