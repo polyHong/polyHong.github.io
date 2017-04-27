@@ -2,9 +2,9 @@
 layout: post
 title: Linux常用命令一之文件处理命令
 category: 技术
-tags: Linux 
+tags: Linux
 keywords: Ubuntu, Linux
-description: 
+description:
 ---
 
 
