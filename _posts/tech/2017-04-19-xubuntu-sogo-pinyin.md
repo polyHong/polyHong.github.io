@@ -58,7 +58,7 @@ sudo im-config -s fcitx -z default
 
 #### **二、卸载搜狗拼音输入法**  
 
-##### ** 1. 首先使用如下命令查看安装的搜狗拼音输入法**   
+##### **1. 首先使用如下命令查看安装的搜狗拼音输入法**   
 
 ```shell
 sudo dpkg -l so*
@@ -70,21 +70,21 @@ sudo dpkg -l so*
 sudo apt-get purge sogoupinyin
 ```
 
-##### ** 2. 卸载`fcitx`**    
+##### **2. 卸载`fcitx`**    
 
 ```shell
 sudo apt-get purge fcitx
 ```
 
 
-##### ** 3. 彻底卸载`fcitx`及其相关配置**    
+##### **3. 彻底卸载`fcitx`及其相关配置**    
 
 ```shell
 sudo apt-get autoremove
 ```
 
 
-##### ** 4. 最后注销或者重启系统, 如果注销按钮不能使用, 可以使用命令**   
+##### **4. 最后注销或者重启系统, 如果注销按钮不能使用, 可以使用命令**   
 
 ```shell
 sudo pkill Xorg
