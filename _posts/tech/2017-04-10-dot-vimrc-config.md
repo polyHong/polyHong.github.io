@@ -108,7 +108,26 @@ set iskeyword+=:"}
 helptags ~/.vim/doc
 ```
 
-##### **4) 完成**
+##### **4) 修复`Alt+i`功能键**
+因为在编写文档的时候需要频繁地用到列表环境, 所以`Alt+i`自动补全`item`真的是太方便了.
+但是在我的ThinkPad T440s上(Xubuntu 16.04平台)这个功能却无法实现, 琢磨了很久, 终于
+在网上找到了一个解决办法. 有了这个功能之后, 感觉身心舒畅极了.   
+
+原因是不同的终端对于`Alt`组合键有不同的解释. 一些终端将`Alt`组合键解释成`8-bit`码,
+而另一些终端将其解释为7位码. 实现Latex-Suite中`Alt+i`宏补全组合键, 只需要在`.vimrc`
+中作如下配置即可:   
+
+```tex
+let c='a'
+while c <= 'z'
+    exec "set <A-".c.">=\e".c
+    exec "imap \e".c." <A-".c.">"
+    let c = nr2char(1+char2nr(c))
+endw
+set timeout ttimeoutlen=50
+```
+
+##### **5) 完成**
 至此，我们就算完成了插件的安装。现在我们可以在vim中编辑Tex文件，并且Latex-Suite
 应该会自动启动。我们还可以通过如下命令：   
 
@@ -126,4 +145,4 @@ helptags ~/.vim/doc
 - [list-of-vim](http://mirnazim.org/writings/vim-plugins-i-use/)    
 - [Manual,LaTex Reference,Tutorial](http://vim-latex.sourceforge.net/index.php?subject=manual&title=Tutorial#tutorial)    
 - [LatTex-Suite Reference](http://vim-latex.sourceforge.net/documentation/latex-suite.html#recommended-settings)    
-
+- [Vim latex suite “alt” macro not working](https://tex.stackexchange.com/questions/130389/vim-latex-suite-alt-macro-not-working)
