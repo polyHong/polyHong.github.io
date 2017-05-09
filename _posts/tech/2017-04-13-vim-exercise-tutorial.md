@@ -146,6 +146,7 @@ Vim the Six Billion Dollar editor
 <ul>
 <li><code>r</code> → 取代光标所在处字符</li>
 <li><code>R</code> → 从光标处开始替代字符，按<code>ESC</code></li>
+<li><code>c [number] motion</code> → 删除指定字符并插入</li>
 <li><code>u</code> → undo</li>
 <li><code>&lt;C-r&gt;</code> → redo</li>
 </ul>
