@@ -157,7 +157,10 @@ Vim the Six Billion Dollar editor
 <ul>
 <li><code>/string</code> → 向前搜索指定字符串，搜索时忽略大小写<code>:set ic</code></li>
 <li><code>n</code> → 搜索指定字符串的下一个出现位置</li>
+<li><code>:s/old/new</code> → 将光标所在行的第一个old替换new</li>
+<li><code>:s/old/new/g</code> → 将光标所在行的所有的old替换new</li>
 <li><code>:%s/old/new/g</code> → 全文替换指定字符串符</li>
+<li><code>:%s/old/new/gc</code> → 同上, 但会在每次替换之前先提示</li>
 <li><code>:n1,n2s/old/new/g</code> → 在一定范围内替换指定字符串</li>
 </ul>
 </blockquote>
