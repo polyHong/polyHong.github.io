@@ -3,12 +3,12 @@ layout: post
 title: Markdown基本语法
 category: 技术
 tags: Markdown
-keywords:
-description: 
+keywords: Markdown
+description: Markdown basic syntax
 ---
 
 
->约翰·格鲁伯设计文档中概述的Markdown元素。
+约翰·格鲁伯设计文档中概述的Markdown元素。
 
 ## 总览
 
