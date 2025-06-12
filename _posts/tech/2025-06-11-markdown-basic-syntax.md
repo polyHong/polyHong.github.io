@@ -12,7 +12,7 @@ description: Markdown basic syntax
 
 ## 标题
 
- `#` 在单词或短语的前面 添加数字符号（ ）。 使用的数字符号的数量应与标题级别相对应。 例如，要创建标题级别三（ `<h3>` ），请使用三个数字符号（例如 `### My Header` ）。
+使用 `#` 创建标题，注意`#`符号的数量应与标题级别相对应。 例如，要创建标题级别三，需要使用三个`#`符号（例如 `### My Header` ）。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -29,12 +29,12 @@ description: Markdown basic syntax
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
-| `Heading level 1   ===============` | `<h1>Heading level 1</h1>` | ## 标题等级1 |
+| `Heading level 1   ===============` | `<h1>Heading level 1</h1>` | # 标题等级1 |
 | `Heading level 2   ---------------` | `<h2>Heading level 2</h2>` | ## 标题等级2 |
 
 ## 段落
 
-要创建段落，请使用空白行分隔一行或多行文本。 您不应缩进带有空格或制表符的段落。
+创建段落，使用空白行分隔一行或多行文本。 不应缩进带有空格或制表符的段落。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ description: Markdown basic syntax
 
 ## 换行
 
-要创建换行符（ `<br>` ），请以两个或多个空格结束一行，然后键入return。
+要创建换行符（ `<br>` ），以两个或多个空格结束一行，然后键入return。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -50,11 +50,11 @@ description: Markdown basic syntax
 
 ## 着重
 
-您可以通过使文本变为粗体或斜体来增加着重。
+可以通过使文本变为粗体或斜体来增加着重。
 
 ### 粗体
 
-要加粗文本，请在单词或短语的前后添加两个星号或下划线。 要加粗一个单词的中部以强调，请在字母周围添加两个星号，且各空格之间不加空格。
+要加粗文本，在单词或短语的前后添加两个星号或下划线。 加粗一个单词的中部以强调，在字母周围添加两个星号，且各空格之间不加空格。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ description: Markdown basic syntax
 
 ### 斜体
 
-要斜体显示文本，请在单词或短语的前后添加一个星号或下划线。 要斜体突出单词的中间部分，请在字母周围添加一个星号，中间不要带空格。
+要斜体显示文本，在单词或短语的前后添加一个星号或下划线。 要斜体突出单词的中间部分，在字母周围添加一个星号，中间不要带空格。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ description: Markdown basic syntax
 
 ### 粗体和斜体
 
-要同时突出显示带有粗体和斜体的文本，请在单词或短语的前后添加三个星号或下划线。
+同时突出显示带有粗体和斜体的文本，在单词或短语的前后添加三个星号或下划线。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ description: Markdown basic syntax
 
 ## 块引用
 
-要创建blockquote，请 `>` 在段落前面 添加一个 。
+创建blockquote，在段落前面添加一个`>` 。
 
 ```
 > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -93,11 +93,11 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-> 桃乐丝（Dorothy）跟着她走过了她城堡中许多美丽的房间。
+> Dorothy followed her through many of the beautiful rooms in her castle.
 
 ### 具有多个段落的块引用
 
-块引用可以包含多个段落。 `>` 在段落之间的空白行上 添加一个 。
+块引用可以包含多个段落。 在段落之间的空白行上添加一个`>`。
 
 ```
 > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -107,13 +107,13 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-> 桃乐丝（Dorothy）跟着她走过了她城堡中许多美丽的房间。
-> 
-> 女巫请她清洗锅碗瓢盆，扫地，并用木柴取火。
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
 ### 嵌套块引用
 
-块引用可以嵌套。 `>>` 在要嵌套的段落前面 添加一个 。
+块引用可以嵌套。在要嵌套的段落前面添加一个`>>`。
 
 ```
 > Dorothy followed her through many of the beautiful rooms in her castle.
@@ -123,9 +123,9 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-> 桃乐丝（Dorothy）跟着她走过了她城堡中许多美丽的房间。
-> 
-> > 女巫请她清洗锅碗瓢盆，扫地，并用木柴取火。
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
 ### 具有其他元素的块引用
 
@@ -142,20 +142,20 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-> #### 季度业绩看起来不错！
-> 
-> - 收入超出了预期。
-> - 利润比以往任何时候都高。
-> 
-> *一切* 都按 **计划进行** 。
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
 
 ## 清单
 
-您可以将项目组织成有序和无序列表。
+可以将项目组织成有序和无序列表。
 
 ### 有序列表
 
-要创建有序列表，请在订单项中添加数字和句点。 数字不必按数字顺序排列，但列表应以数字开头。
+创建有序列表，在订单项中添加数字和句点。 数字不必按数字顺序排列，但列表应以数字开头。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -166,7 +166,7 @@ description: Markdown basic syntax
 
 ### 无序列表
 
-要创建无序列表，请 在订单项前 添加破折号（ `-` ），星号（ `*` ）或加号（ `+` ）。 缩进一个或多个项目以创建嵌套列表。
+创建无序列表，在订单项前添加破折号（ `-` ），星号（ `*` ）或加号（ `+` ）。 缩进一个或多个项目以创建嵌套列表。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -177,7 +177,7 @@ description: Markdown basic syntax
 
 ### 在列表中添加元素
 
-要在保留列表连续性的同时在列表中添加另一个元素，请将该元素缩进四个空格或一个制表符，如以下示例所示。
+要在保留列表连续性的同时在列表中添加另一个元素，将该元素缩进四个空格或一个制表符，如以下示例所示。
 
 #### 段落
 
@@ -192,10 +192,13 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-- 这是第一个列表项。
-- 这是第二个列表项。
-	我需要在第二个列表项下面添加另一段。
-- 这是第三个列表项。
+*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item.
+
 
 #### 块引用
 
@@ -210,10 +213,13 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-- 这是第一个列表项。
-- 这是第二个列表项。
-	> 在第二个列表项的下方，blockquote看起来不错。
-- 这是第三个列表项。
+*   This is the first list item.
+*   Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+*   And here's the third list item.
+
 
 #### 代码块
 
@@ -233,15 +239,16 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-1. 打开文件。
-2. 在第21行找到以下代码块：
-	```
-	<html>
-	  <head>
-	    <title>Test</title>
-	  </head>
-	```
-3. 更新标题以匹配您的网站名称。
+1.  Open the file.
+2.  Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3.  Update the title to match the name of your website.
+
 
 #### 图片
 
@@ -256,14 +263,15 @@ description: Markdown basic syntax
 
 呈现的输出如下所示：
 
-1. 打开包含Linux吉祥物的文件。
-2. 惊叹于它的美丽。
-	![Tux，Linux吉祥物](https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png)
-3. 关闭文件。
+1.  Open the file containing the Linux mascot.
+2.  Marvel at its beauty.
+    ![Tux，Linux吉祥物](https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png)
+3.  Close the file.
+
 
 ## 代码
 
-要将单词或短语表示为代码，请将其括在勾号（ `` ` `` ）中。
+要将单词或短语表示为代码，将其括在勾号（ `` ` `` ）中。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -271,7 +279,7 @@ description: Markdown basic syntax
 
 ### 转义刻度线
 
-如果要表示为代码的单词或短语包含一个或多个刻度线，可以通过将单词或短语括在双刻度线（ ` `` ` ）中 来对其进行转义 。
+如果要表示为代码的单词或短语包含一个或多个刻度线，可以通过将单词或短语括在双刻度线（ ` `` ` ）中来对其进行转义 。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
@@ -279,7 +287,7 @@ description: Markdown basic syntax
 
 ### 代码块
 
-要创建代码块，请在代码块的每一行缩进至少四个空格或一个制表符。
+要创建代码块，在代码块的每一行缩进至少四个空格或一个制表符。
 
 ```
 <html>
@@ -299,7 +307,7 @@ description: Markdown basic syntax
 
 ## 水平线
 
-要创建水平线 `***` ，请单独 在一行上 使用三个或更多的星号（ ），破折号（ `---` ）或下划线（ `___` ）。
+要创建水平线 `***`，单独在一行上使用三个或更多的星号（ ），破折号（ `---` ）或下划线（ `___` ）。
 
 ```
 ***
@@ -315,7 +323,7 @@ _________________
 
 ## 链接
 
-要创建链接，请将链接文本括在方括号（例如 `[Duck Duck Go]` ）中，然后立即在URL后面加上括号（例如 `(https://duckduckgo.com)` ）中 的URL 。
+要创建链接，将链接文本括在方括号（例如 `[Duck Duck Go]` ）中，然后立即在URL后面加上括号（例如 `(https://duckduckgo.com)` ）中的URL 。
 
 ```
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
@@ -327,7 +335,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 ### 添加标题
 
-您可以选择为链接添加标题。 当用户将鼠标悬停在链接上时，这将显示为工具提示。 要添加标题，请将其括在URL后面的括号中。
+可以选择为链接添加标题。 当用户将鼠标悬停在链接上时，这将显示为工具提示。 要添加标题，将其括在URL后面的括号中。
 
 呈现的输出如下所示：
 
@@ -335,7 +343,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 ### 网址和电子邮件地址
 
-要将URL或电子邮件地址快速转换为链接，请将其括在尖括号中。
+要将URL或电子邮件地址快速转换为链接，将其括在尖括号中。
 
 ```
 <https://markdown.p2hp.com>
@@ -349,7 +357,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 ### 格式化链接
 
-为了 [强调](https://markdown.p2hp.com/basic-syntax/index.html#emphasis) 链接，请在方括号和括号之前和之后添加星号。
+为了 [强调](https://markdown.p2hp.com/basic-syntax/index.html#emphasis) 链接，在方括号和括号之前和之后添加星号。
 
 ```
 I love supporting the **[EFF](https://eff.org)**.
@@ -428,7 +436,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 ## 图片
 
-要添加图像，请添加感叹号（`!`），然后在括号中 添加 替代文本，并在括号中添加图像资源的路径或URL。 您可以选择在括号中的URL之后添加标题。
+要添加图像，添加感叹号（`!`），然后在括号中 添加 替代文本，并在括号中添加图像资源的路径或URL。 您可以选择在括号中的URL之后添加标题。
 
 ```
 ![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")
@@ -440,7 +448,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 ### 链接图像
 
-要向图像添加链接，请将图像的Markdown括在方括号中，然后在括号中添加链接。
+要向图像添加链接，将图像的Markdown括在方括号中，然后在括号中添加链接。
 
 ```
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
@@ -452,7 +460,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 ## 转义字符
 
-要显示原义字符，否则将用于设置Markdown文档中的文本格式 `\` ，请在字符前面 添加反斜杠（ ）。
+要显示原义字符，否则将用于设置Markdown文档中的文本格式 `\` ，在字符前面 添加反斜杠（ ）。
 
 ```
 \* Without the backslash, this would be a bullet in an unordered list.
@@ -469,7 +477,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 | 字符 | 名称 |
 | --- | --- |
 | \\ | 反斜杠 |
-| \` | 刻度线（另请参见 [转义刻度线中的代码](https://markdown.p2hp.com/basic-syntax/index.html#escaping-tick-marks) ） |
+| \` | 刻度线（另参见 [转义刻度线中的代码](https://markdown.p2hp.com/basic-syntax/index.html#escaping-tick-marks) ） |
 | \* | 星号 |
 | \_ | 下划线 |
 | {} | 大括号 |
@@ -480,5 +488,5 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 | \- | 减号（连字符） |
 | . | 点 |
 | ! | 感叹号 |
-| \| | 管道（另请参见表中的 [转义管道](https://markdown.p2hp.com/extended-syntax/index.html#escaping-pipe-characters-in-tables) ） |
+| \| | 管道（另参见表中的 [转义管道](https://markdown.p2hp.com/extended-syntax/index.html#escaping-pipe-characters-in-tables) ） |
 
