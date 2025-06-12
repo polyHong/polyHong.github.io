@@ -8,19 +8,15 @@ description: Markdown basic syntax
 ---
 
 
-约翰·格鲁伯设计文档中概述的Markdown元素。
-
-## 总览
-
-几乎所有Markdown应用程序都支持John Gruber原始设计文档中概述的基本语法。 Markdown处理器之间存在细微的差异和差异-尽可能在线内注明。
+>约翰·格鲁伯设计文档中概述的Markdown元素。
 
 ## 标题
 
-要创建标题，请 `#` 在单词或短语的前面 添加数字符号（ ）。 您使用的数字符号的数量应与标题级别相对应。 例如，要创建标题级别三（ `<h3>` ），请使用三个数字符号（例如 `### My Header` ）。
+ `#` 在单词或短语的前面 添加数字符号（ ）。 使用的数字符号的数量应与标题级别相对应。 例如，要创建标题级别三（ `<h3>` ），请使用三个数字符号（例如 `### My Header` ）。
 
 | Markdown | HTML | 渲染输出 |
 | --- | --- | --- |
-| `# Heading level 1` | `<h1>Heading level 1</h1>` | ## 标题等级1 |
+| `# Heading level 1` | `<h1>Heading level 1</h1>` | # 标题等级1 |
 | `## Heading level 2` | `<h2>Heading level 2</h2>` | ## 标题等级2 |
 | `### Heading level 3` | `<h3>Heading level 3</h3>` | ### 标题级别3 |
 | `#### Heading level 4` | `<h4>Heading level  4</h4>` | #### 标题级别4 |
