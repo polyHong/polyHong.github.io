@@ -4,8 +4,9 @@ title: 如何上传代码到GitHub私有仓库
 category: 技术
 tags: git, Github
 keywords: private repository
-description: how to upload files to Github private repository 
+description: how to upload files to Github private repository
 ---
+
 
 ## 方法一：使用bash command上传代码
 
