@@ -40,25 +40,25 @@ git的通用操作流程如下图（来源于网络）
 
 > 查询配置信息
 
-1. 列出当前配置
+1\. 列出当前配置
 
 ```bash
 git config --list
 ```
 
-2. 列出repository配置
+2\. 列出repository配置
 
 ```bash
 git config --local --list
 ```
 
-3. 列出全局配置
+3\. 列出全局配置
 
 ```bash
 git config --global --list
 ```
 
-4. 列出系统配置
+4\. 列出系统配置
 
 ```bash
 git config --system --list
@@ -67,13 +67,13 @@ git config --system --list
 
 > 第一次使用git，配置用户信息
 
-5. 配置用户名
+5\. 配置用户名
 
 ```bash
 git config --global user.name "your name"
 ```
 
-6. 配置用户邮箱
+6\. 配置用户邮箱
 
 ```bash
 git config --global user.email "youremail@github.com"
@@ -81,19 +81,19 @@ git config --global user.email "youremail@github.com"
 
 > 其他配置
 
-7. 配置解决冲突时使用哪种差异分析工具，比如要使用vimdiff
+7\. 配置解决冲突时使用哪种差异分析工具，比如要使用vimdiff
 
 ```bash
 git config --global merge.tool vimdiff
 ```
 
-7. 配置git命令输出为彩色的
+8\. 配置git命令输出为彩色的
 
 ```bash
 git config --global color.ui auto
 ```
 
-7. 配置git使用的文本编辑器
+9\. 配置git使用的文本编辑器
 
 ```bash
 git config --global core.editor vi
@@ -103,13 +103,13 @@ git config --global core.editor vi
 
 > 新建仓库
 
-1. 将工作区中的项目文件使用git进行管理，即创建一个新的本地仓库
+1\. 将工作区中的项目文件使用git进行管理，即创建一个新的本地仓库
 
 ```bash
 git init
 ```
 
-2. 从远程git仓库复制项目
+2\. 从远程git仓库复制项目
 
 ```bash
 git clone <url>
@@ -129,19 +129,19 @@ git clone git://github.com/wasd/example.git mygit
 
 > 提交
 
-3. 提交工作区所有文件到暂存区
+3\. 提交工作区所有文件到暂存区
 
 ```bash
 git add .
 ```
 
-4. 提交工作区中指定文件到暂存区
+4\. 提交工作区中指定文件到暂存区
 
 ```bash
 git add <file1> <file2> ...
 ```
 
-5. 提交工作区中某个文件夹中所有文件到暂存区
+5\. 提交工作区中某个文件夹中所有文件到暂存区
 
 ```bash
 git add [dir]
@@ -149,25 +149,25 @@ git add [dir]
 
 > 撤销
 
-6. 删除工作区文件，并且也从暂存区删除对应文件的记录
+6\. 删除工作区文件，并且也从暂存区删除对应文件的记录
 
 ```bash
 git rm <file1> <file2>
 ```
 
-7. 从暂存区中删除文件，但是工作区依然还有该文件
+7\. 从暂存区中删除文件，但是工作区依然还有该文件
 
 ```bash
 git rm --cached <file>
 ```
 
-8. 取消暂存区已经暂存的文件
+8\. 取消暂存区已经暂存的文件
 
 ```bash
 git reset HEAD <file>...
 ```
 
-9. 撤销上一次对文件的操作
+9\. 撤销上一次对文件的操作
 
 ```bash
 git checkout --<file>
@@ -175,19 +175,19 @@ git checkout --<file>
 
 要确定上一次对文件的修改不再需要，如果想保留上一次的修改以备以后继续工作，可以使用stashing和分支来处理；  
 
-10. 隐藏当前变更，以便能够切换分支
+10\. 隐藏当前变更，以便能够切换分支
 
 ```bash
 git stash
 ```
 
-11. 查看当前所有的储藏
+11\. 查看当前所有的储藏
 
 ```bash
 git stash list
 ```
 
-12. 应用最新的储藏
+12\. 应用最新的储藏
 
 ```bash
 git stash apply
@@ -205,7 +205,7 @@ git stash apply stash@{2}
 git stash apply --index
 ```
 
-13. 使用apply命令只是应用储藏，而内容仍然还在栈上，需要移除指定的储藏
+13\. 使用apply命令只是应用储藏，而内容仍然还在栈上，需要移除指定的储藏
 
 ```bash
 git stash drop stash{0}
@@ -217,7 +217,7 @@ git stash drop stash{0}
 git stash pop
 ```
 
-14. 在某些情况下，你可能想应用储藏的修改，在进行了一些其他的修改后，又要取消之前所应用储藏的修改。Git没有提供类似于 stash unapply 的命令，但是可以通过取消该储藏的补丁达到同样的效果
+14\. 在某些情况下，你可能想应用储藏的修改，在进行了一些其他的修改后，又要取消之前所应用储藏的修改。Git没有提供类似于 stash unapply 的命令，但是可以通过取消该储藏的补丁达到同样的效果
 
 ```bash
 git stash show -p stash@{0} | git apply -R
@@ -231,7 +231,7 @@ it stash show -p | git apply -R
 
 > 更新文件
 
-15. 重命名文件，并将已改名文件提交到暂存区
+15\. 重命名文件，并将已改名文件提交到暂存区
 
 ```bash
 git mv [file-original] [file-renamed]
@@ -239,13 +239,13 @@ git mv [file-original] [file-renamed]
 
 > 查新信息
 
-16. 查询当前工作区所有文件的状态
+16\. 查询当前工作区所有文件的状态
 
 ```bash
 git status
 ```
 
-16. 比较工作区中当前文件和暂存区之间的差异，也就是修改之后还没有暂存的内容
+17\. 比较工作区中当前文件和暂存区之间的差异，也就是修改之后还没有暂存的内容
 
 ```bash
 git diff
@@ -261,19 +261,19 @@ git diff <file-name>
 
 > 提交文件到版本库
 
-1. 将暂存区中的文件提交到本地仓库中，即打上新版本
+1\. 将暂存区中的文件提交到本地仓库中，即打上新版本
 
 ```bash
 git commit -m "commit_info"
 ```
 
-2. 将所有已经使用git管理过的文件暂存后一并提交，跳过add到暂存区的过程
+2\. 将所有已经使用git管理过的文件暂存后一并提交，跳过add到暂存区的过程
 
 ```bash
 git commit -a -m "commit_info"
 ```
 
-3. 提交文件时，发现漏掉几个文件，或者注释写错了，可以撤销上一次提交
+3\. 提交文件时，发现漏掉几个文件，或者注释写错了，可以撤销上一次提交
 
 ```bash
 git commit --amend
@@ -281,19 +281,19 @@ git commit --amend
 
 > 查看信息
 
-4. 比较暂存区与上一版本的差异
+4\. 比较暂存区与上一版本的差异
 
 ```bash
 git diff --cached
 ```
 
-5. 指定文件在暂存区和本地仓库的不同
+5\. 指定文件在暂存区和本地仓库的不同
 
 ```bash
 git diff <file-name> --cached
 ```
 
-6. 查看提交历史
+6\. 查看提交历史
 
 ```bash
 git log
@@ -309,55 +309,55 @@ git log -p -2
 
 Git 使用的标签有两种类型： **轻量级的（lightweight）和含附注的（annotated）** 。轻量级标签就像是个不会变化的分支，实际上它就是个指向特定提交对象的引用。而含附注标签，实际上是存储在仓库中的一个独立对象，它有自身的校验和信息，包含着标签的名字，电子邮件地址和日期，以及标签说明，标签本身也允许使用 GNU Privacy Guard (GPG) 来签署或验证。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。
 
-1. 列出现在所有的标签
+1\. 列出现在所有的标签
 
 ```bash
 git tag
 ```
 
-2. 使用特定的搜索模式列出符合条件的标签，例如只对1.4.2系列的版本感兴趣
+2\. 使用特定的搜索模式列出符合条件的标签，例如只对1.4.2系列的版本感兴趣
 
 ```bash
 git tag -l "v1.4.2.*"
 ```
 
-3. 创建一个含附注类型的标签，需要加 `-a` 参数，如 
+3\. 创建一个含附注类型的标签，需要加 `-a` 参数，如 
 
 ```bash
 git tag -a v1.4 -m "my version 1.4"
 ```
 
-4. 使用git show命令查看相应标签的版本信息，并连同显示打标签时的提交对象
+4\. 使用git show命令查看相应标签的版本信息，并连同显示打标签时的提交对象
 
 ```bash
 git show v1.4
 ```
 
-5. 如果有自己的私钥，可以使用GPG来签署标签，只需要在命令中使用 `-s` 参数
+5\. 如果有自己的私钥，可以使用GPG来签署标签，只需要在命令中使用 `-s` 参数
 
 ```bash
 git tag -s v1.5 -m "my signed 1.5 tag"
 ```
 
-6. 验证已签署的标签：`git tag -v` ，如 
+6\. 验证已签署的标签：`git tag -v` ，如 
 
 ```bash
 git tag -v v1.5
 ```
 
-7. 创建一个轻量级标签的话，就直接使用 `git tag` 命令即可，连 `-a`,`-s` 以及 `-m` 选项都不需要，直接给出标签名字即可，如
+7\. 创建一个轻量级标签的话，就直接使用 `git tag` 命令即可，连 `-a`,`-s` 以及 `-m` 选项都不需要，直接给出标签名字即可，如
 
 ```bash
 git tag v1.5
 ```
 
-8. 将标签推送到远程仓库中：`git push origin` ，如
+8\. 将标签推送到远程仓库中：`git push origin` ，如
 
 ```bash
 git push origin v1.5
 ```
 
-9. 将本地所有的标签全部推送到远程仓库中
+9\. 将本地所有的标签全部推送到远程仓库中
 
 ```bash
 git push origin --tags
@@ -365,7 +365,7 @@ git push origin --tags
 
 > 分支管理
 
-10. 创建分支
+10\. 创建分支
 
 ```bash
 git branch <branch-name>
@@ -377,7 +377,7 @@ git branch <branch-name>
 git branch testing
 ```
 
-11. 从当前所处的分支切换到其他分支
+11\. 从当前所处的分支切换到其他分支
 
 ```bash
 git checkout <branch-name>
@@ -389,49 +389,49 @@ git checkout <branch-name>
 git checkout testing
 ```
 
-12. 新建并切换到新建分支上
+12\. 新建并切换到新建分支上
 
 ```bash
 git checkout -b <branch-name>
 ```
 
-13. 删除分支
+13\. 删除分支
 
 ```bash
 git branch -d <branch-name>
 ```
 
-14. 将当前分支与指定分支进行合并
+14\. 将当前分支与指定分支进行合并
 
 ```bash
 git merge <branch-name>
 ```
 
-15. 显示本地仓库的所有分支
+15\. 显示本地仓库的所有分支
 
 ```bash
 git branch
 ```
 
-16. 查看各个分支最后一个提交对象的信息
+16\. 查看各个分支最后一个提交对象的信息
 
 ```bash
 git branch -v
 ```
 
-17. 查看哪些分支已经合并到当前分支
+17\. 查看哪些分支已经合并到当前分支
 
 ```bash
 git branch --merged
 ```
 
-18. 查看当前哪些分支还没有合并到当前分支
+18\. 查看当前哪些分支还没有合并到当前分支
 
 ```bash
 git branch --no-merged
 ```
 
-19. 把远程分支合并到当前分支
+19\. 把远程分支合并到当前分支
 
 ```bash
 git merge <remote-name>/<branch-name>
@@ -445,7 +445,7 @@ git merge origin/serverfix
 
 如果是单线的历史分支不存在任何需要解决的分歧，只是简单的将HEAD指针前移，所以这种合并过程可以称为快进（Fast forward），而如果是历史分支是分叉的，会以当前分叉的两个分支作为两个祖先，创建新的提交对象；如果在合并分支时，遇到合并冲突需要人工解决后，再才能提交；
 
-19. 在远程分支的基础上创建新的本地分支
+20\. 在远程分支的基础上创建新的本地分支
 
 ```bash
 git checkout -b <branch-name> <remote-name>/<branch-name>
@@ -457,7 +457,7 @@ git checkout -b <branch-name> <remote-name>/<branch-name>
 git checkout -b serverfix origin/serverfix
 ```
 
-19. 从远程分支checkout出来的本地分支，称之为跟踪分支。在跟踪分支上向远程分支上推送内容
+21\. 从远程分支checkout出来的本地分支，称之为跟踪分支。在跟踪分支上向远程分支上推送内容
 
 ```bash
 git push
@@ -469,7 +469,7 @@ git push
 git pull
 ```
 
-19. 将一个分支里提交的改变移到基底分支上重放一遍
+22\. 将一个分支里提交的改变移到基底分支上重放一遍
 
 ```bash
 git rebase <rebase-branch> <branch-name>
@@ -497,7 +497,7 @@ git rebase --onto master server client
 
 ## 5.本地仓库上的操作
 
-1. 查看本地仓库关联的远程仓库
+1\. 查看本地仓库关联的远程仓库
 
 ```bash
 git remote
@@ -505,7 +505,7 @@ git remote
 
 在克隆完每个远程仓库后，远程仓库默认为 `origin`;加上 `-v` 的参数后，会显示远程仓库的 `url` 地址；
 
-2. 添加远程仓库，一般会取一个简短的别名
+2\. 添加远程仓库，一般会取一个简短的别名
 
 ```bash
 git remote add [remote-name] [url]
@@ -517,7 +517,7 @@ git remote add [remote-name] [url]
 git remote add example git://github.com/example/example.git
 ```
 
-2. 从远程仓库中抓取本地仓库中没有的更新
+3\. 从远程仓库中抓取本地仓库中没有的更新
 
 ```bash
 git fetch [remote-name]
@@ -531,7 +531,7 @@ git fetch origin
 
 使用fetch只是将远端数据拉到本地仓库，并不自动合并到当前工作分支，只能人工合并。如果设置了某个分支关联到远程仓库的某个分支的话，可以使用 `git pull` 来拉去远程分支的数据，然后将远端分支自动合并到本地仓库中的当前分支；
 
-3. 将本地仓库某分支推送到远程仓库上
+4\. 将本地仓库某分支推送到远程仓库上
 
 ```bash
 git push [remote-name] [branch-name]
@@ -569,13 +569,13 @@ git push origin :serverfix
 
 这里省略了本地分支，也就相当于将空白内容推送给远程分支，就等于删掉了远程分支。
 
-4. 查看远程仓库的详细信息
+5\. 查看远程仓库的详细信息
 
 ```bash
 git remote show origin
 ```
 
-5. 修改某个远程仓库在本地的简称
+6\. 修改某个远程仓库在本地的简称
 
 ```bash
 git remote rename [old-name] [new-name]
@@ -587,7 +587,7 @@ git remote rename [old-name] [new-name]
 git remote rename origin org
 ```
 
-5. 移除远程仓库
+7\. 移除远程仓库
 
 ```bash
 git remote rm [remote-name]
