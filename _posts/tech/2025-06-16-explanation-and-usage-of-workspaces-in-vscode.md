@@ -4,7 +4,7 @@ title: 关于 VSCode 中工作区的讲解与使用工作区
 category: 技术
 tags: vscode workspace
 keywords: workspace
-description: VSCode的使用率在逐渐提高，但安装太多的插件会使得VSCode变得臃肿，甚至运行变慢，占用太多内存，此文章介绍了工作区，并如何来使用工作区更好地体验VSCode。 初次使用VSCode，肯定有很多人好奇，这里面的工作区有什么用，与文件夹的区别在哪。
+description: explanation and usage of vscode workspace. 
 ---
 
 
