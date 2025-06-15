@@ -17,7 +17,7 @@ description:
 ## Step1. 检查本机是否有ssh key设置
 
 ```bash
-$ cd ~/.ssh
+cd ~/.ssh
 ```
 
 或 
@@ -37,8 +37,8 @@ No such file or directory
 ## Step2. 使用Git Bash生成新的ssh key   
 
 ```bash
-$ cd ~         #保证当前路径在"~"下
-$ ssh-keygen -t rsa -C "your email addr"
+cd ~         #保证当前路径在"~"下
+ssh-keygen -t rsa -C "your email addr"
 ```
 
 ```bash
@@ -55,7 +55,7 @@ e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com
 本机已完成ssh key设置，其存放路径为：`c:/Users/xxxx_000/.ssh/` 下。注释：可生成ssh key自定义名称的密钥，默认id_rsa。 
 
 ```bash
-$ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/github_blog_keys #生成ssh key的名称为github_blog_keys
+ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/github_blog_keys #生成ssh key的名称为github_blog_keys
 ```
 
 慎用容易出现其它异常。
@@ -70,8 +70,8 @@ $ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/github_blog_keys #生成ssh key�
 ## Step4. 配置账户
 
 ```bash
-$ git config --global user.name “your_username”  #设置用户名`
-$ git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册github的邮箱)
+git config --global user.name “your_username”  #设置用户名`
+git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册github的邮箱)
 ``` 
 
 ## Step5. 测试ssh keys是否设置成功
@@ -97,8 +97,8 @@ Hi xxx! You've successfully authenticated, but GitHub does not provide shell acc
 1.创建目录  
 
 ```bash
-$ mkdir test
-$ cd test
+mkdir test
+cd test
 ```
 
 2.初始化
@@ -110,21 +110,21 @@ git init
 3.创建hello.md文件  
 
 ```bash
-$ echo "this is a test of test ssh key" > hello.md
+echo "this is a test of test ssh key" > hello.md
 ```
 
 4.提交到本地  
 
 ```bash
-$ git add .
-$ git commit -m "add hell.md"   #提交记录说明
+git add .
+git commit -m "add hell.md"   #提交记录说明
 ``` 
 
 5.提交到Github
 
 ```bash
-$ git remote add origin 'the path of the test ssh key'
-$ git push -u origin master
+git remote add origin 'the path of the test ssh key'
+git push -u origin master
 ```
 
 6.刷新test ssh key仓库， 查看hello.md.
