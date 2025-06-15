@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用LaTeX的技
+title: 使用LaTeX的技巧
 category: 技术
 tags: LaTeX
 keywords: LateX
