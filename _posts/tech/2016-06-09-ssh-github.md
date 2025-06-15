@@ -29,7 +29,7 @@ cd .ssh
 如果没有则提示： 
 
 ```bash
-> No such file or directory
+No such file or directory
 ```
 
 如果有则进入~/.ssh路径下(ls查看当前路径文件, rm *删除所有文件)  
@@ -42,22 +42,22 @@ $ ssh-keygen -t rsa -C "your email addr"
 ```
 
 ```bash
-> Generating public/private rsa key pair.  
-> Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车  
-> Enter passphrase (empty for no passphrase):   #输入密码（可以为空）  
-> Enter same passphrase again:   #再次确认密码（可以为空）  
-> Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥  
-> Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥  
-> The key fingerprint is:  
-> e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com  
+Generating public/private rsa key pair.  
+Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车  
+Enter passphrase (empty for no passphrase):   #输入密码（可以为空）  
+Enter same passphrase again:   #再次确认密码（可以为空）  
+Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥  
+Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥  
+The key fingerprint is:  
+e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com  
 ```
 
-本机已完成ssh key设置，其存放路径为：c:/Users/xxxx_000/.ssh/下。  
-注释：可生成ssh key自定义名称的密钥，默认id_rsa。 
+本机已完成ssh key设置，其存放路径为：`c:/Users/xxxx_000/.ssh/` 下。注释：可生成ssh key自定义名称的密钥，默认id_rsa。 
 
 ```bash
-$ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/githug_blog_keys #生成ssh key的名称为githug_blog_keys
+$ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/github_blog_keys #生成ssh key的名称为github_blog_keys
 ```
+
 慎用容易出现其它异常。
 
 ## Step3. 添加ssh key到GitHub  
@@ -71,19 +71,19 @@ $ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/githug_blog_keys #生成ssh key�
 
 ```bash
 $ git config --global user.name “your_username”  #设置用户名`
-$ git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册giuhub的邮箱)
+$ git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册github的邮箱)
 ``` 
 
 ## Step5. 测试ssh keys是否设置成功
 
 ```bash
 $ ssh -T git@github.com
-> The authenticity of host 'github.com (192.30.252.129)' can't be established.  
-> RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.  
-> Are you sure you want to continue connecting (yes/no)? yes #确认你是否继续联系，输入yes  
-> Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of known hosts.  
-> Enter passphrase for key '/c/Users/xxxx_000/.ssh/id_rsa':  #生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可。
-> Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. #出现词句话，说明设置成功。
+The authenticity of host 'github.com (192.30.252.129)' can't be established.  
+RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.  
+Are you sure you want to continue connecting (yes/no)? yes #确认你是否继续联系，输入yes  
+Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of known hosts.  
+Enter passphrase for key '/c/Users/xxxx_000/.ssh/id_rsa':  #生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可。
+Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. #出现词句话，说明设置成功。
 ```
 
 # Part II: 将本地项目通过SSH push到GitHub
