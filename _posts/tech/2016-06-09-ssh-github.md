@@ -62,10 +62,10 @@ ssh-keygen -t rsa -C "邮箱地址" -f ~/.ssh/github_blog_keys #生成ssh key的
 
 ## Step3. 添加ssh key到GitHub  
 
-1. 登陆到GitHub系统： 点击右上角账号头像的 "▼"→Settings→SSH kyes→Add SSH key.
-2. 复制id_rsa.pub的公钥内容：  
-	1) 进入c:/Users/xxxx_000/.ssh/目录下，打开id_rsa.pub文件，全选复制公钥内容;  
-	2) Title自定义，将公钥粘贴到GitHub中Add an SSH key的key输入框，最后“Add Key”.
+1\. 登陆到GitHub系统： 点击右上角账号头像的 "▼"→Settings→SSH kyes→Add SSH key.
+2\. 复制id_rsa.pub的公钥内容：   
+	1\) 进入c:/Users/xxxx_000/.ssh/目录下，打开id_rsa.pub文件，全选复制公钥内容;  
+	2\) Title自定义，将公钥粘贴到GitHub中Add an SSH key的key输入框，最后“Add Key”.
 
 ## Step4. 配置账户
 
@@ -94,40 +94,40 @@ Hi xxx! You've successfully authenticated, but GitHub does not provide shell acc
 
 第三步、本地创建项目  
 
-1.创建目录  
+1\. 创建目录  
 
 ```bash
 mkdir test
 cd test
 ```
 
-2.初始化
+2\. 初始化
 
 ```bash
 git init
 ```  
 
-3.创建hello.md文件  
+3\. 创建hello.md文件  
 
 ```bash
 echo "this is a test of test ssh key" > hello.md
 ```
 
-4.提交到本地  
+4\. 提交到本地  
 
 ```bash
 git add .
 git commit -m "add hell.md"   #提交记录说明
 ``` 
 
-5.提交到Github
+5\. 提交到Github
 
 ```bash
 git remote add origin 'the path of the test ssh key'
 git push -u origin master
 ```
 
-6.刷新test ssh key仓库， 查看hello.md.
+6\. 刷新test ssh key仓库， 查看hello.md.
 
 
 # Part III：报错处理
@@ -160,7 +160,7 @@ git config --global core.quotepath false
 ```
 ## 二、Github 无法 ping 通
 
-a) 明确问题：先是验证SSH公钥失败。
+a\) 明确问题：先是验证SSH公钥失败。
 
 ```bash
 $ ssh -T git@github.com
@@ -174,9 +174,9 @@ $ ping github.com
 Ping request could not find host github.com. Please check the name and try again.
 ```
 
-b) 分析问题：`ping` 其他网站正常，只有 `github` 不通，可能是域名解析错误，也就是DNS的问题。
+b\) 分析问题：`ping` 其他网站正常，只有 `github` 不通，可能是域名解析错误，也就是DNS的问题。
 
-c) 解决问题：方法很简单，修改DNS服务器。修改 `hosts` 文件，`hosts` 文件地址在
+c\) 解决问题：方法很简单，修改DNS服务器。修改 `hosts` 文件，`hosts` 文件地址在
 
 ```bash
 C:\Windows\System32\drivers\etc
@@ -193,14 +193,14 @@ Github网站真实IP地址要在 [ipaddress.com](https://www.ipaddress.com/websi
 
 ## 三、ssh报错：ssh: Could not resolve hostname github.com
 
-a) 问题：设置GitHub账户的过程一切正常，但尝试将仓库推送到GitHub时，出现问题。显示的错误信息如下：
+a\) 问题：设置GitHub账户的过程一切正常，但尝试将仓库推送到GitHub时，出现问题。显示的错误信息如下：
 
 ```bash
 ssh: Could not resolve hostname github.com: Name or service not known
 fatal: The remote end hung up unexpectedly.
 ```
 
-b) 解决办法：刷新DNS、更换DNS服务器或重启网络。在 Windows 的终端中，使用以下命令：
+b\) 解决办法：刷新DNS、更换DNS服务器或重启网络。在 Windows 的终端中，使用以下命令：
 
 ```bash
 ipconfig /flushdns
@@ -242,9 +242,9 @@ Host github.com
 
 
 ## 相关链接：
-1. [GitHub](https://github.com/);
-2. [为Github账户设置SSH key](http://zuyunfei.com/2013/04/10/setup-github-ssh-key/)
-3. [Git for windows](https://git-for-windows.github.io/)
+1\. [GitHub](https://github.com/);  
+2\. [为Github账户设置SSH key](http://zuyunfei.com/2013/04/10/setup-github-ssh-key/)  
+3\. [Git for windows](https://git-for-windows.github.io/)
 
 
 
