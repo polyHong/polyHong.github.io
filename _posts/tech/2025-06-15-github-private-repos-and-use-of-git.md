@@ -1,5 +1,5 @@
 ---
-layout:
+layout: post
 title: GitHub 私有仓库以及 git 的使用
 category: 技术
 tags: github, git, repository
