@@ -63,18 +63,18 @@ description: VSCode的使用率在逐渐提高，但安装太多的插件会使�
 
 ```json
 {  
-> "folders": \[  
-> {  
-> "path": "."  
-> },  
-> {  
-> "path": "D:\\\\Workspaces\\\\VSCode\\\\Python"  
-> }  
-> \],  
-> "settings": {  
-> "python.pythonPath": "C:\\\\Program Files\\\\Python37\\\\python.exe"  
-> }  
-> }
+"folders": \[  
+{  
+"path": "."  
+},  
+{  
+"path": "D:\\\\Workspaces\\\\VSCode\\\\Python"  
+}  
+\],  
+"settings": {  
+"python.pythonPath": "C:\\\\Program Files\\\\Python37\\\\python.exe"  
+}  
+}
 ```
 
 "path": "." 为当前工作区文件所在的文件夹。
