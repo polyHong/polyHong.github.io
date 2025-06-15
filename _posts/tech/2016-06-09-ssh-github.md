@@ -9,7 +9,7 @@ description:
 
 本文可分为三部分：  
 >第一部分：通过Gits配置SSH Keys连接GitHub;  
->第二部分：在GitHub上创建仓库，在本地创建项目，然后将本地项目通过SSH提交到GitHub仓库中。
+>第二部分：在GitHub上创建仓库，在本地创建项目，然后将本地项目通过SSH提交到GitHub仓库中。  
 >第三部分：在使用ssh或git命令时可能碰到的一些问题，及其解决办法。
 
 # Part I: Git配置SSH访问GitHub
