@@ -746,6 +746,17 @@ Hello world! 你好，世界 ！
 
 此处感谢 [@可爱又迷人的反派](https://www.zhihu.com/people/Dota-Data) 对于笔者的代码提出的修改，让一部分读者存在的 SumatraPDF 无法进行正常反向同步操作的问题得到了解决。
 
+### 8.2.3 反向查看
+
+在Sumatra PDF的设置->选项中，设置反向搜索命令：
+
+```json
+"C:\Users\AppData\Local\Programs\Microsoft VS Code\Code.exe" "C:\Users\AppData\Local\Programs\Microsoft VS Code\resources\app\out\cli.js" --ms-enable-electron-run-as-node -r -g "%f":"%l"
+```
+
+- 第一个参数是 VS Code 的所在位置  
+- 第二个参数的 `cli.js` 和第三个参数的 `--ms-enable-electron-run-as-node` 是避免 VS Code 使用子进程打开 Sumatra PDF 后，Sumatra PDF 无法反向搜索的情况。
+
 ## 9 SumatraPDF 的使用
 
 将完整代码复制到自己的 json 文件内后，即可使用 SumatraPDF作为自己的 pdf 外部查看器了。以下为具体操作：
