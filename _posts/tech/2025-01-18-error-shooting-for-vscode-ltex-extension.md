@@ -101,7 +101,7 @@ C:\Program Files\OpenJDK\jdk-22.0.2\bin\java.exe
 
 修改为：
 
-```yaml
+```bash
     const executableOptions = {
          encoding: 'utf-8',
          timeout: 15000,
@@ -120,7 +120,7 @@ C:\Program Files\OpenJDK\jdk-22.0.2\bin\java.exe
  
 修改为：
 
-```yaml
+```bash
  const executableOptions = {
            encoding: 'utf-8',
            timeout: 15000,
@@ -130,7 +130,7 @@ C:\Program Files\OpenJDK\jdk-22.0.2\bin\java.exe
 
 - 将第24689行的：
 
-```dart
+```bash
  const execOptions = Object.create(null);
 ```
  
