@@ -7,11 +7,11 @@ keywords: AI, Research, Prompts, Academic Papers, ChatGPT
 description:
 ---
 
-# 一、学术角色预设
+## 一、学术角色预设
 
 在论文写作过程中，无论是进行润色、语法检查还是降重，首先都应设定明确的学术角色。有些学术GPT工具自带角色提示词，而有些则需要用户手动设定。例如，当你需要向GPT咨询论文相关问题时，可以先用以下指令进行角色预设，从而在后续提问中获得更高质量、更准确的反馈。
 
-## 1. 学术角色
+### 1. 学术角色
 
 **英文原版**
 
@@ -73,7 +73,7 @@ Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and 
 
 此外，你还可以根据实际需求预设其他学术角色。
 
-## 2.论文评审专家
+### 2.论文评审专家
 
 - 让GPT扮演专业的论文评审专家，对论文草稿给出评审意见，并据此重新审视和修改论文内容。
 - 在具体修改论文时，让GPT扮演你所研究领域的专家，以提升表达的准确性和专业性。
@@ -148,9 +148,9 @@ Please put your analysis and results in the following format:
 </推荐内容>
 ```
 
-# 二、论文撰写指令
+## 二、论文撰写指令
 
-## 1.写标题
+### 1.写标题
 
 **英文原版**
 
@@ -204,7 +204,7 @@ Please write your generated title within the <Title> tag.
 请在<title>标签内写下生成的标题。
 ```
 
-## 2.写英文标题
+### 2.写英文标题
 
 **英文原版**
 
@@ -258,7 +258,7 @@ Please present your output as a markdown table with two columns. The headers of 
 请确保你的解释清晰、全面，能充分说明每个标题的优点。
 ```
 
-## 3.写摘要
+### 3.写摘要
 
 该指令可用于为研究论文撰写摘要，简明扼要地总结研究目标、方法、主要发现和意义，确保摘要内容清晰、连贯，并符合学术领域的规范要求。
 
@@ -314,7 +314,7 @@ Please write your abstract within the <abstract> tag.
 请在<abstract>标签内写下你的摘要。
 ```
 
-## 4.写英文摘要指令
+### 4.写英文摘要指令
 
 **英文原版**
 
@@ -376,7 +376,7 @@ After writing the abstract, please provide an explanation in Chinese within the 
 </table>
 ```
 
-## 5.缩写名称
+### 5.缩写名称
 
 可以向AI寻求为段落起标题，为方法起缩写名称等。
 
@@ -443,7 +443,7 @@ Please present your results in the following format:
 根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
-## 6.论文续写
+### 6.论文续写
 
 该方法适用于内容暂时匮乏但需要扩充论文篇幅的场景。
 
@@ -513,7 +513,7 @@ Please put the polished and continued content in the <OutputContent> tag.
 根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
-**论文致谢**
+### 7. 论文致谢
 
 对在研究过程中提供帮助的个人或机构表示感谢。
 
@@ -586,7 +586,7 @@ I want you to act as an academic research expert. Draft a comprehensive acknowle
 请在<acknowledgment>标签内写下致谢部分的内容。
 ```
 
-**论文大纲**
+### 8. 论文大纲
 
 为研究论文起草一个结构良好的大纲，包括引言、文献综述、方法论、研究结果和结论，确保研究的合理性、创新性和对现有知识的贡献。
 
@@ -648,11 +648,11 @@ Please write your research paper outline in the <ResearchPaperOutline> tag. Ensu
 ```
 
 
-**学术润色指令**
+## 三、学术润色指令
 
 学术润色旨在提升论文草稿的语言表达、语法准确性、逻辑性和结构合理性，从而增强其清晰度、连贯性和专业性。
 
-## 1.英文润色
+### 1.英文润色
 
 **英文原版**
 
@@ -722,40 +722,7 @@ Please present the refined paragraph in the <RefinedParagraph> tag and the modif
 </润色后的段落>
 ```
 
-
-```html
-<optimized_prompt>
-<task>重新润色学术论文段落以提高质量并记录修改</task>
-
-<context>
-以下是一篇学术论文中的一段文字。请重新润色写作，以符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：（+润色内容）。
-</context>
-
-<instructions>
-1. 接收提供的学术论文段落。
-2. 分析段落内容，识别需要改进的领域：
-   - 检查拼写错误。
-   - 评估语法准确性。
-   - 评估清晰度和简洁性。
-   - 评估整体可读性。
-3. 润色文本以符合学术风格：
-   - 改进拼写、语法、清晰度、简洁性和可读性。
-   - 如有必要，重写整个句子。
-4. 记录所有修改：
-   - 在Markdown表格中列出每个修改。
-   - 表格包含列：原始内容、修改后内容、修改原因。
-   - 为每个修改解释具体原因。
-5. 输出润色后的段落和完整的修改表格。
-</instructions>
-
-<output_format>
-- 润色后的学术论文段落文本。
-- Markdown表格格式的修改列表，包含列：原始内容、修改后内容、修改原因。
-</output_format>
-</optimized_prompt>
-```
-
-**英文润色**
+### 2. 英文润色
 
 这段指令将在Markdown表格中列出所有润色修改部分，并解释修改的原因，可以看到润色的效果很不错的，也可以优化提问。润色过程中，可以让GPT提供多个版本的修改建议，我们的选择性也更多。
 
@@ -833,7 +800,7 @@ Please put the polished paragraph in the <PolishedParagraph> tag and the modific
 | [具体修改内容2] | [解释修改原因2] |
 ```
 
-**中文润色**
+### 2.中文润色
 
 与常规润色指令不同，此类prompt特别强调：助手只需提供修改后的文本版本，无需附加解释或说明。
 
@@ -891,7 +858,7 @@ Please write the corrected version of the text within the <CorrectedText> tag. D
 </改进建议>
 ```
 
-## 4.SCI 论文润色
+### 3. SCI论文润色
 
 **英文原版**
 
@@ -966,63 +933,7 @@ Start your refinement now.
 </重写段落>
 ``` 
 
-
-```html
-<optimized_prompt>
-<task>润色SCI论文段落以提升学术严谨性，生成修订记录表格并重写段落</task>
-
-<context>
-我正在准备我的SCI论文以便提交，需要帮助润色每个段落。你能帮我提升学术严谨性吗？我需要你纠正任何语法错误，改进句子结构以适应学术要求，并在必要时使文本更加正式。对于每个需要改进的段落，你需要将所有修改后的句子放在一个Markdown表格中，每一列分别包含以下内容：完整的原始句子；突出显示句子的修订部分；解释为什么做出这些更改。最后，重写整个更正后的段落。如果你理解了，请回复：是的，让我们开始吧。
-</context>
-
-<instructions>
-1. 接收用户提供的SCI论文段落
-2. 对段落进行全面润色：
-   - 纠正所有语法错误
-   - 优化句子结构以适应学术写作规范
-   - 提升文本正式程度和学术严谨性
-3. 创建修订记录表格：
-   - 表格包含三列：
-        - 第一列：完整的原始句子
-        - 第二列：突出显示修订部分（使用**加粗**标记）
-        - 第三列：解释修改原因（学术规范/语法规则等）
-   - 逐句处理：
-        - 若句子需要修改：记录原始句子，突出显示变更内容，说明修改依据
-        - 若无需修改：保留原始句子，在修订列标注"无修改"
-4. 基于表格修订内容：
-   - 整合所有修改后的句子
-   - 重写完整段落确保逻辑连贯性
-   - 保持学术写作风格一致性
-5. 输出结构：
-   - 先呈现修订记录表格
-   - 随后展示重写后的完整段落
-6. 循环处理：
-   - 重复上述流程处理后续段落
-   - 每个段落独立生成对应输出
-</instructions>
-
-<output_format>
-- 每个段落的输出包含：
-  1. Markdown格式表格：
-     | 原始句子 | 修订部分 | 更改原因 |
-     |----------|----------|----------|
-     | [完整原句] | **[突出显示修改内容]** | [学术依据说明] | 
-     | ...      | ...      | ...      |
-  2. 重写段落区块：
-     [整合所有修改后的完整段落]
-- 修订部分要求：
-   - 仅突出显示实际修改的词汇/短语
-   - 使用**加粗**标记变更内容
-   - 无修改时显示"无修改"
-- 更改原因要求：
-   - 明确引用学术写作规范（如APA/AMA）
-   - 说明具体语法规则依据
-   - 无修改时标注"符合规范"
-</output_format>
-</optimized_prompt>
-```
-
-**期刊/会议风格**
+### 4. 期刊/会议风格
 
 可根据目标期刊或会议（建议选择知名期刊/会议）的风格，对论文内容进行针对性润色。
 
@@ -1055,55 +966,6 @@ When polishing the content, please follow these guidelines:
 Please write your polished content within the <PolishedContent> tag.
 ```
 
-```html
-<optimized_prompt>
-<task>Polish the specified content academically according to the target conference style.</task>
-
-<context>
-If I wish to publish a paper at a XXX conference, please polish the above content in the style of a XXX article.
-</context>
-
-<instructions>
-1. Identify the characteristics of the target meeting:
-   - Determine the academic field of the conference (e.g., computer vision/NLP/biomedical)
-   - Analyze the typical structural features of conference papers (abstract format/chapter division/chart requirements)
-   - Extract the conference's unique terminology and expression conventions
-2. Obtain the content to be processed:
-   - Confirm the user-provided original content (i.e., "the above content")
-   - Verify the completeness and technical accuracy of the content
-3. Execute academic polishing:
-   - Adjust narrative structure:
-     - Reorganize content according to the IMRaD framework (Introduction-Methods-Results-Discussion)
-     - Ensure logical chains comply with academic argumentation standards
-   - Optimize language expression:
-     - Replace colloquial expressions with academic terminology
-     - Strengthen logical connections using appropriate conjunctions
-   - Standardize formatting:
-     - Uniformly reference format (e.g., IEEE/APA)
-     - Standardize chart numbering and title placement
-4. Inject conference-specific elements:
-   - Add domain-specific research background
-   - Highlight key performance indicators of the conference
-   - Adjust the depth of technical descriptions to match the target reader level
-5. Generate the final draft:
-   - Ensure the length meets the conference page limit
-   - Add necessary declaration sections (ethics approval/conflict of interest)
-   - Verify the normative symbolization of all mathematical formulas
-</instructions>
-
-<output_format>
-1. Return the complete polished paper content in .docx format
-2. Include revision notes:
-   - Modification location markers (original page number/paragraph)
-   - Reasons for modification (e.g., terminology standardization/logical reinforcement)
-   - Implementation notes for meeting style requirements
-3. Attach a submission checklist for the conference:
-   - List of required additional materials (dataset/code repository link)
-   - Suggestions for domain direction of recommended reviewers
-</output_format>
-</optimized_prompt>
-```
-
 **中文原版**
 
 ```html
@@ -1134,50 +996,7 @@ If I wish to publish a paper at a XXX conference, please polish the above conten
 请在<润色后的文本>标签内写下润色后的内容。
 ```
 
-
-```html
-<optimized_prompt>
-<task>按照指定会议要求和文章风格润色论文内容</task>
-
-<context>
-如果我希望在XXX会议上发表论文，请按照XXX文章的风格，对上面的内容进行润色。
-</context>
-
-<instructions>
-1. 确认核心参数：
-   - 目标会议名称：XXX会议
-   - 参考文章标识：XXX文章
-   - 待润色内容：用户提供的"上面的内容"
-2. 分析风格特征：
-   - 提取XXX文章的写作特点
-   - 识别XXX会议的投稿要求
-   - 对比当前内容与目标风格的差异
-3. 执行润色操作：
-   - 调整语言风格匹配参考文章
-   - 优化结构符合会议规范
-   - 增强逻辑连贯性
-   - 提升学术严谨性
-4. 质量控制：
-   - 保留原文核心观点
-   - 确保术语使用一致性
-   - 检查引用格式规范
-5. 完成交付：
-   - 输出完整润色版本
-   - 标注关键修改点说明
-</instructions>
-
-<output_format>
-1. 返回润色后的完整论文内容
-2. 文末附加修改说明：
-   - 风格适配调整项
-   - 结构调整优化点
-   - 关键术语变更记录
-3. 保持原始文档格式（如LaTeX/Markdown/Word）
-</output_format>
-</optimized_prompt>
-```
-
-## 6.润色英文段落结构和句子逻辑
+### 5. 润色英文段落结构和句子逻辑
 
 **英文原版**
 
@@ -1205,50 +1024,7 @@ Please list the improvements in Chinese within the <Improvements> tag.
 Start your analysis now.
 ```
 
-
-```html
-<optimized_prompt>
-<task>Analyze the logic and coherence of academic paper paragraphs, provide improvement suggestions, and output revised text.</task>
-
-<context>
-I am a researcher studying **+（your research direction）** and now trying to revise my manuscript which will be submitted to the **+（your submitted journal）**. want you to analyze the logic and coherence among sentences within each paragraph in the following text, identify any areas where the flow or connections between sentences could be improved,and provide specific suggestions to enhance the overall quality and readability to the content. Please only provide the text after improving and then give a list of the improvements in Chinese. lf you understand the above task, please reply with yes, and then I will provide you with the text.
-</context>
-
-<instructions>
-1. Receive the text content provided by the user.
-2. Analyze the logic and coherence of each paragraph in the text
-   - Identify logical relationships between sentences
-   - Check the consistency of sentence structures
-   - Detect any jumps in thought or unclear transitions
-3. Identify areas for improvement:
-   - Highlight logical gaps or inconsistencies  
-   - Note unclear or ambiguous statements
-   - Point out redundant or repetitive content
-4. Provide specific suggestions for improvement:
-   - Suggest appropriate transitional words or phrases
-   - Propose reordering of sentences
-   - Offer clarification of unclear concepts
-5. Generate a double-part output:
-   - [Revised Text] section: Present the fully revised text
-   - [Improvement List] section: List all improvements in Chinese
-6. Ensure the revised text adheres to the academic standards of the target journal
-</instructions>
-
-<output_format>
-Use a strict double-part output format:
-1. [Revised Text] section:
-   - Present the fully revised text
-   - Maintain the original paragraph structure
-   - Mark modified content with underlines
-2. [Improvement List] section:
-   - List all improvements in Chinese
-   - Each item includes: original problem description + improvement plan
-   - Organize improvement items in paragraph order
-</output_format>
-</optimized_prompt>
-```
-
-## 7.直接润色段落
+### 6. 直接润色段落
 
 **英文原版**
 
@@ -1270,55 +1046,6 @@ When polishing this paragraph, please follow these guidelines:
 3. Ensure that the paragraph is well - structured. Each sentence should contribute to the overall point of the paragraph, and there should be a clear topic sentence and supporting details.
 4. Review the grammar and punctuation. Correct any grammar errors and use punctuation appropriately to enhance clarity.
 Please write the polished paragraph within the <PolishedParagraph> tag.
-```
-
-
-```html
-<optimized_prompt>
-<task>Optimize the text content to enhance logical rigor and academic standards.</task>
-
-<context>
-Polish the paragraph above to make it more logical, and academic.
-</context>
-
-<instructions>
-1. Identify the paragraph to be modified:
-   - Confirm the target paragraph for revision
-   - If not specified, request the user to provide the specific paragraph
-
-2. Conduct logical structure optimization:
-   - Analyze the original text's logical chain
-   - Adjust sentence order to establish clear argument progression
-   - Add transitional words to enhance paragraph coherence
-   - Eliminate repetitive or contradictory content
-
-3. Implement academic enhancement:
-   - Replace colloquial expressions with academic terms
-   - Use passive voice and formal sentence structures
-   - Ensure accurate and consistent term usage
-   - Strengthen argument rigor
-
-4. Perform language refinement:
-   - Correct grammar errors and punctuation issues
-   - Optimize vocabulary selection to enhance professionalism
-   - Adjust sentence structure to enhance readability
-   - Maintain academic objective neutrality tone
-
-5. Quality verification:
-   - Verify that the core meaning is retained in comparison to the original content
-   - Check that the logical flow is natural and fluent
-   - Confirm compliance with specific academic field norms
-   - Verify the accuracy of term usage
-</instructions>
-
-<output_format>
-- Return the fully polished text
-- Maintain the original core content and professional terms
-- Follow APA academic writing guidelines
-- Use third-person objective narration
-- Include revision notes comments (in footnote format)
-</output_format>
-</optimized_prompt>
 ```
 
 **中文原版**
@@ -1345,49 +1072,7 @@ Polish the paragraph above to make it more logical, and academic.
 </润色后内容>
 ```
 
-
-```html
-<optimized_prompt>
-<task>优化文本内容，增强逻辑严谨性与学术规范性</task>
-
-<context>
-润色上面的内容，使其更加更合逻辑，更符合学术风格。
-</context>
-
-<instructions>
-1. 分析文本结构与逻辑关系：
-   - 识别原文中的重复表述与冗余信息
-   - 检测逻辑链条中的断裂点
-   - 评估学术术语使用的准确性
-2. 实施学术化重构：
-   - 将口语化表达转换为学术用语
-   - 强化因果关系的逻辑连接词
-   - 统一术语体系与概念界定
-3. 优化段落组织：
-   - 采用"总-分-总"学术论文结构
-   - 确保论点与论据的严格对应
-   - 增加过渡句增强段落衔接
-4. 规范学术表达：
-   - 消除主观性表述
-   - 使用被动语态增强客观性
-   - 补充必要的限定条件
-5. 最终校验：
-   - 核对文献引用格式（如适用）
-   - 验证概念定义的一致性
-   - 确保所有结论有充分依据支撑
-</instructions>
-
-<output_format>
-1. 返回优化后的完整文本
-2. 保留原始核心内容与专业术语
-3. 遵循APA学术写作规范
-4. 使用第三人称客观叙述
-5. 包含修订说明注释（使用脚注形式）
-</output_format>
-</optimized_prompt>
-```
-
-**润色多版参考**
+### 7. 润色多版参考
 
 ```html
 Please provide multiple versions for reference.
@@ -1397,7 +1082,7 @@ Please provide multiple versions for reference.
 请提供多个版本以供参考。
 ```
 
-**错误纠正**
+### 8. 错误纠正
 
 如果ChatGPT理解错了你的问题，可以给它一个错误的反馈，让它重新回答。
 
@@ -1409,7 +1094,7 @@ Note that it is not....., but..... Re-answer the previous question based on what
 注意，不是...而是... 请根据我的补充，重新回答上个问题。
 ```
 
-**重新回答**
+### 9. 重新回答
 
 如果认为回答的不够好，或者方向不对。可以要求重新回答，并且指明侧重方向。比如你只希望去除当前段落的冗余，并不想改动原意思。
 
@@ -1421,7 +1106,7 @@ Still the above question, I think your answer is not good enough. Please answer 
 仍然是上面的问题，我认为你的回答还不够好。请再次回答，这次侧重于去除这段话中的冗余。
 ```
 
-**语法检查/查找语法错误**
+### 10. 语法检查/查找语法错误
 
 ```html
 Can you help me ensure that the grammar and the spelling is correct? Do not try to polish the text, if no mistake is found, tell me that this paragraph is good. If you find grammar or spelling mistakes, please list mistakes you find in a two-column markdown table, put the original text the first column, put the corrected text in the second column and highlight the key words you fixed. Example: Paragraph: How is you? Do you knows what is it? | Original sentence | Corrected sentence | |:--- |:--- | | How **is** you? | How **are** you? | | Do you **knows** what **is it**? | Do you **know** what **it is**? | Below is a paragraph from an academic paper. You need to report all grammar and spelling mistakes as the example before. Paragraph: XXX  
@@ -1435,12 +1120,15 @@ Can you help me ensure that the grammar and the spelling is correct? Do not try 
 以下是一篇学术论文中的段落。你需要按照上述例子报告所有语法和拼写错误。段落：XXX
 ```
 
-**语法校正**
+### 11. 语法校正
 
 ```html
 I am a researcher studying **+（your research direction）** and now trying to revise my manuscript which will be submitted to the **+（your submitted journal）**. Please help me to ensure the grammar and spelling are correct. Do not try to improve the text, if no mistake found, tell me this paragraph is good.If you find grammar or spelling mistakes, please list the mistakes you find in a two-column mark down table, put the original text in the first column, put the corrected text in the second column, and do highlight the key words you fixed in bold.
 ```
 
+### 12. 语法句法
+
+```html
 **语法句法**
 
 ```html
@@ -1475,7 +1163,7 @@ I have used a passive voice in this sentence. Consider using an active voice ins
 这句话使用了被动语态，请考虑使用主动语态。
 ```
 
-**润色定位**
+### 13. 润色定位
 
 当文本较长不便于整体观察时，可要求GPT明确指出具体修改了哪些段落和句子。
 
@@ -1487,7 +1175,7 @@ Note that in addition to giving the modified content, please also indicate which
 注意，除了给出润色修改之后的内容，还请指明修订的版本中具体修改了哪些段落的哪几句话。
 ```
 
-**优化语法**
+### 14. 优化语法
 
 ```html
 This sentence is grammatically incorrect. Please revise.
@@ -1601,7 +1289,7 @@ Execute substantial revisions：执行重要的编辑
 Overhaul content framework:改变内容架构
 ```
 
-# 四、中英翻译指令
+## 四、中英翻译指令
 
 **论文翻译**
 
@@ -1653,7 +1341,7 @@ I want you to act as a scientific English-Chinese translator, I will provide you
 我希望你担任一名科学性的英文-中文翻译员，我会提供一些段落给你，你的任务是准确且学术性地将这些段落翻译成另一种语言。翻译后请不要重复原文段落。你应该使用人工智能工具，比如自然语言处理，以及关于有效写作技巧的修辞知识和经验来进行回复。我将如下提供我的段落，告诉我它是用什么语言写的，然后进行翻译：XXX
 ```
 
-# 五、论文查重降重指令
+## 五、论文查重降重指令
 
 **内容降重**
 
@@ -1767,7 +1455,7 @@ Please explain the concepts in your own words after understanding their meaning,
 请在理解其含义后用自己的话解释概念，以减少对原文的依赖并提高原创思考的水平。
 ```
 
-# 六、参考文献指令
+## 六、参考文献指令
 
 **检查参考文献格式**
 
@@ -1789,7 +1477,7 @@ Please first correct the following reference format according to APA style, adju
 请首先按照 APA 格式对以下参考文献格式进行校正，调整为严格符合 APA 的文献格式。最后，我需要将参考文献以 Markdown 格式的代码块形式展示。需要注意的是期刊名称要全称，且斜体(这里可以添加其他要求)。下面是我的参考文献：
 ```
 
-# 七、投稿与审稿指令
+## 七、投稿与审稿指令
 
 **撰写 Cover Letter**
 
@@ -1815,7 +1503,7 @@ Act as an academic research expert. Carefully analyze and interpret the \[feedba
 作为学术研究专家，分析审稿人的反馈并创建详细的回应计划。
 ```
 
-# 八、AI读文献指令
+## 八、AI读文献指令
 
 **归纳文献核心要点**
 
@@ -1951,7 +1639,7 @@ For the research question (such as "Under what circumstances does wishful thinki
 6. 研究局限
 ```
 
-# 九、其他学术场景指令
+## 九、其他学术场景指令
 
 **论文期刊匹配**
 
