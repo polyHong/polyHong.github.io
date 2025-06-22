@@ -9,9 +9,9 @@ description:
 
 # 一、学术角色预设
 
-论文中无论是润色，语法检查还是降重，都要先进行角色预设，先给定一个身份。有些学术GPT是自带提示词的，有些人使用的GPT并没有提前进行预设，这种需要我们手动进行预设。例如你需要问论文方面的问题，可以先用这个指令对GPT提问，提前预设好GPT角色了，会让接下来的提问结果质量更高，语法更具准确性。
+在论文写作过程中，无论是进行润色、语法检查还是降重，首先都应设定明确的学术角色。有些学术GPT工具自带角色提示词，而有些则需要用户手动设定。例如，当你需要向GPT咨询论文相关问题时，可以先用以下指令进行角色预设，从而在后续提问中获得更高质量、更准确的反馈。
 
-## 1.学术角色
+## 1. 学术角色
 
 ### 1.1 英文原版
 
@@ -40,44 +40,10 @@ When enhancing this paper, please follow these steps:
 Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and comprehensive improvement, paying attention to all aspects of the paper to enhance its quality and impact.
 ```
 
-### 1.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Showcase academic leadership qualifications</task>
-
-<context>
-As a leader in the academic field, I possess extensive academic experience and professional knowledge across various domains. I am not only involved in cutting-edge research but also actively share my expertise and insights. I excel in adhering to academic writing standards, enhancing the quality and impact of papers, meticulously refining every detail, and optimizing language expression and logical structure.
-</context>
-
-<instructions>
-1. Highlight core academic leadership credentials:
-   - Demonstrate extensive research involvement
-   - Showcase cross-domain expertise
-2. Detail professional capabilities:
-   - Adhere to academic writing standards
-   - Enhance paper quality and impact
-3. Emphasize specialized skills:
-   - Meticulous detail refinement
-   - Language expression optimization
-   - Logical structure enhancement
-4. Maintain formal academic tone throughout
-5. Organize information hierarchically
-</instructions>
-
-<output_format>
-Concise professional profile in English, structured with:
-- Opening statement establishing academic authority
-- Bullet points categorizing qualifications
-- Final sentence summarizing value proposition
-</output_format>
-</optimized_prompt>
-```
-
 ### 1.4 中文原版
 
 ```html
-我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构。
+我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解，擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构。
 ```
 
 ### 1.5 PromptPilot 中文优化版
@@ -105,47 +71,12 @@ Concise professional profile in English, structured with:
 </解释>
 ```
 
-### 1.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>优化学术论文的语言表达和逻辑结构</task>
-
-<context>
-我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构。
-</context>
-
-<instructions>
-1. 分析输入论文内容
-2. 应用学术写作规范：
-   - 遵循领域特定格式
-   - 确保引用和参考文献准确
-3. 精细润色每个细节：
-   - 修正语法和拼写错误
-   - 优化词汇选择和术语一致性
-   - 检查标点和句式结构
-4. 优化语言表达：
-   - 提升清晰度和简洁性
-   - 增强学术风格和专业性
-   - 调整语气以符合目标读者
-5. 优化逻辑结构：
-   - 重新组织段落和章节顺序
-   - 强化论证连贯性和流畅性
-   - 添加过渡句以改善整体逻辑
-</instructions>
-
-<output_format>
-提供完整润色后的论文文本，使用 `高亮标记` 标识所有修改部分，并在文本末尾附上简要优化说明，包括修改理由和整体改进效果。
-</output_format>
-</optimized_prompt>
-```
-
-当然，你也可以预设其他的角色。
+此外，你还可以根据实际需求预设其他学术角色。
 
 ## 2.论文评审专家
 
-- 请他扮演一个专业的论文评审专家，对论文草稿给出评审意见，然后根据意见，去重新审视论文。
-- 在修改具体论文内容时，让他扮演我所研究的领域的专家，这样可以让它的表达更加准确。
+- 让GPT扮演专业的论文评审专家，对论文草稿给出评审意见，并据此重新审视和修改论文内容。
+- 在具体修改论文时，让GPT扮演你所研究领域的专家，以提升表达的准确性和专业性。
 
 ### 2.1 英文原版
 
@@ -179,69 +110,6 @@ Please put your analysis and results in the following format:
 <Result>
 [List the modification places, revision opinions, and recommended revision content in a clear and organized way. For example: "Modification place: [Location in the content]; Revision opinion: [Explanation]; Recommended revision content: [Suggested text]"]
 </Result>
-```
-
-### 2.3 Prompt Optimizer 英文优化版
-
-```html
-
-<optimized_prompt>
-<task>As a subject matter expert, identify the content that needs modification and provide specific suggestions for revision.</task>
-
-<context>
-You are now acting as an expert in the field of \[Put professional fields here…\]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.
-</context>
-
-<instructions>
-1. Locate the specific positions that need to be modified:
-   - Identify each paragraph, sentence, or phrase in the original text that requires modification
-   - Avoid rewriting the entire text; maintain the basic framework of the original text
-
-2. Analyze the points of modification item by item:
-   - For each modification point, indicate any unprofessional or inaccurate statements.
-   - Explain the professional reasons for the modification
-   - Provide specific suggestions for replacement content
-   - Ensure consistency in semantics between the original and modified versions
-
-3. Provide professional modification suggestions:
-   - Replace vague expressions with domain-specific terminology
-   - Adjust sentence structures to enhance professional rigor
-   - Ensure that the modifications conform to the professional standards of the field
-
-4. Maintain the format of modification suggestions:
-   - List each modification point separately
-   - Use the "Location-Issue-Suggestion" structure:
-     - Location: Describe the specific location in the original text
-     - Issue: Explain the unprofessional statement
-     - Suggestion: Provide specific suggestions for replacement content
-   - Ensure consistency in semantics between the original and modified versions
-
-3. Provide professional revision suggestions:
-   - Use domain-specific terminology instead of vague expressions.
-   - Use professional sentence structures.
-   - Ensure that the modifications conform to the professional standards of the field.
-
-4. Maintain the formatting standards of revision suggestions:
-   - List each modification point separately.
-   - Use the "Location-Issue-Suggestion" structure:
-     - Location: Describe the specific location in the original text
-     - Issue: Explain the unprofessional statement
-     - Suggestion: Provide specific suggestions for replacement content
-   - Ensure consistency in semantics between the original and modified versions.
-</instructions>
-
-<output_format>
-List the modification suggestions in a table format:
-1. [Location description] 
-   - Issue: [Specific expression problem]
-   - Suggestion: [Modified professional expression]
-2. [Location description] 
-   - Issue: [Specific expression problem]
-   - Suggestion: [Modified professional expression]
-...
-Make sure each modification point is presented separately, without using continuous paragraphs
-</output_format>
-</optimized_prompt>
 ```
 
 ### 2.4 中文原版
@@ -280,41 +148,6 @@ Make sure each modification point is presented separately, without using continu
 </推荐内容>
 ```
 
-### 2.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>扮演指定领域的专家，评估内容并提出修改建议。</task>
-
-<context>
-你现在扮演一个[这里放你所研究的领域] 领域的专家，从专业的角度，您认为上面这些内容是否有需要修改的地方？ 注意，不要全文修改，您需要一一指出需要修改的地方，并且给出修改意见以及推荐的修改内容。
-</context>
-
-<instructions>
-1. 确认要扮演的领域：
-   - 替换"[这里放你所研究的领域]"为具体的专业领域
-2. 仔细阅读待评估的内容：
-   - 确保理解上下文和细节
-3. 识别需要修改的地方：
-   - 一一列出所有需要修改的点
-   - 避免全文修改，只聚焦于具体问题
-4. 为每个修改点提供修改意见：
-   - 解释为什么需要修改
-   - 基于专业角度给出理由
-5. 为每个修改点推荐具体的修改内容：
-   - 提供清晰的修改建议
-   - 确保修改内容可操作
-</instructions>
-
-<output_format>
-输出格式应为列表形式，每个条目包括：
-   - 需修改的地方：描述具体的修改点
-   - 修改意见：解释修改原因和专业依据
-   - 推荐的修改内容：提供具体的修改建议
-</output_format>
-</optimized_prompt>
-```
-
 # 二、论文撰写指令
 
 ## 1.写标题
@@ -344,31 +177,6 @@ When generating the title, please follow these guidelines:
 Please write your generated title within the <Title> tag.
 ```
 
-### 1.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Generate a scientific paper title based on the abstract and keywords.</task>
-
-<context>
-I will provide you with the abstract and key words of a scientific paper in any language and you will detect the language and reply in the same language. Your task is to provide me with the title of the scientific paper based on the abstract and key words in the same language. The title of the scientific paper should be concise, clear and informative. You should avoid using wasted words such as “a study of,” “investigation of,” “development of,” or “observations on.” Make sure the title can grip the audience immediately. My abstract is "XXX", my key words are "XXX"
-</context>
-
-<instructions>
-1. Detect the language of the summary and keywords provided by the user.
-2. Generate a title for the scientific paper based on the summary and keywords in the detected language.
-3. Ensure the title is concise, clear, and informative.
-4. Avoid using unnecessary words such as "a study of," "investigation of," "development of," or "observations on."
-5. Make sure the title is able to immediately attract the audience.
-6. Provide the generated title in the detected language.
-</instructions>
-
-<output_format>
-The output should be the title of the scientific paper, in the same language as the input, formatted as a plain text string.
-</output_format>
-</optimized_prompt>
-```
-
 ### 1.4 中文原版
 
 ```html
@@ -394,36 +202,6 @@ The output should be the title of the scientific paper, in the same language as 
 4. 避免使用研究、调查、发展或观察等词语。
 5. 让标题具有吸引力，能够引起读者的兴趣。
 请在<title>标签内写下生成的标题。
-```
-
-### 1.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>根据科学论文的摘要和关键词生成相应语言的论文标题</task>
-
-<context>
-我将为你提供一篇任何语言的科学论文的摘要和关键词，你将检测该语言并以相同的语言进行回复。你的任务是根据摘要和关键词用相同的语言向我提供科学论文的标题。科学论文的标题应该是简洁、明确和有信息量的。你应该避免使用诸如研究、调查、发展或观察等词语。确保标题能够立即抓住听众的心。
-</context>
-
-<instructions>
-1. 语言检测：分析提供的摘要和关键词，确定其语言类型
-2. 语言一致性：使用检测到的相同语言生成论文标题
-3. 标题生成：
-   - 提炼摘要核心内容与关键词的核心概念
-   - 创建简洁（不超过15词）、明确且信息丰富的标题
-   - 避免使用指定禁用词：`研究`、`调查`、`发展`、`观察`
-   - 确保标题具有立即吸引注意力的效果
-4. 质量验证：
-   - 检查标题是否准确反映论文内容
-   - 确认标题符合学术规范
-5. 输出准备：仅输出最终生成的标题文本
-</instructions>
-
-<output_format>
-直接输出生成的论文标题文本，不使用引号或任何格式标记，保持纯文本格式
-</output_format>
-</optimized_prompt>
 ```
 
 ## 2.写英文标题
@@ -453,51 +231,6 @@ Please present your output as a markdown table with two columns. The headers of 
 | [Your fifth title] | [Your fifth explanation] |
 ```
 
-### 2.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Generate 5 English titles according to the abstract of the thesis and explain their advantages, and output the Markdown table with the Chinese header.</task>
-
-<context>
-I want you to act as an academic journal editor. I am going to provide you an abstract of manuscript and you provide me with 5 good titles in English for a research paper and give explanation for why this title is good. Provide your output as a markdown table with two columns and with head in Chinese. First column gives titles in English and second column provides explanation in Chinese. The following text is the abstract:
-</context>
-
-<instructions>
-1. Confirm the role identity:
-   - Acknowledge your role as an academic journal editor
-2. Receive input material:
-   - Prepare to receive the user-provided manuscript abstract
-3. Title generation and evaluation:
-   - Create 5 English paper titles that meet academic standards
-   - Analyze the advantages of each title:
-     - Reflect the core contribution of the research
-     - Express the relevance of the research to the target audience
-     - Express the novelty of the research
-     - Express the significance of the research
-4. Output preparation:
-   - Structure the output as a Markdown table with two columns
-   - Set the table header in Chinese:
-     - First column: "英文标题" (English Title)
-     - Second column: "理由说明" (Reason Explanation)
-5. Content organization:
-   - Put the generated English titles in the first column
-   - Put the explanation for each title in the second column
-</instructions>
-
-<output_format>
-Markdown format table, including:
-1. Table header: | 英文标题 | 理由说明 |
-2. Separator row: | :--- | :--- |
-3. Five rows of data: Each row corresponds to a title and its explanation
-4. Chinese explanation needs to be specific:
-   - Accuracy of terms
-   - Coverage of core content
-   - Expression of academic appeal
-</output_format>
-</optimized_prompt>
-```
-
 ### 2.4 中文原版
 
 ```html
@@ -525,64 +258,9 @@ Markdown format table, including:
 请确保你的解释清晰、全面，能充分说明每个标题的优点。
 ```
 
-### 2.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>生成研究论文的5个英文标题并解释其优点</task>
-
-<context>
-希望你担任一名学术期刊编辑。我将为你提供一个手稿的摘要，你需要为一篇研究论文提供5个好的英文标题，并解释为什么这个标题好。请以Markdown表格的形式提供你的输出，表格有两列，标题用中文。第一列给出英文标题，第二列用中文提供解释。以下是摘要：
-</context>
-
-<instructions>
-1. 分析用户提供的摘要内容
-   - 识别研究主题、方法、创新点等核心要素
-   - 提取关键术语和领域专业词汇
-2. 生成5个备选英文标题：
-   - 确保标题准确反映研究核心内容
-   - 采用不同表达风格（如陈述式、疑问式、创新性短语）
-   - 符合学术期刊命名规范
-3. 为每个标题撰写专业解释：
-   - 说明术语选择的准确性
-   - 分析句式结构的优势
-   - 评估吸引力与专业性平衡
-   - 突出创新表达方式的价值
-4. 构建结构化输出：
-   - 创建两列Markdown表格
-   - 第一列标题设为“英文标题”
-   - 第二列标题设为“解释”
-5. 质量控制：
-   - 验证标题无重复
-   - 确保解释包含三个分析维度
-   - 检查表格格式正确性
-</instructions>
-
-<output_format>
-输出必须为完整的Markdown表格：
-
-| 英文标题 | 解释 |
-|----------|------|
-| [标题1]  | [包含三个分析维度的中文解释] |
-| [标题2]  | [包含三个分析维度的中文解释] |
-| [标题3]  | [包含三个分析维度的中文解释] |
-| [标题4]  | [包含三个分析维度的中文解释] |
-| [标题5]  | [包含三个分析维度的中文解释] |
-
-表格要求：
-1. 必须有6行（1行表头+5行内容）
-2. 第一列严格使用英文标题
-3. 第二列使用中文解释，每项解释需包含：
-   - 术语准确性说明
-   - 句式结构分析
-   - 专业吸引力评估
-</output_format>
-</optimized_prompt>
-```
-
 ## 3.写摘要
 
-这个指令可以为你的研究论文撰写一个摘要，简洁地总结研究目标、方法、主要发现和意义，确保摘要清晰、连贯，同时遵循学术领域的具体指南和惯例。
+该指令可用于为研究论文撰写摘要，简明扼要地总结研究目标、方法、主要发现和意义，确保摘要内容清晰、连贯，并符合学术领域的规范要求。
 
 ### 3.1 英文原版
 
@@ -608,37 +286,6 @@ When drafting the abstract, please follow these guidelines:
 3. Ensure that the abstract accurately reflects the essence of the research.
 4. The abstract should be a single - paragraph text.
 Please write your abstract within the <abstract> tag.
-```
-
-### 3.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Writing a research paper abstract.</task>
-
-<context>
-Act as an academic research expert. Draft an abstract for a research paper titled \[title\]. The abstract should succinctly summarize the main objectives, methodologies, key findings, and implications of the research.
-</context>
-
-<instructions>
-1. Play the role of an academic research expert.
-2. Analyze the research paper title and research background
-3. Write an abstract containing four core parts:
-   - Clearly state the research objectives
-   - Describe the research methods used
-   - Summarize the key findings
-   - Explain the research impact and significance
-4. Ensure the abstract has the following features:
-   - Content is concise and refined
-   - Logical coherence and clarity
-   - Compliance with academic standards
-5. Maintain a professional academic writing style
-</instructions>
-
-<output_format>
-Output a single paragraph academic abstract text, including the four core elements: objectives, methods, results, and significance, with a word count between 150-250 words. Do not use titles or paragraphs.
-</output_format>
-</optimized_prompt>
 ```
 
 ### 3.4 中文原版
@@ -667,60 +314,6 @@ Output a single paragraph academic abstract text, including the four core elemen
 请在<abstract>标签内写下你的摘要。
 ```
 
-### 3.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>起草研究论文摘要</task>
-
-<context>
-作为学术研究专家，为研究论文起草一个摘要，标题为[标题]。摘要应简洁地概述研究的主要目标、方法、关键发现和意义。
-</context>
-
-<instructions>
-1. 确定论文核心要素：
-   - 识别标题中的研究主题
-   - 提取原文要求的关键维度：目标、方法、发现、意义
-2. 构建目标描述：
-   - 用1-2句话说明研究的核心目的
-   - 突出研究试图解决的核心问题
-3. 总结研究方法：
-   - 简述采用的研究方法（实验/调查/模型等）
-   - 注明关键数据来源或样本特征
-4. 提炼核心发现：
-   - 列举2-3项最具突破性的研究成果
-   - 用数据支撑关键结论（如有）
-5. 阐述研究价值：
-   - 说明理论贡献
-   - 指出实际应用价值
-   - 强调对领域的推动作用
-6. 整合成完整摘要：
-   - 保持总字数150-250字
-   - 确保逻辑连贯：目标→方法→结果→意义
-   - 避免出现图表引用和文献引用
-</instructions>
-
-<output_format>
-1. 采用学术摘要标准结构：
-   - 首句点明研究背景
-   - 第二段说明研究目标与方法
-   - 第三段陈述关键发现
-   - 结尾段强调研究意义
-2. 语言要求：
-   - 使用第三人称客观叙述
-   - 动词采用过去时态
-   - 专业术语保持准确
-3. 格式规范：
-   - 单段落无分节
-   - 禁用缩略语（首次出现需全称）
-   - 重要数据需包含具体数值
-4. 篇幅控制：
-   - 严格控制在200字±10%
-   - 核心要素占比：目标(20%)/方法(20%)/结果(30%)/意义(30%)
-</output_format>
-</optimized_prompt>
-```
-
 ## 4.写英文摘要指令
 
 ### 4.1 英文原版
@@ -745,44 +338,6 @@ When writing the abstract, please follow the below structure and content require
 5. End with a statement that underscores the unique value or significant contribution of the manuscript.
 Please write your abstract in English within the <Abstract> tag.
 After writing the abstract, please provide an explanation in Chinese within the <Explanation> tag to check if you have followed the instruction. You should detail how each part of the abstract meets the corresponding requirement.
-```
-
-### 4.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Write an English abstract for the uploaded manuscript and verify compliance with instructions.</task>
-
-<context>
-Please read through the uploaded manuscript and write an abstract in English for it. The abstract should initiate with a comprehensive summary of the broader context or background of the study, followed by a statement that describe the gaps, limitations or issues. Then, describe the research methods used in the manuscript. After that, write 3-5 sentences showing the key findings. In the end, include a statement which underscores the unique value or significant contribution of the manuscript. After generating the abstract, give explanation in Chinese checking if you have followed the instruction in a markdown table.
-</context>
-
-<instructions>
-1. Read the uploaded manuscript
-   - Identify the main research question or objective
-   - Understand the context and background of the study
-2. Draft the abstract
-   - Provide a comprehensive summary of the broader context or background of the study
-   - State the gaps, limitations or issues in the existing research related to this study
-   - Describe the research methods used in the manuscript
-   - Write 3-5 sentences showing the key findings
-   - Include a statement which underscores the unique value or significant contribution of the manuscript
-3. Verify compliance with instructions
-   - Check if the abstract follows the structure and content requirements
-   - Provide a detailed explanation in Chinese to verify if the abstract meets the requirements
-   - Use a Markdown table to present the explanation
-   </instructions>
-<output_format>
-1. The abstract should be written in English and should include the following sections:
-   - A comprehensive summary of the broader context or background of the study
-   - A statement that describe the gaps, limitations or issues in the existing research related to this study
-   - A description of the research methods used in the manuscript
-   - 3-5 sentences showing the key findings
-   - A statement which underscores the unique value or significant contribution of the manuscript
-2. After generating the abstract, provide a detailed explanation in Chinese to verify if the abstract meets the requirements
-   - Use a Markdown table to present the explanation
-   </output_format>
-</optimized_prompt>
 ```
 
 ### 4.4 中文原版
@@ -821,35 +376,6 @@ Please read through the uploaded manuscript and write an abstract in English for
 </table>
 ```
 
-### 4.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>阅读上传的手稿，撰写一份结构化英文摘要，并提供中文解释和Markdown表格检查指令遵循情况。</task>
-
-<context>
-请阅读上传的手稿，并为其撰写一份英文摘要。摘要应首先提供研究背景或更广泛背景的全面概述，接着陈述描述研究的空白、局限性或问题。然后，描述手稿中使用的研究方法。此后，写出3-5句话展示关键发现。最后，包括一份强调手稿独特价值或重大贡献的声明。在生成摘要后，以中文提供解释，检查你是否遵循了指令，并以Markdown表格形式展示。
-</context>
-
-<instructions>
-1. 阅读并全面理解上传的手稿内容，确保掌握所有关键细节。
-2. 撰写英文摘要：
-   - 提供研究背景或更广泛背景的全面概述。
-   - 陈述研究的空白、局限性或问题。
-   - 描述手稿中使用的研究方法。
-   - 写出3-5句话展示关键发现。
-   - 包括强调手稿独特价值或重大贡献的声明。
-3. 在摘要生成后：
-   - 以中文提供解释，检查是否遵循所有指令。
-   - 以Markdown表格形式展示检查结果。
-</instructions>
-
-<output_format>
-输出应包含两部分：第一部分是英文摘要，按照指令结构撰写；第二部分是中文解释和Markdown表格，详细说明指令遵循情况。
-</output_format>
-</optimized_prompt>
-```
-
 ## 5.缩写名称
 
 可以向AI寻求为段落起标题，为方法起缩写名称等。
@@ -879,50 +405,10 @@ Please present your results in the following format:
 </AbbreviationOption>
 ```
 
-### 5.3 Prompt Optimizer 英文优化版
+### 5.4 中文原版
 
 ```html
-<optimized_prompt>
-<task>Provide possible academic abbreviation options for "XXX" and their reasons.</task>
-
-<context>
-What abbreviations can "XXX" have? Give several options, with reasons, for use in an academic paper. "XXX"
-</context>
-
-<instructions>
-1. Analyze the original terminology:
-   - Confirm "XXX" as a placeholder for the term to be abbreviated
-   - Identify the discipline(s) in which the term is relevant
-2. Generate academic abbreviation options:
-   - List at least 3 options that comply with academic standards
-   - Include standard abbreviation rules:
-     - Initials (e.g., X.X.)
-     - Syllable abbreviation (e.g., Xx)
-     - Discipline-specific exceptions
-
-3. Write reasons for using each option:
-   - Each option is presented independently:
-     - Cite academic writing guidelines (e.g., APA, MLA) as the basis
-     - Explain the discipline(s) where the abbreviation is applicable
-     - Compare the advantages of the abbreviation over the full term
-
-4. Quality assurance:
-   - Ensure the abbreviation is unambiguous
-   - Verify compliance with the target journal's standards
-   - Avoid informal abbreviation forms
-</instructions>
-
-<output_format>
-Presented in a table format:
-| Abbreviation | Applicable Discipline | Reason for Use |
-|--------------|----------------------|----------------|
-| [Abbreviation 1] | [Discipline] | 1. [Academic Basis]<br>2. [Efficiency Advantage]<br>3. [Use Case] |
-| [Abbreviation 2] | [Discipline] | 1. [Academic Basis]<br>2. [Efficiency Advantage]<br>3. [Use Case] |
-| [Abbreviation 3] | [Discipline] | 1. [Academic Basis]<br>2. [Efficiency Advantage]<br>3. [Use Case] |
-
-Follow up with additional notes on the citation norm for the first occurrence of the full term.
-</output_format>
-</optimized_prompt>
+可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
 ```
 
 ### 5.4 中文原版
@@ -951,69 +437,15 @@ Follow up with additional notes on the citation norm for the first occurrence of
 </缩写选择>
 ```
 
-### 5.6 Prompt Optimizer 中文优化版
+### 6.4 中文原版
 
 ```html
-<optimized_prompt>
-<task>提供适用于论文的缩写形式及其使用理由</task>
-
-<context>
-可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
-</context>
-
-<instructions>
-1. 列举常见的学术写作缩写类型：
-   - 拉丁语缩写
-   - 计量单位缩写
-   - 专业术语缩写
-   - 机构组织缩写
-   - 通用学术短语缩写
-
-2. 为每种类型提供具体示例：
-   - 每个示例包含完整形式和缩写形式
-   - 注明适用学科领域
-   - 说明使用场景：
-     - 正文中的首次使用
-     - 图表标注
-     - 参考文献
-
-3. 详细说明选用理由：
-   - 节省篇幅
-   - 提高专业度
-   - 避免重复
-   - 符合领域惯例
-   - 增强可读性
-
-4. 提供使用规范建议：
-   - 首次出现时标注全称
-   - 保持全文一致性
-   - 避免过度使用
-   - 检查目标期刊要求
-
-5. 包含特殊注意事项：
-   - 区分大小写规则
-   - 避免歧义缩写
-   - 文化敏感度考量
-</instructions>
-
-<output_format>
-以分类列表形式呈现：
-1. [类别名称]
-   - 示例：
-     ◦ 全称：[完整术语]
-     ◦ 缩写：[缩写形式]
-     ◦ 适用领域：[具体学科]
-   - 理由：[2-3条使用优势]
-   - 注意事项：[关键使用规范]
-
-每个类别提供3-5个典型示例，确保覆盖自然科学、社会科学和人文学科领域。使用学术正式语体，避免口语化表达。
-</output_format>
-</optimized_prompt>
+根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
 ## 6.论文续写
 
-这个方法一般适合实在想不出什么内容，又希望增加字数的情况。
+该方法适用于内容暂时匮乏但需要扩充论文篇幅的场景。
 
 ### 6.1 英文原版
 
@@ -1043,47 +475,10 @@ When working on this content, please follow these guidelines:
 Please put the polished and continued content in the <OutputContent> tag.
 ```
 
-### 6.3 Prompt Optimizer 英文优化版
+### 6.4 中文原版
 
 ```html
-<optimized_prompt>
-<task>Optimize and expand the existing content on the specified topic to make it richer and more comprehensive.</task>
-
-<context>
-Based on the knowledge you have mastered about [xxx], polish and continue writing the above content to make the content richer and more complete.
-</context>
-
-<instructions>
-1. Analyze existing content:
-   - Identify the original content to be polished and expanded
-   - Recognize the core ideas and knowledge framework of the original content
-   - Mark the key areas that need to be strengthened or expanded
-
-2. Conduct content optimization:
-   - Correct grammatical errors and unclear expressions
-   - Enhance the accuracy and consistency of professional terms
-   - Adjust paragraph structure for better readability
-
-3. Implement content expansion:
-   - Add relevant cases, data, or application scenarios
-   - Include background knowledge and extended interpretations
-   - Integrate cross-disciplinary perspectives for a multi-dimensional analysis
-
-4. Quality verification:
-   - Ensure that the added content is highly relevant to the original theme
-   - Verify the completeness and logical coherence of the content
-   - Confirm the accuracy of professional information
-
-5. Final integration:
-   - Smoothly transition between the original content and the added content
-   - Maintain a consistent tone and writing style
-   - Form a comprehensive argument with academic depth
-</instructions>
-
-<output_format>
-The output should be a continuous professional text that includes the optimized version of the original content and the expanded content. Use academic writing style, avoid using bullet points or numbered lists. The added content should be naturally integrated with the original content, forming a coherent and logical argument.
-</output_format>
-</optimized_prompt>
+根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
 ### 6.4 中文原版
@@ -1112,57 +507,10 @@ The output should be a continuous professional text that includes the optimized 
 请在<result>标签内写下润色和续写后的内容。
 ```
 
-### 6.6 Prompt Optimizer 中文优化版
+### 6.4 中文原版
 
 ```html
-<optimized_prompt>
-<task>根据指定知识领域润色和续写内容，使其更丰富完整</task>
-
-<context>
-根据你所掌握的关于[xxx]的知识，润色并续写上面的内容，使得内容更加丰富完整。
-</context>
-
-<instructions>
-1. 明确知识领域：
-   - 要求用户将[xxx]替换为具体的知识领域名称
-   - 确认该领域的核心概念和知识框架
-
-2. 分析原始内容：
-   - 获取需要润色的原文内容
-   - 识别原文的核心观点和逻辑结构
-   - 标注需要扩展深化的关键部分
-
-3. 执行内容润色：
-   - 优化语言表达的专业性和流畅度
-   - 调整段落结构增强可读性
-   - 修正语法错误和术语不准确问题
-   - 保持原始核心观点不变
-
-4. 进行内容续写：
-   - 基于指定知识领域添加：
-     - 相关案例或实证数据
-     - 深度原理分析
-     - 最新行业动态
-     - 多维度视角解读
-   - 确保新增内容与原文逻辑连贯
-   - 补充必要的背景说明
-
-5. 整体质量校验：
-   - 验证内容完整性和知识准确性
-   - 确保专业术语使用一致
-   - 检查信息密度是否合理提升
-   - 维持统一的语言风格
-</instructions>
-
-<output_format>
-完整润色续写后的专业文本，需满足：
-1. 包含原文核心观点的优化版本
-2. 新增内容占比30%-50%且逻辑连贯
-3. 使用Markdown格式规范排版
-4. 不添加额外解释说明性文字
-5. 文末标注知识领域来源
-</output_format>
-</optimized_prompt>
+根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
 ## 7.论文致谢
@@ -1436,7 +784,7 @@ Act as an academic research expert. Draft a comprehensive research paper outline
 
 # 三、学术润色指令
 
-学术润色涉及对论文草稿的语言、语法、逻辑和结构进行改进，以提高其清晰度、连贯性和专业性。
+学术润色旨在提升论文草稿的语言表达、语法准确性、逻辑性和结构合理性，从而增强其清晰度、连贯性和专业性。
 
 ## 1.英文润色
 
@@ -1783,7 +1131,7 @@ Below is a paragraph from an academic paper. Polish the writing to meet the acad
 
 ## 3.中文润色
 
-与通常的指令不同的是，这个prompt特别指出，助手只需提供修改后的文本版本，而无需包含任何解释或额外的说明。
+与常规润色指令不同，此类prompt特别强调：助手只需提供修改后的文本版本，无需附加解释或说明。
 
 ### 3.1 英文原版
 
@@ -2089,7 +1437,7 @@ I am preparing my SCI paper for submission and require assistance in polishing e
 
 ## 5.期刊/会议风格
 
-根据期刊会议(注意 期刊或者会议要足够著名)的风格，来润色内容。
+可根据目标期刊或会议（建议选择知名期刊/会议）的风格，对论文内容进行针对性润色。
 
 ### 5.1 英文原版
 
@@ -2548,7 +1896,7 @@ I have used a passive voice in this sentence. Consider using an active voice ins
 
 ## 14.润色定位
 
-如果文本过长不利于观察，让它回答具体修改了哪些地方。
+当文本较长不便于整体观察时，可要求GPT明确指出具体修改了哪些段落和句子。
 
 ```html
 Note that in addition to giving the modified content, please also indicate which paragraphs and sentences have been modified in the revised version.
@@ -2624,7 +1972,7 @@ Now, in order to help me better polish my thesis, I need you to remember the XXX
 现在，为了接下来能够帮我更好的润色论文，我需要你记住XXX原理：“.......”
 ```
 
-**这样就相当于为一段内容，封装了一个函数名称，之后你再次提到XXX原理的时候，ChatGPT就能快速知道你说的是哪些基本事实了** 。
+**这样相当于为一段内容封装了“函数名”，后续只需提及XXX原理，ChatGPT即可快速关联相关基本事实。**
 
 ```html
 Polish and rewrite the above content to make it more in line with the style of academic papers, and at the same time, it can be more professional. If there are parts that do not conform to facts or logic, please refer to the part of xxxxx for the above content modification. 
@@ -2843,7 +2191,7 @@ Please explain the concepts in your own words after understanding their meaning,
 ## 1.检查参考文献格式
 
 ```html
-I'd like you to serve as a reference editor for a research manuscript. I will supply you with five reference templates that you should use as guidelines. Following that, I will provide additional references for which you'll need to examine formatting aspects such as punctuation placement and spacing. It is essential that the provided references align cohesively with the five initial templates. Provide me with any necessary corrections or suggestions for improve the text. Give a markdown table with three columns where the first is the original text, second is the fixed text, explanation in the third column, and then provide all fixed references. Below are the five example templates and references needed to be fixed: 
+请担任研究手稿的参考文献编辑。我将提供五个参考文献模板作为格式参考，随后会给出需校正的参考文献。请检查格式（如标点、间距等），确保与模板一致，并以Markdown三列表格形式列出原文、修正后文本及修正说明，最后汇总所有修正后的参考文献。以下为五个模板及需校正的参考文献：
 ```
 
 ```html
@@ -2860,14 +2208,14 @@ Please first correct the following reference format according to APA style, adju
 请首先按照 APA 格式对以下参考文献格式进行校正，调整为严格符合 APA 的文献格式。最后，我需要将参考文献以 Markdown 格式的代码块形式展示。需要注意的是期刊名称要全称，且斜体(这里可以添加其他要求)。下面是我的参考文献：
 ```
 
-# 七、投稿审稿指令
+# 七、投稿与审稿指令
 
-## 1.撰写 Cover letter
+## 1.撰写 Cover Letter
 
-**写** **Cover** **letter** ，需要提供文章题目和摘要
+**Cover Letter 写作需提供文章题目和摘要**
 
 ```html
-I want you to act as an academic journal editor. I will provide you with the title and abstract of my manuscript. You need to write a format cover letter for submitting the manuscript to the Nature journal. You should state that the manuscript did not consider for publication in any other journal. Briefly introduce the merit of the manuscript and provide a short summary to point out the importance of the results for a scientific audience. The title and abstract are as follows: 
+请担任学术期刊编辑。我将提供手稿的标题和摘要，请为投稿至《Nature》杂志撰写一封格式规范的Cover Letter。需声明该手稿未在其他期刊考虑发表，简要介绍手稿优点，并突出研究结果对科学界的重要性。标题和摘要如下：
 ```
 
 ```html
@@ -2890,7 +2238,7 @@ Act as an academic research expert. Carefully analyze and interpret the \[feedba
 
 ## 1.归纳文献核心要点
 
-**如果你想快速了解单篇文献的核心要点，用这个指令准没错！**
+**如需快速了解单篇文献的核心要点，可使用以下指令：**
 
 ```html
 1. Condense the main points of this article for me. 
@@ -2918,7 +2266,7 @@ Act as an academic research expert. Carefully analyze and interpret the \[feedba
 
 ## 2.总结论文内容
 
-**最适合科研小白的读文献指令！**
+**非常适合科研新手的文献阅读指令！**
 
 ```html
 Act as an academic research expert. Read and digest the content of the research paper titled \[xx\]. Produce a concise and clear summary that encapsulates the main findings, methodology, results, and implications of the study. Ensure that the summary is written in a manner that is accessible to a general audience while retaining the core insights and nuances of the original paper. 
@@ -2951,7 +2299,7 @@ Act as an academic research expert. Read and digest the content of the research 
 
 ## 4.提取论文中的术语表
 
-**对于科研小白来说，超级实用的功能，直接帮你生成文献中的术语表，真的太香了！**
+**对于科研新手来说，这一功能极为实用，可直接生成文献术语表，便于学习和查阅。**
 
 ```html
 Assuming I am a graduate student majoring in artificial intelligence, please act as my thesis advisor and create a glossary of terms suitable for my study based on this paper. This glossary should include three columns: Term, Definition, and Section Index in the Thesis. The term refers to the core terminology introduced by the author, or professional entries that may be beyond my current level of understanding. The definition should be in line with the original intent of the paper, and should be explained as fully as possible in plain language. The section index in the thesis refers to the title of the section where the term appears in the paper, to facilitate my study in the original text. Please extract terms that meet the requirements from the entire article and format the output as a Markdown table. 
@@ -3022,11 +2370,12 @@ For the research question (such as "Under what circumstances does wishful thinki
 6. 研究局限
 ```
 
-# 九、其他场景的学术指令
+# 九、其他学术场景指令
 
 ## 1.论文期刊匹配
 
-**这个指令我用的比较多，用来匹配论文期刊，效果非常好！**
+**该指令可高效匹配论文投稿期刊，推荐使用。**
+**该指令可用于论文期刊匹配，实用性强，推荐使用。**
 
 ```html
 I want you to act as a scientific manuscript matcher. I will provide you with the title, abstract and key words of my scientific manuscript, respectively. Your task is analyzing my title, abstract and key words synthetically to find the most related, reputable journals for potential publication of my research based on an analysis of tens of millions of citation connections in database, such as Web of Science, Pubmed, Scopus, ScienceDirect and so on. You only need to provide me with the 15 most suitable journals. Your reply should include the name of journal, the corresponding match score (The full score is ten). I want you to reply in text-based excel sheet and sort by matching scores in reverse order.My title is "XXX" My abstract is "XXX" My key words are "XXX" 
