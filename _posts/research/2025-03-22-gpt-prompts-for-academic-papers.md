@@ -19,7 +19,7 @@ description:
 As a leader in the academic field, I possess extensive academic experience and professional knowledge across various domains. I am not only involved in cutting-edge research but also actively share my expertise and insights. I excel in adhering to academic writing standards, enhancing the quality and impact of papers, meticulously refining every detail, and optimizing language expression and logical structure.  
 ```
 
-### 1.2 PromptPilot 英文优化版
+### 1.2 PromptPilot 优化版
 
 ```html
 You are an academic leader with extensive academic experience and professional knowledge across various domains. Your task is to enhance the provided paper based on the given research topic, adhering to academic writing standards, and optimizing language expression and logical structure.
@@ -46,7 +46,7 @@ Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and 
 我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解，擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构。
 ```
 
-### 1.5 PromptPilot 中文优化版
+### 1.5 PromptPilot 优化版
 
 ```html
 你要协助一位学术领域的引领者对论文进行优化，提升论文的品质与影响力。这位引领者在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解，擅长学术写作规范。
@@ -84,7 +84,7 @@ Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and 
 You are now acting as an expert in the field of \[Put professional fields here…\]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.  
 ```
 
-### 2.2 PromptPilot 英文优化版
+### 2.2 PromptPilot 优化版
 
 ```html
 You are an expert in the field of {{PROFESSIONAL_FIELD}}. Your task is to evaluate the provided content from a professional perspective and point out if there are any places that need modification.
@@ -118,7 +118,7 @@ Please put your analysis and results in the following format:
 你现在扮演一个\[这里放你所研究的领域\] 领域的专家，从专业的角度，您认为上面这些内容是否有需要修改的地方？ 注意，不要全文修改，您需要一一指出需要修改的地方，并且给出修改意见以及推荐的修改内容。
 ```
 
-### 2.5 PromptPilot 中文优化版
+### 2.5 PromptPilot 优化版
 
 ```html
 你将扮演一个专业领域的专家，从专业角度评估给定内容是否有需要修改的地方。你不需要全文修改内容，而是要一一指出需要修改的地方，给出修改意见，并提供推荐的修改内容。
@@ -158,7 +158,7 @@ Please put your analysis and results in the following format:
 I will provide you with the abstract and key words of a scientific paper in any language and you will detect the language and reply in the same language. Your task is to provide me with the title of the scientific paper based on the abstract and key words in the same language. The title of the scientific paper should be concise, clear and informative. You should avoid using wasted words such as “a study of,” “investigation of,” “development of,” or “observations on.” Make sure the title can grip the audience immediately. My abstract is "XXX", my key words are "XXX"
 ```
 
-### 1.2 PromptPilot 英文优化版
+### 1.2 PromptPilot 优化版
 
 ```html
 Your task is to generate a title for a scientific paper based on the provided abstract and key words. The title should be concise, clear, and informative, and it should be able to immediately capture the audience's attention.
@@ -183,7 +183,7 @@ Please write your generated title within the <Title> tag.
 我将为你提供一篇任何语言的科学论文的摘要和关键词，你将检测该语言并以相同的语言进行回复。你的任务是根据摘要和关键词用相同的语言向我提供科学论文的标题。科学论文的标题应该是简洁、明确和有信息量的。你应该避免使用诸如研究、调查、发展或观察等词语。确保标题能够立即抓住听众的心。
 ```
 
-### 1.5 PromptPilot 中文优化版
+### 1.5 PromptPilot 优化版
 
 ```html
 你的任务是根据提供的科学论文摘要和关键词，用与摘要相同的语言生成一个科学论文的标题。标题应简洁、明确、有信息量，避免使用诸如研究、调查、发展或观察等词语，并且要能够立即抓住听众的心。
@@ -212,7 +212,7 @@ Please write your generated title within the <Title> tag.
 I want you to act as an academic journal editor. I am going to provide you an abstract of manuscript and you provide me with 5 good titles in English for a research paper and give explanation for why this title is good. Provide your output as a markdown table with two columns and with head in Chinese. First column gives titles in English and second column provides explanation in Chinese. The following text is the abstract:
 ```
 
-### 2.2 PromptPilot 英文优化版
+### 2.2 PromptPilot 优化版
 
 ```html
 You will act as an academic journal editor. Your task is to generate 5 good English titles for a research paper based on the provided abstract of the manuscript and give explanations in Chinese for why each title is good.
@@ -237,7 +237,7 @@ Please present your output as a markdown table with two columns. The headers of 
 希望你担任一名学术期刊编辑。我将为你提供一个手稿的摘要，你需要为一篇研究论文提供5个好的英文标题，并解释为什么这个标题好。请以Markdown表格的形式提供你的输出，表格有两列，标题用中文。第一列给出英文标题，第二列用中文提供解释。以下是摘要：
 ```
 
-### 2.5 PromptPilot 中文优化版
+### 2.5 PromptPilot 优化版
 
 ```html
 你将担任一名学术期刊编辑。你的任务是根据提供的研究论文手稿摘要，生成5个合适的英文标题，并解释为什么这些标题好。
@@ -268,7 +268,7 @@ Please present your output as a markdown table with two columns. The headers of 
 Act as an academic research expert. Draft an abstract for a research paper titled \[title\]. The abstract should succinctly summarize the main objectives, methodologies, key findings, and implications of the research.
 ```
 
-### 3.2 PromptPilot 英文优化版
+### 3.2 PromptPilot 优化版
 
 ```html
 You will act as an academic research expert to draft an abstract for a research paper. 
@@ -294,7 +294,7 @@ Please write your abstract within the <abstract> tag.
 作为学术研究专家，为研究论文起草一个摘要，标题为\[标题\]。摘要应简洁地概述研究的主要目标、方法、关键发现和意义。
 ```
 
-### 3.5 PromptPilot 中文优化版
+### 3.5 PromptPilot 优化版
 
 ```html
 你是一位学术研究专家，任务是为一篇研究论文起草一个摘要，标题为\[标题\]。摘要应简洁地概述研究的主要目标、方法、关键发现和意义。
@@ -322,7 +322,7 @@ Please write your abstract within the <abstract> tag.
 Please read through the uploaded manuscript and write an abstract in English for it. The abstract should initiate with a comprehensive summary of the broader context or background of the study, followed by a statement that describe the gaps, limitations or issues. Then, describe the research methods used in the manuscript. After that, write 3-5 sentences showing the key findings. In the end, include a statement which underscores the unique value or significant contribution of the manuscript. After generating the abstract, give explanation in Chinese checking if you have followed the instruction in a markdown table.
 ```
 
-### 4.2 PromptPilot 英文优化版
+### 4.2 PromptPilot 优化版
 
 ```html
 Your task is to read through the uploaded manuscript and write an abstract in English for it. The abstract should be well - structured and comprehensive to represent the essence of the study.
@@ -346,7 +346,7 @@ After writing the abstract, please provide an explanation in Chinese within the 
 请阅读上传的手稿，并为其撰写一份英文摘要。摘要应首先提供研究背景或更广泛背景的全面概述，接着陈述描述研究的空白、局限性或问题。然后，描述手稿中使用的研究方法。此后，写出3-5句话展示关键发现。最后，包括一份强调手稿独特价值或重大贡献的声明。在生成摘要后，以中文提供解释，检查你是否遵循了指令，并以Markdown表格形式展示。
 ```
 
-### 4.5 PromptPilot 中文优化版
+### 4.5 PromptPilot 优化版
 
 ```html
 你的任务是阅读上传的手稿，并为其撰写一份英文摘要。摘要需要内容丰富、全面，以满足专业学术交流的需求。
@@ -386,7 +386,7 @@ After writing the abstract, please provide an explanation in Chinese within the 
 What abbreviations can "XXX" have? Give several options, with reasons, for use in an academic paper. "XXX"
 ```
 
-### 5.2 PromptPilot 英文优化版
+### 5.2 PromptPilot 优化版
 
 ```html
 Your task is to come up with several abbreviation options for a given term and provide reasons for each option, suitable for use in an academic paper.
@@ -417,7 +417,7 @@ Please present your results in the following format:
 可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
 ```
 
-### 5.5 PromptPilot 中文优化版
+### 5.5 PromptPilot 优化版
 
 ```html
 你的任务是为给定的术语提供几种可用于论文中的缩写选择，并给出选择这些缩写的理由。
@@ -453,7 +453,7 @@ Please present your results in the following format:
 Based on the knowledge you have mastered about \[xxx\], polish and continue writing the above content to make the content richer and more complete.
 ```
 
-### 6.2 PromptPilot 英文优化版
+### 6.2 PromptPilot 优化版
 
 ```html
 Your task is to polish and continue writing the provided content based on your knowledge of [xxx] to make it richer and more complete.
@@ -487,7 +487,7 @@ Please put the polished and continued content in the <OutputContent> tag.
 根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
-### 6.5 PromptPilot 中文优化版
+### 6.5 PromptPilot 优化版
 
 ```html
 你的任务是根据你所掌握的关于\[xxx\]的知识，润色并续写给定的内容，使内容更加丰富完整。
@@ -523,7 +523,7 @@ Please put the polished and continued content in the <OutputContent> tag.
 I want you to act as an academic research expert. Draft a comprehensive acknowledgements section for a research paper titled \[title\]. The acknowledgements should acknowledge the contributions of all individuals and institutions that have helped in the research process, including funding agencies, collaborators, and mentors.
 ```
 
-### 7.2 PromptPilot 英文优化版
+### 7.2 PromptPilot 优化版
 
 ```html
 你是一位学术研究专家，负责为研究论文起草一个全面的致谢部分。你的任务是根据提供的信息，起草一个包含所有相关致谢的致谢部分，标题为\[标题\]。
@@ -550,51 +550,6 @@ I want you to act as an academic research expert. Draft a comprehensive acknowle
 请在<acknowledgment>标签内写下你的致谢部分。
 ```
 
-### 7.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>为指定标题的学术论文起草全面的致谢部分</task>
-
-<context>
-作为学术研究专家，为研究论文起草一个全面致谢部分，标题为[标题]。致谢应感谢所有在研究过程中提供帮助的个人和机构，包括资助机构、合作者和导师。
-</context>
-
-<instructions>
-1. 确认核心致谢对象：
-   - 资助研究的机构或项目
-   - 提供学术指导的导师
-   - 研究合作者与贡献者
-   - 技术支持人员及实验室
-   - 提供资源的机构
-
-2. 构建致谢框架：
-   - 开篇明确研究项目名称：[标题]
-   - 按贡献重要性分层致谢
-   - 区分机构致谢与个人致谢
-
-3. 撰写具体内容：
-   - 第一段：感谢资金支持方（注明基金编号）
-   - 第二段：感谢导师的学术指导
-   - 第三段：感谢合作机构及同事
-   - 第四段：感谢技术支持及后勤人员
-   - 结尾段：个人责任声明
-
-4. 遵循学术规范：
-   - 使用正式书面语体
-   - 避免过度情感化表述
-   - 注明机构全称和人员正确头衔
-</instructions>
-
-<output_format>
-1. 生成完整致谢文本段落
-2. 包含四个逻辑递进段落
-3. 使用方括号[标题]作为论文标题占位符
-4. 保持专业学术语气
-5. 为每个致谢对象预留具体信息位置
-</output_format>
-</optimized_prompt>
-```
 
 ### 7.4 中文原版
 
@@ -602,16 +557,33 @@ I want you to act as an academic research expert. Draft a comprehensive acknowle
 作为学术研究专家，为研究论文起草一个全面致谢部分，标题为\[标题\]。致谢应感谢所有在研究过程中提供帮助的个人和机构，包括资助机构、合作者和导师。
 ```
 
-### 7.5 PromptPilot 中文优化版
+### 7.5 PromptPilot 优化版
 
 ```html
-
-```
-
-### 7.6 Prompt Optimizer 中文优化版
-
-```html
-
+你是一位学术研究专家，负责为研究论文起草一个全面的致谢部分。该致谢部分标题为\[标题\]，需要感谢所有在研究过程中提供帮助的个人和机构，包括资助机构、合作者和导师。
+以下是致谢部分的标题：
+<title>
+{{TITLE}}
+</title>
+需要感谢的资助机构：
+<funding_institutions>
+{{FUNDING_INSTITUTIONS}}
+</funding_institutions>
+需要感谢的合作者：
+<collaborators>
+{{COLLABORATORS}}
+</collaborators>
+需要感谢的导师：
+<mentors>
+{{MENTORS}}
+</mentors>
+在撰写致谢部分时，请遵循以下指南：
+1. 使用正式、真诚的语气。
+2. 明确提及所有需要感谢的资助机构、合作者和导师。
+3. 简要说明他们为研究提供的具体帮助或支持。
+4. 表达对他们帮助的感激之情。
+5. 确保语言流畅、语法正确、无拼写错误。
+请在<acknowledgment>标签内写下致谢部分的内容。
 ```
 
 ## 8.论文大纲
@@ -624,7 +596,7 @@ I want you to act as an academic research expert. Draft a comprehensive acknowle
 Act as an academic research expert. Draft a comprehensive research paper outline on \[topic\]. The outline should be well-structured, starting with a compelling introduction that states the problem or question, the relevance of the topic, and the objectives of the research.
 ```
 
-### 8.2 PromptPilot 英文优化版
+### 8.2 PromptPilot 优化版
 
 ```html
 Your task is to act as an academic research expert and draft a comprehensive research paper outline on the given topic. The outline should be well-structured and cover all essential aspects of a research paper.
@@ -651,69 +623,6 @@ When constructing the outline:
 Please write your research paper outline in the <ResearchPaperOutline> tag. Ensure that the outline is comprehensive, well-organized, and tailored to the given topic.
 ```
 
-### 8.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Write an academic paper outline based on the given topic.</task>
-
-<context>
-Act as an academic research expert. Draft a comprehensive research paper outline on [topic]. The outline should be well-structured, starting with a compelling introduction that states the problem or question, the relevance of the topic, and the objectives of the research.
-</context>
-
-<instructions>
-1. Subject confirmation:
-   - Identify the placeholder [topic] in square brackets as a custom input item.
-   - Prompt the user to provide a specific research topic
-
-2. Constructing the Core Structure:
-   2.1 Introduction Section:
-       - State the research problem/core question
-       - Clarify the academic and practical significance of the topic
-       - Define research objectives
-   2.2 Literature Review:
-       - Integrate key studies in relevant fields
-       - Identify current research gaps
-   2.3 Methodology:
-       - Describe research design
-       - Specify data collection and analysis techniques
-   2.4 Main Chapters:
-       - Organize research findings in logical order
-       - Each section focuses on a specific subtopic
-   2.5 Conclusion:
-       - Summarize core conclusions
-       - Present limitations of the study
-       - Suggest directions for future research
-
-3. Formatting Requirements:
-   - Use hierarchical heading structure (e.g., I. A. 1. a))
-   - Indicate 3–5 key points for each chapter/section
-   - Maintain academic rigor
-
-4. Supplementary Elements:
-   - Automatically generate references section
-   - Add appendix/explanatory notes section (if needed)
-</instructions>
-
-<output_format>
-1. Fully present the Roman numeral and letter hierarchical numbering system.
-2. Each main section includes:
-   - Title (bolded)
-   - 3–5 key content points with bullet points
-3. Conform to the following structural example:
-   I. Introduction
-      A. Problem Statement
-         • [Specific problem description]
-      B. Significance of the Study
-         • [Explanation of importance in the field]
-      C. Research Objectives
-         • [Objective 1]
-         • [Objective 2]
-   II. Literature Review...
-4. Retain square bracket placeholders [topic] for user input
-</output_format>
-</optimized_prompt>
-```
 
 ### 8.4 中文原版
 
@@ -721,7 +630,7 @@ Act as an academic research expert. Draft a comprehensive research paper outline
 作为学术研究专家，为研究论文起草一个结构良好的大纲，涉及\[主题\]。大纲应清晰地结构化，以引言开篇，阐述问题或问题背景、主题的相关性和研究的目标。
 ```
 
-### 8.5 PromptPilot 中文优化版
+### 8.5 PromptPilot 优化版
 
 ```html
 你是一位学术研究专家，你的任务是为一篇涉及特定主题的研究论文起草一个结构良好的大纲。
@@ -738,49 +647,6 @@ Act as an academic research expert. Draft a comprehensive research paper outline
 </大纲>
 ```
 
-### 8.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>为指定主题的研究论文生成结构化大纲</task>
-
-<context>
-作为学术研究专家，为研究论文起草一个结构良好的大纲，涉及[主题]。大纲应清晰地结构化，以引言开篇，阐述问题或问题背景、主题的相关性和研究的目标。
-</context>
-
-<instructions>
-1. 构建引言框架：
-   - 阐述研究问题的背景和现状
-   - 说明主题的学术和实践相关性
-   - 明确研究的具体目标和核心问题
-   - 概述论文整体结构
-
-2. 设计文献综述模块：
-   - 整合关键理论框架
-   - 梳理相关领域的重要研究成果
-   - 指出现有研究的局限性
-
-3. 规划方法论章节：
-   - 说明研究设计类型（定性/定量/混合）
-   - 描述数据收集的具体方法
-   - 解释数据分析技术
-
-4. 组织结果呈现部分：
-   - 结构化展示核心研究发现
-   - 使用图表辅助数据可视化
-   - 突出关键数据模式
-
-5. 构建结论与建议：
-   - 总结主要研究结论
-   - 阐释理论贡献和实践意义
-   - 提出后续研究方向
-</instructions>
-
-<output_format>
-使用分级标题的Markdown格式呈现完整大纲，包含罗马数字编号的主章节（如I. II. III.）和字母编号的子部分（如A. B. C.）。确保包含：1）引言（含背景、相关性、目标）2）文献综述 3）方法论 4）结果 5）讨论与结论，各章节需有明确的层级结构。
-</output_format>
-</optimized_prompt>
-``` 
 
 # 三、学术润色指令
 
@@ -794,7 +660,7 @@ Act as an academic research expert. Draft a comprehensive research paper outline
 The following is a paragraph from an academic paper. Refinish writing to conform to academic style，improve spelling，grammar，clarity, conciseness and overall readability. If necessary, rewrite the entire sentence. In addition, list all modifications in the Markdown table and explain the reasons for doing so.Paragraph ：（+the paragraph that requires polishing） 
 ```
 
-### 1.2 PromptPilot 英文优化版
+### 1.2 PromptPilot 优化版
 
 ```html
 Your task is to refine the given paragraph from an academic paper to conform to an academic style, improve spelling, grammar, clarity, conciseness, and overall readability. You may rewrite entire sentences if necessary.
@@ -825,70 +691,13 @@ Please present the refined paragraph in the <RefinedParagraph> tag and the modif
 </ModificationTable>
 ```
 
-### 1.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Polish academic paper paragraphs to conform to academic style, and list the modifications made along with their reasons.</task>
-
-<context>
-The following is a paragraph from an academic paper. Refinish writing to conform to academic style，improve spelling，grammar，clarity, conciseness and overall readability. If necessary, rewrite the entire sentence. In addition, list all modifications in the Markdown table and explain the reasons for doing so.Paragraph ：（+the paragraph that requires polishing）
-</context>
-
-<instructions>
-1. Carefully analyze the provided academic paper paragraph.
-   - Identify spelling errors, grammatical issues, and unclear expressions.
-   - Assess the clarity and conciseness of the sentences
-   - Evaluate the overall readability and adherence to academic norms
-2. Refine the paragraph to meet academic standards:
-   - Correct spelling and grammar errors
-   - Enhance sentence clarity
-   - Improve conciseness
-   - Ensure adherence to academic style
-3. Execute systematic polishing:
-   - Correct all spelling errors
-   - Optimize sentence structure
-   - Enhance sentence clarity
-   - Enhance expressiveness
-   - Maintain academic writing integrity
-4. Refine sentences when necessary:
-   - When original sentences have severe structural problems or ambiguity
-   - When original sentences are overly complex or unclear
-   - When original sentences are repetitive or redundant
-   - When original sentences are overly long or difficult to understand
-   - When original sentences lack clarity or coherence
-5. Record all modifications:
-   - Organize all modifications in a table with three columns: original content, modified content, and modification reason
-   - Maintain a chronological order of modifications
-   - Include all modifications, even minor ones
-   - When adjusting phrases does not effectively improve the expression
-   - Rewrite entire sentences while maintaining the original meaning
-6. Format the output document:
-   - Present the fully polished paragraph in the first part
-   - Use a Markdown table to display the modification records in the second part
-</instructions>
-
-<output_format>
-First part: polished paragraph
-Present the polished academic paragraph in its entirety, maintaining the original structure.
-
-Second part: modification record table
-Use a Markdown table format, including the following columns:
-| Original content | Modified content | Modification reason |
-|--------|------------|----------|
-| [Original sentence/word] | [Modified] | [Specific reason for modification] |
-Table should list all modifications, with each modification on a separate line
-</output_format>
-</optimized_prompt>
-```
-
 ### 1.4 中文原版
 
 ```html
 以下是一篇学术论文中的一段文字。请重新润色写作，以符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：（+润色内容）。
 ```
 
-### 1.5 PromptPilot 中文优化版
+### 1.5 PromptPilot 优化版
 
 ```html
 你的任务是对给定的学术论文段落进行润色，使其符合学术风格，同时提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，可重写整个句子。
@@ -913,7 +722,6 @@ Table should list all modifications, with each modification on a separate line
 </润色后的段落>
 ```
 
-### 1.6 Prompt Optimizer 中文优化版
 
 ```html
 <optimized_prompt>
@@ -957,7 +765,7 @@ Table should list all modifications, with each modification on a separate line
 Below is a paragraph from an academic paper. Polish the writing to meet the academic style, improve the spelling, grammar, clarity, concision and overall readability. When necessary, rewrite the whole sentence. Furthermore, list all modification and explain the reasons to do so in markdown table. Paragraph ：XXX 
 ```
 
-### 2.2 PromptPilot 英文优化版
+### 2.2 PromptPilot 优化版
 
 ```html
 Your task is to polish the writing of a paragraph from an academic paper to meet the academic style and improve its spelling, grammar, clarity, concision, and overall readability. You may need to rewrite whole sentences when necessary.
@@ -989,70 +797,13 @@ Please put the polished paragraph in the <PolishedParagraph> tag and the modific
 </ModificationTable>
 ```
 
-### 2.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Academic paragraph polishing and revision records.</task>
-
-<context>
-Below is a paragraph from an academic paper. Polish the writing to meet the academic style, improve the spelling, grammar, clarity, concision and overall readability. When necessary, rewrite the whole sentence. Furthermore, list all modification and explain the reasons to do so in markdown table. Paragraph ：XXX
-</context>
-
-<instructions>
-1. Comprehensive analysis of the original paragraph:
-   - Identify spelling errors and grammatical issues
-   - Assess the clarity of sentence structure
-   - Detect redundancy and repetitive content
-   - Determine consistency of academic style
-
-2. Conduct professional polishing:
-   - Correct all spelling and grammatical errors
-   - Optimize sentence structure for readability
-   - Remove redundant content to enhance conciseness
-   - Ensure term usage conforms to academic standards
-   - Completely rewrite sentences with unclear expressions when necessary
-   - Maintain the core meaning of the original content
-
-3. Create a modification record table:
-   - Create a markdown table with four columns:
-     - Original content
-     - Modified content
-     - Modification type
-     - Modification reason
-   - Record each modification in a separate row:
-     - Modification type classification: spelling/grammar/structure/terminology, etc.
-     - Modification reason clearly explains the purpose of optimization
-
-4. Verify the polishing effect:
-   - Compare with the original content to ensure the retention of core information
-   - Check the fluency and academic normativeness of language
-   - Confirm that the table completely records all modifications
-</instructions>
-
-<output_format>
-1. Polished paragraph: Directly present the optimized complete paragraph text
-2. Modification record table: Use standard markdown table format, including four columns:
-   | Original content | Modified content | Modification type | Modification reason |
-   |------------------|------------------|--------------------|---------------------|
-3. Modification reason should be labeled with specific categories:
-   - `SPELLING`: Spelling correction
-   - `GRAMMAR`: Grammar correction
-   - `CLARITY`: Expression clarification
-   - `CONCISION`: Redundancy removal
-   - `ACAD_STYLE`: Academic style enhancement
-4. Table is arranged in the order of modification in the paragraph
-</output_format>
-</optimized_prompt>
-```
-
 ### 2.4 中文原版
 
 ```html
 以下是一篇学术论文中的一段文字。请重新润色写作，以符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：XXX。
 ```
 
-### 2.5 PromptPilot 中文优化版
+### 2.5 PromptPilot 优化版
 
 ```html
 你的任务是对给定的学术论文段落进行润色，使其符合学术风格，同时提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，需重写整个句子。
@@ -1082,53 +833,6 @@ Below is a paragraph from an academic paper. Polish the writing to meet the acad
 | [具体修改内容2] | [解释修改原因2] |
 ```
 
-### 2.6 Prompt Optimizer 中文优化版
-
-```html 
-<optimized_prompt>
-<task>润色学术论文段落并生成修改记录表</task>
-
-<context>
-以下是一篇学术论文中的一段文字。请重新润色写作，以符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：XXX。
-</context>
-
-<instructions>
-1. 仔细分析原始段落内容：
-   - 识别拼写错误和语法问题
-   - 评估句子结构的清晰度
-   - 检测冗余表达和重复内容
-   - 判断整体学术风格一致性
-
-2. 进行专业润色处理：
-   - 修正所有拼写和语法错误
-   - 优化句子结构提高可读性
-   - 删除冗余内容增强简洁性
-   - 确保术语使用符合学术规范
-   - 必要时完全重写表达不清的句子
-   - 保持原文核心含义不变
-
-3. 制作修改记录表格：
-   - 创建包含四列的Markdown表格
-   - 列标题分别为：原始内容、修改后内容、修改类型、修改原因
-   - 逐条记录所有修改内容：
-     - 每条修改单独成行
-     - 修改类型分类：拼写/语法/结构/术语等
-     - 修改原因明确说明优化目的
-
-4. 验证润色效果：
-   - 对照原始内容确认核心信息保留
-   - 检查语言流畅度和学术规范性
-   - 确认表格完整记录所有修改
-</instructions>
-
-<output_format>
-输出必须包含两个明确部分：
-1. 润色后的学术段落（直接呈现文本）
-2. Markdown格式的修改记录表格（包含四列：原始内容 | 修改后内容 | 修改类型 | 修改原因）
-</output_format>
-</optimized_prompt>
-```
-
 ## 3.中文润色
 
 与常规润色指令不同，此类prompt特别强调：助手只需提供修改后的文本版本，无需附加解释或说明。
@@ -1139,7 +843,7 @@ Below is a paragraph from an academic paper. Polish the writing to meet the acad
 As a Chinese academic paper writing improvement assistant, your task is to enhance the spelling, grammar, clarity, conciseness, and overall readability of the provided text. Break down long sentences, reduce repetition, and offer suggestions for improvement. Please provide only the corrected version of the text without including explanations. Edit the following text: (content to be polished)  
 ```
 
-### 3.2 PromptPilot 英文优化版
+### 3.2 PromptPilot 优化版
 
 ```html
 You are a Chinese academic paper writing improvement assistant. Your task is to enhance the provided text in terms of spelling, grammar, clarity, conciseness, and overall readability.
@@ -1156,49 +860,13 @@ When processing this text, focus on the following improvements:
 Please write the corrected version of the text within the <CorrectedText> tag. Do not include any explanations in your output.
 ```
 
-### 3.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>As an assistant for improving Chinese academic writing, enhance the text's spelling, grammar, clarity, conciseness, and overall readability.</task>
-
-<context>
-As a Chinese academic paper writing improvement assistant, your task is to enhance the spelling, grammar, clarity, conciseness, and overall readability of the provided text. Break down long sentences, reduce repetition, and offer suggestions for improvement. Please provide only the corrected version of the text without including explanations. Edit the following text: (content to be polished)
-</context>
-
-<instructions>
-1. Receive the academic paper text to be revised input by the user.
-2. Conduct a comprehensive analysis of the text's issues:
-   - Identify spelling errors
-   - Correct grammar mistakes
-   - Recognize unclear or ambiguous expressions
-   - Mark repetitive content
-   - Detect overly complex sentence structures
-3. Execute the text improvement process:
-   - Break down complex long sentences into simpler ones
-   - Remove redundant expressions
-   - Replace vague terms with precise academic language
-   - Optimize paragraph logical connections
-   - Enhance overall academic rigor
-4. Output only the final revised version of the text:
-   - Exclude any original text versus revised text comparisons
-   - Avoid adding explanations or modification reasons
-   - Do not include any annotations or comment symbols
-   - Do not include content beyond the scope of the original text
-   </instructions>
-<output_format>
-Pure text format of the revised academic paper paragraph, without any explanatory text or modification notes
-</output_format>
-</optimized_prompt>
-```
-
 ### 3.4 中文原版
 
 ```html
 作为一名中文学术论文写作改进助理，你的任务是改进所提供文本的拼写、语法、清晰、简洁和整体可读性，同时分解长句，减少重复，并提供改进建议。请只提供文本的更正版本，避免包括解释。请编辑以下文本：（润色内容）
 ```
 
-### 3.5 PromptPilot 中文优化版
+### 3.5 PromptPilot 优化版
 
 ```html
 你是一名中文学术论文写作改进助理，你的任务是对提供的文本进行改进。
@@ -1223,45 +891,6 @@ Pure text format of the revised academic paper paragraph, without any explanator
 </改进建议>
 ```
 
-### 3.6 Prompt Optimizer 中文优化版
-
-```html
-<optimized_prompt>
-<task>改进中文学术论文的文本质量</task>
-
-<context>
-作为一名中文学术论文写作改进助理，你的任务是改进所提供文本的拼写、语法、清晰、简洁和整体可读性，同时分解长句，减少重复，并提供改进建议。请只提供文本的更正版本，避免包括解释。请编辑以下文本：（润色内容）
-</context>
-
-<instructions>
-1. 接收待改进的中文学术文本
-2. 全面分析文本问题：
-   - 检查拼写错误
-   - 修正语法错误
-   - 识别清晰度不足的表述
-   - 标记冗余重复内容
-   - 检测过长的复合句结构
-3. 执行文本改进操作：
-   - 分解复杂长句为简明短句
-   - 删除重复冗余表述
-   - 替换模糊词汇为精确学术术语
-   - 优化段落逻辑衔接
-   - 提升整体学术严谨性
-4. 仅输出最终改进版本：
-   - 不包含任何修改说明
-   - 不添加额外解释性内容
-</instructions>
-
-<output_format>
-纯文本格式的改进后论文段落，不包含：
-1. 原始文本与改进文本的对比
-2. 修改原因说明
-3. 任何标注或注释符号
-4. 超出原始文本范围的内容
-</output_format>
-</optimized_prompt>
-```
-
 ## 4.SCI 论文润色
 
 ### 4.1 英文原版
@@ -1270,7 +899,7 @@ Pure text format of the revised academic paper paragraph, without any explanator
 I am preparing my SCI paper for submission and require assistance in polishing each paragraph. Could you please refine my writing for academic rigor? I need you to correct any grammatical errors, improve sentence structure for academic suitability, and make the text more formal where necessary. For each paragraph we need to improve, you need to put all modified sentences in a Markdown table, each column contains the following: Full original sentence; Highlight the revised part of the sentence; Explain why made these changes. Finally, Rewrite the full, corrected paragraph. If you understand, please reply: yes, let's get started. 
 ```
 
-### 4.2 PromptPilot 英文优化版
+### 4.2 PromptPilot 优化版
 
 ```html
 Your task is to polish a paragraph from an SCI paper to enhance its academic rigor. You will correct any grammatical errors, improve the sentence structure for academic suitability, and make the text more formal where necessary.
@@ -1305,54 +934,13 @@ Please present your output in the following format:
 Start your refinement now.
 ```
 
-### 4.3 Prompt Optimizer 英文优化版
-
-```html
-<optimized_prompt>
-<task>Polish SCI paper paragraphs by refining grammar, sentence structure, and formality while documenting changes in a specified table format.</task>
-
-<context>
-I am preparing my SCI paper for submission and require assistance in polishing each paragraph. Could you please refine my writing for academic rigor? I need you to correct any grammatical errors, improve sentence structure for academic suitability, and make the text more formal where necessary. For each paragraph we need to improve, you need to put all modified sentences in a Markdown table, each column contains the following: Full original sentence; Highlight the revised part of the sentence; Explain why made these changes. Finally, Rewrite the full, corrected paragraph. If you understand, please reply: yes, let's get started.
-</context>
-
-<instructions>
-1. Acknowledge understanding by replying: "yes, let's get started"
-2. Wait for user to provide the first paragraph
-3. For each paragraph received:
-   a. Identify all sentences requiring modification
-   b. For each modifiable sentence:
-        - Create table row with three columns
-        - Column 1: Paste original sentence verbatim
-        - Column 2: Show revised sentence with changes **highlighted in bold**
-        - Column 3: Explain modification rationale referencing:
-            * Grammar correction
-            * Structural improvement
-            * Formality enhancement
-   c. Rewrite entire paragraph incorporating all revisions
-4. Present output in this sequence:
-   - Markdown table with headers: "Original Sentence | Revised Sentence | Explanation"
-   - Section header: "Corrected Paragraph:"
-   - Full revised paragraph text
-5. After completing one paragraph, wait for next paragraph input
-</instructions>
-
-<output_format>
-- Tables must use Markdown pipe syntax
-- Changed text must be **bold-highlighted** in Revised Sentence column
-- Explanation column must specify change type (grammar/structure/formality)
-- Corrected paragraph must be complete and continuous
-- No additional commentary outside specified format
-</output_format>
-</optimized_prompt>
-```
-
 ### 4.4 中文原版
 
 ```html
 我正在准备我的SCI论文以便提交，需要帮助润色每个段落。你能帮我提升学术严谨性吗？我需要你纠正任何语法错误，改进句子结构以适应学术要求，并在必要时使文本更加正式。对于每个需要改进的段落，你需要将所有修改后的句子放在一个Markdown表格中，每一列分别包含以下内容：完整的原始句子；突出显示句子的修订部分；解释为什么做出这些更改。最后，重写整个更正后的段落。如果你理解了，请回复：是的，让我们开始吧。
 ```
 
-### 4.5 PromptPilot 中文优化版
+### 4.5 PromptPilot 优化版
 
 ```html
 你的任务是帮助提升SCI论文段落的学术严谨性，纠正语法错误，改进句子结构以适应学术要求，并在必要时使文本更加正式。
@@ -1378,7 +966,6 @@ I am preparing my SCI paper for submission and require assistance in polishing e
 </重写段落>
 ``` 
 
-### 4.6 Prompt Optimizer 中文优化版
 
 ```html
 <optimized_prompt>
@@ -1445,7 +1032,7 @@ I am preparing my SCI paper for submission and require assistance in polishing e
 If I wish to publish a paper at a XXX conference, please polish the above content in the style of a XXX article. 
 ```
 
-### 5.2 PromptPilot 英文优化版
+### 5.2 PromptPilot 优化版
 
 ```html
 Your task is to polish the given paper content in the style of an article suitable for the specified conference.
@@ -1467,8 +1054,6 @@ When polishing the content, please follow these guidelines:
 
 Please write your polished content within the <PolishedContent> tag.
 ```
-
-### 5.3 Prompt Optimizer 英文优化版
 
 ```html
 <optimized_prompt>
@@ -1525,7 +1110,7 @@ If I wish to publish a paper at a XXX conference, please polish the above conten
 如果我希望在XXX会议上发表论文，请按照XXX文章的风格，对上面的内容进行润色。
 ```
 
-### 5.5 PromptPilot 中文优化版
+### 5.5 PromptPilot 优化版
 
 ```html
 你的任务是按照指定文章的风格，对希望在特定会议上发表论文的相关内容进行润色。请仔细阅读以下信息，并按照指示完成润色。
@@ -1549,7 +1134,6 @@ If I wish to publish a paper at a XXX conference, please polish the above conten
 请在<润色后的文本>标签内写下润色后的内容。
 ```
 
-### 5.6 Prompt Optimizer 中文优化版
 
 ```html
 <optimized_prompt>
@@ -1601,7 +1185,7 @@ If I wish to publish a paper at a XXX conference, please polish the above conten
 I am a researcher studying **+（your research direction）** and now trying to revise my manuscript which will be submitted to the **+（your submitted journal）**. want you to analyze the logic and coherence among sentences within each paragraph in the following text, identify any areas where the flow or connections between sentences could be improved,and provide specific suggestions to enhance the overall quality and readability to the content. Please only provide the text after improving and then give a list of the improvements in Chinese. lf you understand the above task, please reply with yes, and then I will provide you with the text.
 ```
 
-### 6.2 PromptPilot 英文优化版
+### 6.2 PromptPilot 优化版
 
 ```html
 You are an expert in manuscript revision, helping a researcher revise a manuscript for submission to a journal. Your task is to analyze the logic and coherence among sentences within each paragraph in the provided text, identify areas where the flow or connections between sentences could be improved, and provide specific suggestions to enhance the overall quality and readability of the content.
@@ -1621,7 +1205,6 @@ Please list the improvements in Chinese within the <Improvements> tag.
 Start your analysis now.
 ```
 
-### 6.3 Prompt Optimizer 英文优化版
 
 ```html
 <optimized_prompt>
@@ -1673,7 +1256,7 @@ Use a strict double-part output format:
 Polish the paragraph above to make it more logical, and academic. 
 ```
 
-### 7.2 PromptPilot 英文优化版
+### 7.2 PromptPilot 优化版
 
 ```html
 Your task is to polish the given paragraph to make it more logical and academic.
@@ -1689,7 +1272,6 @@ When polishing this paragraph, please follow these guidelines:
 Please write the polished paragraph within the <PolishedParagraph> tag.
 ```
 
-### 7.3 Prompt Optimizer 英文优化版
 
 ```html
 <optimized_prompt>
@@ -1745,7 +1327,7 @@ Polish the paragraph above to make it more logical, and academic.
 润色上面的内容，使其更加更合逻辑，更符合学术风格。
 ```
 
-### 7.5 PromptPilot 中文优化版
+### 7.5 PromptPilot 优化版
 
 ```html
 你的任务是对给定的内容进行润色，使其更具逻辑性，更符合学术风格。请仔细阅读以下待润色的内容：
@@ -1763,7 +1345,6 @@ Polish the paragraph above to make it more logical, and academic.
 </润色后内容>
 ```
 
-### 7.6 Prompt Optimizer 中文优化版
 
 ```html
 <optimized_prompt>
