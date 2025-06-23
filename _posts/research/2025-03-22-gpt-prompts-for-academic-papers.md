@@ -13,62 +13,12 @@ description:
 
 ### 1. 学术角色
 
-**英文原版**
-
 ```html
 As a leader in the academic field, I possess extensive academic experience and professional knowledge across various domains. I am not only involved in cutting-edge research but also actively share my expertise and insights. I excel in adhering to academic writing standards, enhancing the quality and impact of papers, meticulously refining every detail, and optimizing language expression and logical structure.  
 ```
 
-**PromptPilot 优化版**
-
-```html
-You are an academic leader with extensive academic experience and professional knowledge across various domains. Your task is to enhance the provided paper based on the given research topic, adhering to academic writing standards, and optimizing language expression and logical structure.
-First, please carefully read the following research topic:
-<ResearchTopic>
-{{RESEARCH_TOPIC}}
-</ResearchTopic>
-Now, please carefully read the following paper content:
-<PaperContent>
-{{PAPER_CONTENT}}
-</PaperContent>
-When enhancing this paper, please follow these steps:
-1. Ensure that the paper is relevant to the research topic. Remove any content that is off-topic and add necessary details to strengthen the connection to the topic.
-2. Check for compliance with academic writing standards. This includes proper citation, use of formal language, and appropriate formatting.
-3. Analyze the language expression. Replace vague or unclear words with more precise ones, and improve sentence structure for better readability.
-4. Evaluate the logical structure. Ensure that the paper has a clear introduction, body, and conclusion. Each paragraph should flow logically from one to the next.
-5. Refine every detail of the paper, such as grammar, punctuation, and spelling.
-Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and comprehensive improvement, paying attention to all aspects of the paper to enhance its quality and impact.
-```
-
-**中文原版**
-
 ```html
 我作为学术领域的引领者，在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解，擅长学术写作规范，提升论文的品质与影响力，精细润色每个细节，优化语言表达与逻辑结构。
-```
-
-**PromptPilot 优化版**
-
-```html
-你要协助一位学术领域的引领者对论文进行优化，提升论文的品质与影响力。这位引领者在各个领域拥有丰富的学术经验与专业知识，不仅参与前沿研究，还积极分享经验与见解，擅长学术写作规范。
-请仔细阅读以下原始论文：
-<原始论文>
-{{ORIGINAL_PAPER}}
-</原始论文>
-在优化论文时，请遵循以下学术写作规范和优化要求：
-1. 精细润色每个细节，检查并修正语法错误、拼写错误和标点使用不当的问题。
-2. 优化语言表达，使句子更加通顺、简洁、准确，避免使用过于复杂或生僻的词汇和句子结构，除非必要。
-3. 梳理逻辑结构，确保论文的论证过程清晰合理，段落之间过渡自然，论点和论据之间紧密关联。
-4. 提升论文的整体连贯性和可读性，使读者能够轻松理解论文的核心内容和研究价值。
-
-请在<修改后论文>标签内写下优化后的论文。
-然后在<解释>标签内详细说明你进行修改的依据和思路，解释你为什么这样修改，以及这样修改如何提升了论文的品质和影响力。
-
-<修改后论文>
-[在此写下优化后的论文]
-</修改后论文>
-<解释>
-[在此说明修改的依据和思路]
-</解释>
 ```
 
 此外，你还可以根据实际需求预设其他学术角色。
@@ -78,74 +28,12 @@ Please write your improved paper in the <ImprovedPaper> tag. Provide a rich and 
 - 让GPT扮演专业的论文评审专家，对论文草稿给出评审意见，并据此重新审视和修改论文内容。
 - 在具体修改论文时，让GPT扮演你所研究领域的专家，以提升表达的准确性和专业性。
 
-**英文原版**
-
 ```html
 You are now acting as an expert in the field of \[Put professional fields here…\]. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.  
 ```
 
-**PromptPilot 优化版**
-
-```html
-You are an expert in the field of {{PROFESSIONAL_FIELD}}. Your task is to evaluate the provided content from a professional perspective and point out if there are any places that need modification.
-First, please carefully read the following professional field in which you are an expert:
-<ProfessionalField>
-{{PROFESSIONAL_FIELD}}
-</ProfessionalField>
-Now, please carefully read the following content to be evaluated:
-<Content>
-{{CONTENT}}
-</Content>
-When evaluating this content, please follow these steps:
-1. Thoroughly read the entire content.
-2. From the perspective of the professional field, check for any parts that do not meet the professional standards or best - practices.
-3. For each part that needs modification, clearly point out its location in the content.
-4. Provide a detailed revision opinion explaining why the modification is needed.
-5. Offer recommended revision content for each part that needs modification.
-
-Please put your analysis and results in the following format:
-<Thought>
-[Analyze the content here and list the places that need modification, along with the reasons and recommended revision content]
-</Thought>
-<Result>
-[List the modification places, revision opinions, and recommended revision content in a clear and organized way. For example: "Modification place: [Location in the content]; Revision opinion: [Explanation]; Recommended revision content: [Suggested text]"]
-</Result>
-```
-
-**中文原版**
-
 ```html
 你现在扮演一个\[这里放你所研究的领域\] 领域的专家，从专业的角度，您认为上面这些内容是否有需要修改的地方？ 注意，不要全文修改，您需要一一指出需要修改的地方，并且给出修改意见以及推荐的修改内容。
-```
-
-**PromptPilot 优化版**
-
-```html
-你将扮演一个专业领域的专家，从专业角度评估给定内容是否有需要修改的地方。你不需要全文修改内容，而是要一一指出需要修改的地方，给出修改意见，并提供推荐的修改内容。
-以下是需要评估的内容：
-<内容>
-{{CONTENT}}
-</内容>
-在评估内容时，请按照以下步骤进行：
-1. 仔细阅读整个内容。
-2. 从专业角度检查内容是否存在逻辑错误、表达不准确、语法错误、用词不当等问题。
-3. 对于每个发现的问题，分析其原因和影响。
-4. 思考如何修改以解决问题。
-
-请在<思考>标签中详细分析内容中存在的问题以及你的分析过程。然后在<修改点>标签中列出需要修改的具体位置和内容。接着在<修改意见>标签中给出针对每个修改点的修改建议，说明为什么要这样修改。最后在<推荐内容>标签中给出修改后的推荐内容。
-
-<思考>
-[在此详细分析内容中存在的问题以及你的分析过程]
-</思考>
-<修改点>
-[在此列出需要修改的具体位置和内容]
-</修改点>
-<修改意见>
-[在此给出针对每个修改点的修改建议，说明为什么要这样修改]
-</修改意见>
-<推荐内容>
-[在此给出修改后的推荐内容]
-</推荐内容>
 ```
 
 ## 二、论文撰写指令
@@ -316,64 +204,12 @@ Please write your abstract within the <abstract> tag.
 
 ### 4.写英文摘要指令
 
-**英文原版**
-
 ```html
 Please read through the uploaded manuscript and write an abstract in English for it. The abstract should initiate with a comprehensive summary of the broader context or background of the study, followed by a statement that describe the gaps, limitations or issues. Then, describe the research methods used in the manuscript. After that, write 3-5 sentences showing the key findings. In the end, include a statement which underscores the unique value or significant contribution of the manuscript. After generating the abstract, give explanation in Chinese checking if you have followed the instruction in a markdown table.
 ```
 
-**PromptPilot 优化版**
-
-```html
-Your task is to read through the uploaded manuscript and write an abstract in English for it. The abstract should be well - structured and comprehensive to represent the essence of the study.
-First, please carefully read the following manuscript:
-<Manuscript>
-{{MANUSCRIPT}}
-</Manuscript>
-When writing the abstract, please follow the below structure and content requirements:
-1. Begin with a comprehensive summary of the broader context or background of the study.
-2. Then, state the gaps, limitations or issues in the existing research related to this study.
-3. Describe the research methods used in the manuscript.
-4. Write 3 - 5 sentences to show the key findings of the study.
-5. End with a statement that underscores the unique value or significant contribution of the manuscript.
-Please write your abstract in English within the <Abstract> tag.
-After writing the abstract, please provide an explanation in Chinese within the <Explanation> tag to check if you have followed the instruction. You should detail how each part of the abstract meets the corresponding requirement.
-```
-
-**中文原版**
-
 ```html
 请阅读上传的手稿，并为其撰写一份英文摘要。摘要应首先提供研究背景或更广泛背景的全面概述，接着陈述描述研究的空白、局限性或问题。然后，描述手稿中使用的研究方法。此后，写出3-5句话展示关键发现。最后，包括一份强调手稿独特价值或重大贡献的声明。在生成摘要后，以中文提供解释，检查你是否遵循了指令，并以Markdown表格形式展示。
-```
-
-**PromptPilot 优化版**
-
-```html
-你的任务是阅读上传的手稿，并为其撰写一份英文摘要。摘要需要内容丰富、全面，以满足专业学术交流的需求。
-请仔细阅读以下手稿：
-<手稿>
-{{MANUSCRIPT}}
-</手稿>
-撰写英文摘要时，请按照以下步骤进行：
-1. 首先，提供研究背景或更广泛背景的全面概述，这部分内容应让读者对研究的大环境有清晰的认识。
-2. 接着，陈述描述研究的空白、局限性或问题，明确指出当前研究领域中尚未解决的问题。
-3. 然后，描述手稿中使用的研究方法，详细说明研究是如何开展的。
-4. 此后，写出3 - 5句话展示关键发现，突出研究的重要成果。
-5. 最后，包括一份强调手稿独特价值或重大贡献的声明，说明该研究在学术或实际应用中的重要意义。
-
-在生成英文摘要后，请以中文提供解释，检查你是否遵循了上述指令，并以Markdown表格形式展示。表格应包含“指令要求”和“是否遵循”两列。
-
-请在<abstract>标签内写下英文摘要，在<explanation>标签内写下中文解释，在<table>标签内写下Markdown表格。
-
-<abstract>
-[在此写下英文摘要]
-</abstract>
-<explanation>
-[在此写下中文解释]
-</explanation>
-<table>
-[在此写下Markdown表格]
-</table>
 ```
 
 ### 5.缩写名称
@@ -386,49 +222,8 @@ After writing the abstract, please provide an explanation in Chinese within the 
 What abbreviations can "XXX" have? Give several options, with reasons, for use in an academic paper. "XXX"
 ```
 
-**PromptPilot 优化版**
-
-```html
-Your task is to come up with several abbreviation options for a given term and provide reasons for each option, suitable for use in an academic paper.
-Please carefully read the following term:
-<Term>
-{{TERM}}
-</Term>
-When generating abbreviations for this term, please adhere to the following guidelines:
-1. Ensure that the abbreviations are commonly used or can be reasonably derived from the term, and are appropriate for an academic context.
-2. For each abbreviation option, provide a clear and reasonable reason explaining how it is related to the original term.
-3. Present at least three abbreviation options.
-Please present your results in the following format:
-<AbbreviationOption>
-<Option>[Abbreviation]</Option>
-<Reason>[Explanation of why this abbreviation is suitable]</Reason>
-</AbbreviationOption>
-```
-
-**中文原版**
-
 ```html
 可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
-```
-
-**PromptPilot 优化版**
-
-```html
-你的任务是为给定的术语提供几种可用于论文中的缩写选择，并给出选择这些缩写的理由。
-需要缩写的术语是：
-<term>
-{{TERM}}
-</term>
-在提供缩写选择时，请考虑以下要求：
-- 缩写应符合学术规范和论文所在领域的常用习惯。
-- 尽量提供多种不同形式的缩写，例如取首字母缩写、截短缩写等。
-- 每个缩写选择都要给出合理的理由，说明为什么这个缩写适合用于论文。
-
-请在<缩写选择>标签内列出不同的缩写选项，并在每个缩写后用括号给出选择该缩写的理由。例如：
-<缩写选择>
-[1] ABC（该缩写是术语中每个单词的首字母组合，简洁明了且在相关领域常用）
-[2] XYZ（这是对术语进行截短处理得到的缩写，保留了关键部分）
-</缩写选择>
 ```
 
 ### 6.论文续写
@@ -489,12 +284,6 @@ Please put the polished and continued content in the <OutputContent> tag.
 请在<result>标签内写下润色和续写后的内容。
 ```
 
-**中文原版**
-
-```html
-根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
-```
-
 ### 7. 论文致谢
 
 对在研究过程中提供帮助的个人或机构表示感谢。
@@ -505,67 +294,10 @@ Please put the polished and continued content in the <OutputContent> tag.
 I want you to act as an academic research expert. Draft a comprehensive acknowledgements section for a research paper titled \[title\]. The acknowledgements should acknowledge the contributions of all individuals and institutions that have helped in the research process, including funding agencies, collaborators, and mentors.
 ```
 
-**PromptPilot 优化版**
-
-```html
-你是一位学术研究专家，负责为研究论文起草一个全面的致谢部分。你的任务是根据提供的信息，起草一个包含所有相关致谢的致谢部分，标题为\[标题\]。
-首先，请仔细阅读以下致谢部分的标题：
-<title>
-{{TITLE}}
-</title>
-接下来，请了解在研究过程中提供帮助的各方信息：
-<funding_agencies>
-{{FUNDING_AGENCIES}}
-</funding_agencies>
-<collaborators>
-{{COLLABORATORS}}
-</collaborators>
-<mentors>
-{{MENTORS}}
-</mentors>
-起草致谢部分时，请遵循以下指南：
-1. 使用正式且诚恳的语气。
-2. 以标题\[标题\]开始致谢部分。
-3. 分别对资助机构、合作者和导师表达诚挚的感谢，详细说明他们在研究过程中提供的具体帮助或支持。
-4. 确保语言表达清晰、流畅，避免语法错误和拼写错误。
-5. 提供丰富、全面的致谢内容，充分体现对各方帮助的感激之情。
-请在<acknowledgment>标签内写下你的致谢部分。
-```
-
-
 **中文原版**
 
 ```html
 作为学术研究专家，为研究论文起草一个全面致谢部分，标题为\[标题\]。致谢应感谢所有在研究过程中提供帮助的个人和机构，包括资助机构、合作者和导师。
-```
-
-**PromptPilot 优化版**
-
-```html
-你是一位学术研究专家，负责为研究论文起草一个全面的致谢部分。该致谢部分标题为\[标题\]，需要感谢所有在研究过程中提供帮助的个人和机构，包括资助机构、合作者和导师。
-以下是致谢部分的标题：
-<title>
-{{TITLE}}
-</title>
-需要感谢的资助机构：
-<funding_institutions>
-{{FUNDING_INSTITUTIONS}}
-</funding_institutions>
-需要感谢的合作者：
-<collaborators>
-{{COLLABORATORS}}
-</collaborators>
-需要感谢的导师：
-<mentors>
-{{MENTORS}}
-</mentors>
-在撰写致谢部分时，请遵循以下指南：
-1. 使用正式、真诚的语气。
-2. 明确提及所有需要感谢的资助机构、合作者和导师。
-3. 简要说明他们为研究提供的具体帮助或支持。
-4. 表达对他们帮助的感激之情。
-5. 确保语言流畅、语法正确、无拼写错误。
-请在<acknowledgment>标签内写下致谢部分的内容。
 ```
 
 ### 8. 论文大纲
@@ -629,82 +361,11 @@ Please write your research paper outline in the <ResearchPaperOutline> tag. Ensu
 </大纲>
 ```
 
-
 ## 三、学术润色指令
 
 学术润色旨在提升论文草稿的语言表达、语法准确性、逻辑性和结构合理性，从而增强其清晰度、连贯性和专业性。
 
-### 1.英文润色
-
-**英文原版**
-
-```html
-The following is a paragraph from an academic paper. Refinish writing to conform to academic style，improve spelling，grammar，clarity, conciseness and overall readability. If necessary, rewrite the entire sentence. In addition, list all modifications in the Markdown table and explain the reasons for doing so.Paragraph ：（+the paragraph that requires polishing） 
-```
-
-**PromptPilot 优化版**
-
-```html
-Your task is to refine the given paragraph from an academic paper to conform to an academic style, improve spelling, grammar, clarity, conciseness, and overall readability. You may rewrite entire sentences if necessary.
-First, please carefully read the following paragraph:
-<Paragraph>
-{{PARAGRAPH}}
-</Paragraph>
-When refining this paragraph, please focus on the following aspects:
-1. Ensure that the language is in an academic style, avoiding colloquial or informal expressions.
-2. Correct any spelling or grammar errors.
-3. Make the sentences clearer and easier to understand.
-4. Eliminate any redundant words or phrases to improve conciseness.
-5. Enhance the overall readability of the paragraph.
-
-After refining the paragraph, please list all modifications in a Markdown table with two columns: "Original Text" and "Modified Text". In the third column, explain the reason for each modification. The table should have a header row and should be properly formatted in Markdown.
-
-Please present the refined paragraph in the <RefinedParagraph> tag and the modification table in the <ModificationTable> tag.
-
-<RefinedParagraph>
-[Write the refined paragraph here]
-</RefinedParagraph>
-<ModificationTable>
-| Original Text | Modified Text | Reason |
-| --- | --- | --- |
-| [Original text 1] | [Modified text 1] | [Explanation 1] |
-| [Original text 2] | [Modified text 2] | [Explanation 2] |
-|... |... |... |
-</ModificationTable>
-```
-
-**中文原版**
-
-```html
-以下是一篇学术论文中的一段文字。请重新润色写作，以符合学术风格，提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，重写整个句子。此外，请在Markdown表格中列出所有修改，并解释修改的原因。段落：（+润色内容）。
-```
-
-**PromptPilot 优化版**
-
-```html
-你的任务是对给定的学术论文段落进行润色，使其符合学术风格，同时提高拼写、语法、清晰度、简洁性和整体可读性。如有必要，可重写整个句子。
-以下是待润色的段落：
-<段落>
-{{PARAGRAPH}}
-</段落>
-润色时，请遵循以下要求：
-1. 确保段落中的拼写和语法正确。
-2. 提高句子的清晰度，使表达更加明确。
-3. 尽量使句子简洁，避免冗长和复杂的表述。
-4. 整体风格要符合学术规范。
-请在<润色后的段落>标签内输出润色后的段落。
-此外，请在Markdown表格中列出所有修改，并解释修改的原因。表格应包含两列，第一列是“修改内容”，第二列是“修改原因”。例如：
-| 修改内容 | 修改原因 |
-| --- | --- |
-| 将‘xxxx’改为‘yyyy’ | 原表述‘xxxx’不够清晰，‘yyyy’更符合学术表达习惯 |
-
-请确保你的回答丰富、全面，充分满足上述要求。
-<润色后的段落>
-[在此输出润色后的段落]
-</润色后的段落>
-```
-
-### 2. 英文润色
+### 1. 英文润色
 
 这段指令将在Markdown表格中列出所有润色修改部分，并解释修改的原因，可以看到润色的效果很不错的，也可以优化提问。润色过程中，可以让GPT提供多个版本的修改建议，我们的选择性也更多。
 
@@ -782,7 +443,7 @@ Please put the polished paragraph in the <PolishedParagraph> tag and the modific
 | [具体修改内容2] | [解释修改原因2] |
 ```
 
-### 2.中文润色
+### 2. 中文润色
 
 与常规润色指令不同，此类prompt特别强调：助手只需提供修改后的文本版本，无需附加解释或说明。
 
@@ -986,26 +647,6 @@ Please write your polished content within the <PolishedContent> tag.
 I am a researcher studying **+（your research direction）** and now trying to revise my manuscript which will be submitted to the **+（your submitted journal）**. want you to analyze the logic and coherence among sentences within each paragraph in the following text, identify any areas where the flow or connections between sentences could be improved,and provide specific suggestions to enhance the overall quality and readability to the content. Please only provide the text after improving and then give a list of the improvements in Chinese. lf you understand the above task, please reply with yes, and then I will provide you with the text.
 ```
 
-**PromptPilot 优化版**
-
-```html
-You are an expert in manuscript revision, helping a researcher revise a manuscript for submission to a journal. Your task is to analyze the logic and coherence among sentences within each paragraph in the provided text, identify areas where the flow or connections between sentences could be improved, and provide specific suggestions to enhance the overall quality and readability of the content.
-Here is the manuscript text:
-<ManuscriptText>
-{{MANUSCRIPT_TEXT}}
-</ManuscriptText>
-When analyzing the text, please follow these steps:
-1. Read each paragraph carefully to understand the main idea.
-2. Check the logical connections between sentences within each paragraph. Look for any jumps in thought, unclear transitions, or statements that seem out of place.
-3. For areas that need improvement, think of ways to make the flow smoother, such as adding transitional words or phrases, re - arranging sentences, or clarifying the relationships between ideas.
-4. Rewrite the text to incorporate these improvements.
-5. List all the improvements you made in Chinese.
-
-Please write the improved text within the <ImprovedText> tag.
-Please list the improvements in Chinese within the <Improvements> tag.
-Start your analysis now.
-```
-
 ### 6. 直接润色段落
 
 **英文原版**
@@ -1111,9 +752,6 @@ I am a researcher studying **+（your research direction）** and now trying to 
 ### 12. 语法句法
 
 ```html
-**语法句法**
-
-```html
 This sentence is grammatically incorrect. Please revise.
 ```
 
@@ -1191,7 +829,7 @@ I have used a passive voice in this sentence. Consider using an active voice ins
 我在这句话中使用了被动语态。考虑改用主动语态。
 ```
 
-**修改建议**
+### 15. 修改建议/意见
 
 ```html
 You are now acting as an expert in the field of lung cancer. From a professional point of view, do you think there is any need to modify the above content? Be careful not to modify the whole text, you need to point out the places that need to be modified one by one, and give revision opinions and recommended revision content.  
@@ -1201,8 +839,6 @@ You are now acting as an expert in the field of lung cancer. From a professional
 你现在扮演一个\[这里放你所研究的领域\] 领域的专家，从专业的角度，您认为上面这些内容是否有需要修改的地方？ 注意，不要全文修改，您需要一一指出需要修改的地方，并且给出修改意见以及推荐的修改内容。
 ```
 
-**修改意见**
-
 ```html
 I started to write an academic paper, the title is XXXXX, now I have finished the introduction part, but I am not sure whether it is suitable, can you help me to read it, and put forward detailed and specific revision suggestions?  
 ```
@@ -1211,7 +847,7 @@ I started to write an academic paper, the title is XXXXX, now I have finished th
 我开始写论文了，题目是XXXXX，现在我完成了引言部分，但是不确定是否合适，你能帮我看一下，并提出详细具体的修改意见吗？
 ```
 
-**封装基本事实/原理/背景**
+### 16. 封装基本事实/原理/背景
 
 润色的同时，修改基本逻辑错误。如果对内容的润色需要一些背景知识，可以在对话时主动告诉ChatGPT，比如XXX原理。
 
@@ -1223,7 +859,7 @@ Now, in order to help me better polish my thesis, I need you to remember the XXX
 现在，为了接下来能够帮我更好的润色论文，我需要你记住XXX原理：“.......”
 ```
 
-**这样相当于为一段内容封装了“函数名”，后续只需提及XXX原理，ChatGPT即可快速关联相关基本事实。**
+这样相当于为一段内容封装了“函数名”，后续只需提及XXX原理，ChatGPT即可快速关联相关基本事实。
 
 ```html
 Polish and rewrite the above content to make it more in line with the style of academic papers, and at the same time, it can be more professional. If there are parts that do not conform to facts or logic, please refer to the part of xxxxx for the above content modification. 
@@ -1233,7 +869,7 @@ Polish and rewrite the above content to make it more in line with the style of a
 请润色并重写上面的内容，使其更加符合学术论文的风格，并在此过程中，更加专业化。如果有不符合事实或逻辑的部分，请参考XXX原理部分对上面的内容修改。
 ```
 
-**逻辑论证辅助**
+### 逻辑论证辅助
 
 AI在逻辑推理方面有显著的提升，可以用于辅助构建更有说服力的论证。
 
@@ -1245,7 +881,7 @@ Please help me analyze and optimize the logical structure of this argument to ma
 请帮我分析和优化这段论证的逻辑结构，以使其更具说服力。
 ```
 
-**个性化润色指令**
+### 个性化润色指令
 
 根据ChatGPT的个性化模型，提供针对性的润色建议。
 
@@ -1463,7 +1099,7 @@ Please first correct the following reference format according to APA style, adju
 
 **撰写 Cover Letter**
 
-**Cover Letter 写作需提供文章题目和摘要**
+Cover Letter 写作需提供文章题目和摘要
 
 ```html
 请担任学术期刊编辑。我将提供手稿的标题和摘要，请为投稿至《Nature》杂志撰写一封格式规范的Cover Letter。需声明该手稿未在其他期刊考虑发表，简要介绍手稿优点，并突出研究结果对科学界的重要性。标题和摘要如下：
@@ -1489,7 +1125,7 @@ Act as an academic research expert. Carefully analyze and interpret the \[feedba
 
 **归纳文献核心要点**
 
-**如需快速了解单篇文献的核心要点，可使用以下指令：**
+如需快速了解单篇文献的核心要点，可使用以下指令：
 
 ```html
 1. Condense the main points of this article for me. 
@@ -1517,7 +1153,7 @@ Act as an academic research expert. Carefully analyze and interpret the \[feedba
 
 **总结论文内容**
 
-**非常适合科研新手的文献阅读指令！**
+非常适合科研新手的文献阅读指令。
 
 ```html
 Act as an academic research expert. Read and digest the content of the research paper titled \[xx\]. Produce a concise and clear summary that encapsulates the main findings, methodology, results, and implications of the study. Ensure that the summary is written in a manner that is accessible to a general audience while retaining the core insights and nuances of the original paper. 
@@ -1529,7 +1165,7 @@ Act as an academic research expert. Read and digest the content of the research 
 
 **深入阅读某篇论文**
 
-**这个指令增加了阅读文献后总结字数和格式的要求，质量非常高！**
+这个指令增加了阅读文献后总结字数和格式的要求，质量非常高。
 
 ```html
 您现在作为「」领域的世界顶级学术专家，想详细阅读并深入这篇论文（见XXX.PDF），首先，请用1000-1500字左右的篇幅，对论文进行深入解读。在讲述过程中,请多引用论文中的细节内容、关键数据和实验结果，帮助我清楚地理解论文的创新性贡献。注意，论文中可能有一些技术概念相对新颖，我可能不太了解，也请给出通俗的解释。 然后，请从以下几个方面对论文进行详细解读： 
@@ -1550,7 +1186,7 @@ Act as an academic research expert. Read and digest the content of the research 
 
 **提取论文中的术语表**
 
-**对于科研新手来说，这一功能极为实用，可直接生成文献术语表，便于学习和查阅。**
+对于科研新手来说，这一功能极为实用，可直接生成文献术语表，便于学习和查阅。
 
 ```html
 Assuming I am a graduate student majoring in artificial intelligence, please act as my thesis advisor and create a glossary of terms suitable for my study based on this paper. This glossary should include three columns: Term, Definition, and Section Index in the Thesis. The term refers to the core terminology introduced by the author, or professional entries that may be beyond my current level of understanding. The definition should be in line with the original intent of the paper, and should be explained as fully as possible in plain language. The section index in the thesis refers to the title of the section where the term appears in the paper, to facilitate my study in the original text. Please extract terms that meet the requirements from the entire article and format the output as a Markdown table. 
@@ -1562,7 +1198,7 @@ Assuming I am a graduate student majoring in artificial intelligence, please act
 
 **生成文献摘要**
 
-**非常标准的读论文的指令模板，你可以直接用这个模板定制自己的专属指令！**
+非常标准的读论文的指令模板，你可以直接用这个模板定制自己的专属指令。
 
 ```html
 角色与目的：我是一个“学术摘要专家”。我的主要功能是为用户提供提交的学术论文的详细摘要和分析。 
@@ -1599,7 +1235,7 @@ Assuming I am a graduate student majoring in artificial intelligence, please act
 
 **文献比较阅读**
 
-**用来对比两篇文献之间的差异，不过这个指令我用的不多，有需要的可以自己存下来！**
+用来对比两篇文献之间的差异，不过这个指令我用的不多，有需要的可以自己存下来。
 
 ```html
 For the research question (such as "Under what circumstances does wishful thinking more likely occur?"), what are the perspectives of these two studies? Compare and analyze these two studies in the following aspects: 
@@ -1625,8 +1261,7 @@ For the research question (such as "Under what circumstances does wishful thinki
 
 **论文期刊匹配**
 
-**该指令可高效匹配论文投稿期刊，推荐使用。**
-**该指令可用于论文期刊匹配，实用性强，推荐使用。**
+该指令可高效匹配论文投稿期刊，推荐使用。该指令可用于论文期刊匹配，实用性强，推荐使用。
 
 ```html
 I want you to act as a scientific manuscript matcher. I will provide you with the title, abstract and key words of my scientific manuscript, respectively. Your task is analyzing my title, abstract and key words synthetically to find the most related, reputable journals for potential publication of my research based on an analysis of tens of millions of citation connections in database, such as Web of Science, Pubmed, Scopus, ScienceDirect and so on. You only need to provide me with the 15 most suitable journals. Your reply should include the name of journal, the corresponding match score (The full score is ten). I want you to reply in text-based excel sheet and sort by matching scores in reverse order.My title is "XXX" My abstract is "XXX" My key words are "XXX" 
@@ -1669,16 +1304,6 @@ Please help me to conduct an in-depth analysis of these research methods and dat
 
 ```html
 请帮助我对这些研究方法和数据进行深度分析，并为我提供关于其优缺点的评估。
-```
-
-**提高可读性**
-
-```html
-> Act as an academic research expert and copywriter. Your task is to review and enhance the readability of the provided \[piece of text\] in a research paper. Ensure that the text is clear, concise, and free from jargon while maintaining its academic integrity. 
-```
-
-```html
-作为学术研究专家和文案撰写人，提高研究论文文本的可读性，确保内容清晰易懂。
 ```
 
 **提高可读性**
