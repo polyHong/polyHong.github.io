@@ -411,12 +411,6 @@ Please present your results in the following format:
 可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
 ```
 
-**中文原版**
-
-```html
-可以有哪些缩写？请给出几种选择，并给出理由，以便用于论文中。
-```
-
 **PromptPilot 优化版**
 
 ```html
@@ -435,12 +429,6 @@ Please present your results in the following format:
 [1] ABC（该缩写是术语中每个单词的首字母组合，简洁明了且在相关领域常用）
 [2] XYZ（这是对术语进行截短处理得到的缩写，保留了关键部分）
 </缩写选择>
-```
-
-**中文原版**
-
-```html
-根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
 ### 6.论文续写
@@ -473,12 +461,6 @@ When working on this content, please follow these guidelines:
 5. Make the language more vivid and engaging by using appropriate rhetorical devices or more precise vocabulary.
 6. Try to present the content in a well-organized manner, for example, using paragraphs or bullet points when appropriate.
 Please put the polished and continued content in the <OutputContent> tag.
-```
-
-**中文原版**
-
-```html
-根据你所掌握的关于\[xxx\]的知识，润色并续写上面的内容，使得内容更加丰富完整。
 ```
 
 **中文原版**
