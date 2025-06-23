@@ -40,110 +40,22 @@ You are now acting as an expert in the field of \[Put professional fields here�
 
 ### 1.写标题
 
-**英文原版**
-
 ```html
 I will provide you with the abstract and key words of a scientific paper in any language and you will detect the language and reply in the same language. Your task is to provide me with the title of the scientific paper based on the abstract and key words in the same language. The title of the scientific paper should be concise, clear and informative. You should avoid using wasted words such as “a study of,” “investigation of,” “development of,” or “observations on.” Make sure the title can grip the audience immediately. My abstract is "XXX", my key words are "XXX"
 ```
-
-**PromptPilot 优化版**
-
-```html
-Your task is to generate a title for a scientific paper based on the provided abstract and key words. The title should be concise, clear, and informative, and it should be able to immediately capture the audience's attention.
-First, please carefully read the following abstract of the scientific paper:
-<Abstract>
-{{ABSTRACT}}
-</Abstract>
-Next, please carefully read the following key words of the scientific paper:
-<Keywords>
-{{KEYWORDS}}
-</Keywords>
-When generating the title, please follow these guidelines:
-1. Detect the language of the abstract and key words, and generate the title in the same language.
-2. Avoid using wasted words such as “a study of,” “investigation of,” “development of,” or “observations on.”
-3. Ensure that the title reflects the main content of the abstract and key words.
-Please write your generated title within the <Title> tag.
-```
-
-**中文原版**
 
 ```html
 我将为你提供一篇任何语言的科学论文的摘要和关键词，你将检测该语言并以相同的语言进行回复。你的任务是根据摘要和关键词用相同的语言向我提供科学论文的标题。科学论文的标题应该是简洁、明确和有信息量的。你应该避免使用诸如研究、调查、发展或观察等词语。确保标题能够立即抓住听众的心。
 ```
 
-**PromptPilot 优化版**
-
-```html
-你的任务是根据提供的科学论文摘要和关键词，用与摘要相同的语言生成一个科学论文的标题。标题应简洁、明确、有信息量，避免使用诸如研究、调查、发展或观察等词语，并且要能够立即抓住听众的心。
-以下是科学论文的摘要：
-<abstract>
-{{ABSTRACT}}
-</abstract>
-以下是科学论文的关键词：
-<keywords>
-{{KEYWORDS}}
-</keywords>
-在生成标题时，请遵循以下指南：
-1. 确保标题使用与摘要相同的语言。
-2. 标题要简洁明了，避免冗长复杂的表述。
-3. 准确反映摘要和关键词的核心内容。
-4. 避免使用研究、调查、发展或观察等词语。
-5. 让标题具有吸引力，能够引起读者的兴趣。
-请在<title>标签内写下生成的标题。
-```
-
 ### 2.写英文标题
-
-**英文原版**
 
 ```html
 I want you to act as an academic journal editor. I am going to provide you an abstract of manuscript and you provide me with 5 good titles in English for a research paper and give explanation for why this title is good. Provide your output as a markdown table with two columns and with head in Chinese. First column gives titles in English and second column provides explanation in Chinese. The following text is the abstract:
 ```
 
-**PromptPilot 优化版**
-
-```html
-You will act as an academic journal editor. Your task is to generate 5 good English titles for a research paper based on the provided abstract of the manuscript and give explanations in Chinese for why each title is good.
-First, please carefully read the following abstract of the manuscript:
-<ManuscriptAbstract>
-{{MANUSCRIPT_ABSTRACT}}
-</ManuscriptAbstract>
-When generating titles, please ensure that they are relevant to the content of the abstract, concise, and can accurately reflect the core of the research. The explanations should clearly state the reasons why the title is suitable for the research.
-Please present your output as a markdown table with two columns. The headers of the table should be in Chinese, with the first column titled "英文标题" (English Title) and the second column titled "理由说明" (Reason Explanation).
-| 英文标题 | 理由说明 |
-| --- | --- |
-| [Your first title] | [Your first explanation] |
-| [Your second title] | [Your second explanation] |
-| [Your third title] | [Your third explanation] |
-| [Your fourth title] | [Your fourth explanation] |
-| [Your fifth title] | [Your fifth explanation] |
-```
-
-**中文原版**
-
 ```html
 希望你担任一名学术期刊编辑。我将为你提供一个手稿的摘要，你需要为一篇研究论文提供5个好的英文标题，并解释为什么这个标题好。请以Markdown表格的形式提供你的输出，表格有两列，标题用中文。第一列给出英文标题，第二列用中文提供解释。以下是摘要：
-```
-
-**PromptPilot 优化版**
-
-```html
-你将担任一名学术期刊编辑。你的任务是根据提供的研究论文手稿摘要，生成5个合适的英文标题，并解释为什么这些标题好。
-以下是手稿摘要：
-<manuscript_abstract>
-{{MANUSCRIPT_ABSTRACT}}
-</manuscript_abstract>
-在生成标题时，请确保标题能够准确概括研究的核心内容，具有吸引力且符合学术规范。
-请以Markdown表格的形式提供你的输出，表格有两列，标题用中文。第一列给出英文标题，第二列用中文提供解释。表格格式如下：
-| 英文标题 | 解释 |
-| --- | --- |
-| [英文标题1] | [标题1好的原因解释] |
-| [英文标题2] | [标题2好的原因解释] |
-| [英文标题3] | [标题3好的原因解释] |
-| [英文标题4] | [标题4好的原因解释] |
-| [英文标题5] | [标题5好的原因解释] |
-
-请确保你的解释清晰、全面，能充分说明每个标题的优点。
 ```
 
 ### 3.写摘要
@@ -202,7 +114,7 @@ Please write your abstract within the <abstract> tag.
 请在<abstract>标签内写下你的摘要。
 ```
 
-### 4.写英文摘要指令
+### 4.写英文摘要
 
 ```html
 Please read through the uploaded manuscript and write an abstract in English for it. The abstract should initiate with a comprehensive summary of the broader context or background of the study, followed by a statement that describe the gaps, limitations or issues. Then, describe the research methods used in the manuscript. After that, write 3-5 sentences showing the key findings. In the end, include a statement which underscores the unique value or significant contribution of the manuscript. After generating the abstract, give explanation in Chinese checking if you have followed the instruction in a markdown table.
@@ -869,7 +781,7 @@ Polish and rewrite the above content to make it more in line with the style of a
 请润色并重写上面的内容，使其更加符合学术论文的风格，并在此过程中，更加专业化。如果有不符合事实或逻辑的部分，请参考XXX原理部分对上面的内容修改。
 ```
 
-### 逻辑论证辅助
+### 17. 逻辑论证辅助
 
 AI在逻辑推理方面有显著的提升，可以用于辅助构建更有说服力的论证。
 
@@ -881,7 +793,7 @@ Please help me analyze and optimize the logical structure of this argument to ma
 请帮我分析和优化这段论证的逻辑结构，以使其更具说服力。
 ```
 
-### 个性化润色指令
+### 18. 个性化润色指令
 
 根据ChatGPT的个性化模型，提供针对性的润色建议。
 
