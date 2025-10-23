@@ -2,10 +2,11 @@
 layout: post
 title: Mac/Linux 系统安装 CLI 工具
 category: 技术
-tags: AI, Claude Code, Codex, Gemini, CLI
-keywords: AI, Claude Code, Codex, Gemini, CLI
+tags: AI, Claude Code, Codex, Gemini
+keywords: AI, Claude Code, Codex, Gemini
 description: install kinds of CLI tools on the platforms of Mac and Linux.
 ---
+
 
 ## 系统要求
 
