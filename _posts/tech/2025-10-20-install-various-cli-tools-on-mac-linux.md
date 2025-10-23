@@ -6,8 +6,6 @@ tags: AI, Claude Code, Codex, Gemini
 keywords: AI, Claude Code, Codex, Gemini
 description: install kinds of CLI tools on the platforms of Mac and Linux.
 ---
-
-
 ## 系统要求
 
 - 操作系统：macOS 10.15+，Ubuntu 20.04+/Debian 10+
@@ -164,8 +162,7 @@ gemini
 
 完成以上初始化即可正常使用。
 
-
-## 3. OpenAI Codex CLI 
+## 3. OpenAI Codex CLI
 
 通过 AiHubMix 在命令行中支持 OpenAI Codex 调用。
 
@@ -173,25 +170,26 @@ AiHubMix 提供了与 OpenAI Codex CLI 的无缝集成，让你可以在命令�
 
 ### 第一步：终端运行
 
-```bash 
+```bash
 npm install -g @openai/codex
 ```
 
 ### 第二步：环境变量配置
 
 打开你的 Shell 配置文件（例如 `.zshrc` 或 `.bashrc`），添加以下环境变量：
-```bash 
+
+```bash
 export OPENAI_BASE_URL="https://aihubmix.com/v1"
 export OPENAI_API_KEY="sk-***" # 替换为你的 AiHubMix API 密钥
 ```
 
 > 这里的 `OPENAI_API_KEY` 应该使用 AiHubMix 的密钥，变量名保持为 `OPENAI_API_KEY` 是为了兼容 OpenAI 原生客户端。
 
-
 ### 第三步：使配置生效
 
 在终端中执行以下命令，使环境变量生效：
-```bash 
+
+```bash
 source ~/.zshrc  # 如果使用 zsh
 # 或
 source ~/.bashrc  # 如果使用 bash
@@ -200,7 +198,8 @@ source ~/.bashrc  # 如果使用 bash
 ### 第四步：终端启动
 
 定位到你的项目目录，然后运行 `codex` 命令：
-```bash 
+
+```bash
 cd /你的项目路径
 codex
 ```
@@ -208,11 +207,11 @@ codex
 #### 使用自然语言执行任务
 
 现在可以通过自然语言向 Codex CLI 输入指令，例如：
-```bash 
+
+```bash
 # 示例输入
 讲解一下 AnimatedText
 ```
-
 
 ### 高级配置
 
@@ -220,18 +219,17 @@ codex
 > - 目前仅支持 OpenAI 家的模型，模型列表可在 Responses API 文档 中查看
 > - 你可以通过编辑 `~/.codex/instructions.md` 文件来自定义系统提示词，定制 AI 助手的行为
 
-
 ### 使用命令参考
 
 #### 帮助命令
 
-```bash 
+```bash
 codex -h
 ```
 
 #### 完整命令选项
 
-```bash 
+```bash
 Usage
   $ codex [options] <prompt>
 
@@ -265,33 +263,36 @@ Options
   $ codex -q "修复构建问题"
 ```
 
-
-## 4. Continue CLI 
+## 4. Continue CLI
 
 Continue CLI 是一个开源的、模块化的命令行编码助手。它提供了一个经过实战检验的代理循环，让你只需将模型、规则和工具接入即可使用。
 
 ### 第一步：终端运行
 
-```bash 
+```bash
 # Install
-npm i -g @continuedev/cli
+npm install -g @continuedev/cli
 ```
 
 ### 第二步：环境变量配置
+
 `cn` 使用与 Continue 完全相同的配置文件 `config.yaml`。也就是说，你可以登录 Continue Hub，或者直接使用你现有的本地配置。
 
 要在不同配置之间切换，你可以在 `cn` 中使用 `/config` 斜杠命令，或者在启动时加上 `--config` 标志。例如：
-```bash 
+
+```bash
 cn --config continuedev/default-agent
 ```
+
 或
-```bash 
+
+```bash
 cn --config ~/.continue/config.yaml
 ```
 
-
 ### 第三步：终端启动
-```bash 
+
+```bash
 # Interactive mode
 cn
 
@@ -299,12 +300,13 @@ cn
 cn -p "Generate a conventional commit name for the current git changes"
 ```
 
-## 5. Qwen Code 
+## 5. Qwen Code
 
 利用 Aihubmix 平台的任何大语言模型为 Qwen Code 提供支持。
 
 ### 第一步：终端运行
-```bash 
+
+```bash
 npm install -g @qwen-code/qwen-code
 qwen --version
 ```
@@ -314,7 +316,8 @@ qwen --version
 在系统环境变量中填入 Aihubmix 密钥和转发地址，密钥可以在 Aihubmix 「Keys」页面 生成。
 
 比如在 `~/.zshrc` 中添加：
-```bash 
+
+```bash
 export OPENAI_API_KEY="your_aihubmix_key"
 export OPENAI_BASE_URL="https://aihubmix.com/v1"
 export OPENAI_MODEL="your_model"
@@ -322,14 +325,15 @@ export OPENAI_MODEL="your_model"
 
 > 对于 Mac 用户，你可以在用户名目录通过快捷键 ⌘ + ⇧ + . 显示隐藏的 .zshrc 文件，用系统的「文本编辑」APP 打开并添加上述内容。
 
-
 ### 第三步：使配置生效
+
 添加配置之后，终端执行 `source ~/.zshrc`，回车即可。
 
 ### 第四步：启动并使用
 
 终端输入
-```bash 
+
+```bash
 qwen
 ```
 
